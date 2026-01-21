@@ -1,0 +1,1807 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaisei+Decol&display=swap');
+
+/* @font-face {
+    font-family: "fogthreeACL";
+    src: url("../_resource/fonts/FogthreeACL.otf");
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("../_resource/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "poppinsBold";
+    src: url("../_resource/fonts/Poppins-Bold.ttf");
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: url("../_resource/img/aboutContact/About\ Contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+
+}
+
+.ab--sec01 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec01--div01 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ab--sec01--div02 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 5% 0% 5%;
+}
+
+.ab--sec01--div03 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2%; */
+}
+
+.ab--sec01--headdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1rem;
+    /* gap: 0.5rem; */
+
+}
+
+.ab--sec01--headleftline {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec01--headmidtext {
+    font-family: "Inria Sans";
+    color: aqua;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.ab--sec01--headrightline {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec01--heading {
+    font-family: "Kaisei Decol";
+    /* font-size: 2.5rem; */
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.ab--sec01--div04 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+    /* margin-bottom: 3rem; */
+}
+
+.ab--sec01--leftdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+
+.ab--sec01--leftdivimg {
+    width: 100%;
+    height: auto;
+}
+
+.ab--sec01--leftdivp {
+    font-family: "Inter";
+    color: white;
+    text-align: justify;
+    /* margin-top: 1rem; */
+    font-size: 0.9rem;
+}
+
+.ab--sec01--centdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-family: "Inter";
+    font-size: 0.9rem;
+    text-align: justify;
+
+}
+
+.ab--sec01--rightdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec01--rightdivp {
+    font-family: "Inter";
+    color: white;
+    text-align: justify;
+    /* margin-top: 1rem; */
+    font-size: 0.9rem;
+}
+
+.ab--sec01--rightdivimg {
+    width: 100%;
+    height: auto;
+}
+
+.ab--sec01--div05 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* margin-bottom: 5rem; */
+}
+
+.ab--sec01--card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: radial-gradient(circle at 100% 100%, #091E24 0, #091E24 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 0 100%, #091E24 0, #091E24 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 100% 0, #091E24 0, #091E24 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+        radial-gradient(circle at 0 0, #091E24 0, #091E24 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+        linear-gradient(#091E24, #091E24) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+        linear-gradient(#091E24, #091E24) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+        linear-gradient(247deg, transparent 0%, #00C6FF 200%);
+
+    border-radius: 8px;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 9px;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.ab--sec01--card:hover {
+   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.ab--sec01--cardimg {
+    width: 30%;
+    height: auto;
+}
+
+.ab--sec01--cardtext {
+    font-family: "Inria Sans";
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 850px) {
+    .ab--sec01--div04 {
+        width: auto;
+        max-width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 2rem; */
+        /* margin-bottom: 3rem; */
+    }
+
+    .ab--sec01--card {
+        width: 35%;
+
+    }
+
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1050px) {
+    .ab--sec01--div04 {
+        width: auto;
+        /* max-width: 800px; */
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* gap: 2rem; */
+        /* margin-bottom: 3rem; */
+    }
+
+    .ab--sec01--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+
+    }
+
+
+    .ab--sec01--centdiv {
+        width: 50%;
+        /* max-width: 800px; */
+
+        height: 27%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        font-family: "Inter";
+        font-size: 0.8rem;
+        text-align: justify;
+        /* margin-top: 20rem; */
+
+    }
+
+    .ab--sec01--leftdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        /* margin-top: 1rem; */
+        font-size: 0.8rem;
+        /* margin-top: 11rem; */
+        margin-right: 1rem;
+        padding-right: 1rem;
+        /* margin: auto; */
+        /* margin-top: auto; */
+        padding-top: 6rem;
+    }
+
+    .ab--sec01--rightdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        /* margin-top: 1rem; */
+        font-size: 0.8rem;
+        /* margin-bottom: 11rem; */
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 9rem;
+
+    }
+
+    .ab--sec01--card {
+        width: 25%;
+
+    }
+}
+
+@media only screen and (min-width: 1051px) and (max-width: 1400px) {
+    .ab--sec01--div04 {
+        width: auto;
+        max-width: 1050px;
+        ;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* gap: 2rem; */
+        /* margin-bottom: 3rem; */
+    }
+
+    .ab--sec01--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+
+    }
+
+    .ab--sec01--centdiv {
+        width: 50%;
+        height: 32%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        font-family: "Inter";
+        font-size: 0.9rem;
+        text-align: justify;
+
+    }
+
+    .ab--sec01--leftdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        /* margin-top: 1rem; */
+        font-size: 0.9rem;
+        margin-top: 7rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+
+    }
+
+    .ab--sec01--rightdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        /* margin-top: 1rem; */
+        font-size: 0.9rem;
+        margin-bottom: 10rem;
+        margin-left: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+    }
+
+    .ab--sec01--div05 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        /* margin-bottom: 5rem; */
+    }
+
+    .ab--sec01--card {
+        width: 15%;
+        height: 150px;
+
+    
+
+
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+
+    .ab--sec01 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab--sec01--div01 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ab--sec01--div02 {
+        width: auto;
+        max-width: 1400px;
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .ab--sec01--div03 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* margin-bottom: 2%; */
+    }
+
+    .ab--sec01--headdiv {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -1rem;
+        /* gap: 0.5rem; */
+
+    }
+
+    .ab--sec01--headleftline {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec01--headmidtext {
+        font-family: "Inria Sans";
+        color: aqua;
+        font-size: 0.9rem;
+        margin: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .ab--sec01--headrightline {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec01--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+
+    }
+
+    .ab--sec01--div04 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* gap: 2rem; */
+        /* margin-bottom: 3rem; */
+    }
+
+    .ab--sec01--centdiv {
+        width: 40%;
+        max-width: 1400px;
+        height: 35%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        font-family: "Inter";
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        text-align: justify;
+
+    }
+
+    .ab--sec01--leftdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        /* margin-top: 1rem; */
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+        /* padding-top: 1rem; */
+
+    }
+
+    .ab--sec01--rightdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        /* margin-top: 1rem; */
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        /* padding-bottom: 1rem; */
+    }
+
+    .ab--sec01--div05 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        /* margin-bottom: 5rem; */
+    }
+
+    .ab--sec01--card {
+        width: 17%;
+        height: 160px;
+
+    }
+
+    .ab--sec01--cardtext {
+        font-family: "Inria Sans";
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+.ab--sec02 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.ab--sec02--div01 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec02--div02 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 5% 5% 5%;
+}
+
+.ab--sec02--div03 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec02--headdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec02--headleftline {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec02--headmidtext {
+    font-family: "Inria Sans";
+    color: #00C6FF;
+    font-size: 0.9rem;
+    margin: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.ab--sec02--headrightline {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec02--heading {
+    font-family: "Kaisei Decol";
+    /* font-size: 2.5rem; */
+    color: white;
+    text-align: center;
+    margin-top: 0rem;
+
+}
+
+.ab--sec02--div04 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ab--sec02--sendmessagediv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00C6FF;
+
+}
+
+.ab--sec02--sendmessageheading {
+    font-family: "Kaisei Decol";
+    color: rgb(250, 250, 250);
+    /* font-size: 1.5rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ab--sec02--sendmessagep {
+    font-family: "Inter";
+    color: white;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.ab--sec02--formdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(0, 240, 248); */
+}
+
+.ab--sec02--formindiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+.ab--sec02--formheading {
+    font-family: "Inria Sans";
+    color: rgb(250, 250, 250);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.ab--sec02--forminput {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    /* border: none; */
+    padding: 0.5rem;
+    font-family: "Inter";
+    font-size: 0.9rem;
+    /* margin-bottom: 1rem; */
+    border: 1px solid #00C6FF;
+    background: transparent;
+    color: white;
+    outline: none;
+
+}
+
+.ab--sec02--forminput:focus {
+    border: 1px solid #00C6FF;
+    background: transparent;
+
+}
+
+::placeholder {
+    color: white;
+}
+
+
+.ab--sec02--formtextarea {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    font-family: "Inter";
+    font-size: 0.9rem;
+    border: 1px solid #00C6FF;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+
+
+.ab--sec02--formbutton {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 5px; */
+    gap: 0.5rem;
+    border: 2px solid #00C6FF;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+.ab--sec02--formbutton:hover {
+    background-color: #ffffff;
+    transform: rotate(-5deg);
+    transition: all 0.5s ease;
+}
+
+.ab--sec02--formbuttonimg {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec02--formbuttontext {
+    font-family: "Inria Sans";
+    color: #00C6FF;
+    /* font-size: 1rem; */
+}
+
+.ab--sec02--contactdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 2rem; */
+    margin: 1rem 0.5rem 0rem 0.5rem;
+    border: 1px solid #00C6FF;
+    border-radius: 5px;
+    background-color: #091E24;
+
+}
+
+.ab--sec02--contactheading {
+    font-family: "Kaisei Decol";
+    color: rgb(250, 250, 250);
+    /* font-size: 1.5rem; */
+    /* margin-bottom: 1rem; */
+}
+
+.ab--sec02--contactinfo {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0.5rem; */
+    /* margin: 1rem 0.5rem 1rem 0.5rem; */
+    gap: 1rem;
+}
+
+.ab--sec02--contactinfoitem {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 0.5rem; */
+    padding-left: 0.5rem;
+    background-color: #02313F;
+    border-radius: 5px;
+    /* border: 1px solid rgb(0, 240, 248); */
+}
+
+.ab--sec02--contactinfoitemimg {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec02--contactinfoitemimg:hover {
+    transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+.ab--sec02--contactinfoitemtext {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid rgb(0, 240, 248); */
+    font-family: "Inria Sans";
+    color: rgb(250, 250, 250);
+
+}
+
+.ab--sec02--contactinfoitemheading {
+    font-family: "Inria Sans";
+    color: rgb(250, 250, 250);
+    margin-bottom: -0.5rem;
+}
+
+.ab--sec02--contactinfohr {
+    width: 90%;
+    height: 1px;
+    /* color: white; */
+    background-color: white;
+
+}
+
+.ab--sec02--socialmediadiv {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* border: 1px solid rgb(0, 240, 248); */
+    /* margin-top: 1rem */
+
+}
+
+.ab--sec02--socialmediaheading {
+    font-family: "Kaisei Decol";
+    color: rgb(250, 250, 250);
+
+}
+
+.ab--sec02--socialmediaicons {
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.ab--sec02--socialmediaicon {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec02--socialmediaicon:hover {
+    transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 850px) {
+    .ab--sec02--div02 {
+        width: auto;
+        max-width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 5% 5%;
+    }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1050px) {
+
+
+    .ab--sec02--headmidtext {
+        font-family: "Inria Sans";
+        color: #00C6FF;
+        font-size: 1.1rem;
+        margin: 0rem 0.2rem 0rem 0.2rem;
+    }
+
+
+    .ab--sec02--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        margin-top: 0rem;
+
+    }
+
+    .ab--sec02--div04 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    .ab--sec02--sendmessagediv {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid #00C6FF;
+
+    }
+
+    .ab--sec02--sendmessageheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        /* text-align: center; */
+    }
+
+    .ab--sec02--sendmessagep {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .ab--sec02--formdiv {
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid rgb(0, 240, 248); */
+    }
+
+    .ab--sec02--formindiv {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0rem 0rem 0rem 1rem;
+    }
+
+    .ab--sec02--formheading {
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .ab--sec02--forminput {
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        /* border: none; */
+        padding: 0.5rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        /* margin-bottom: 1rem; */
+        border: 1px solid #00C6FF;
+        background: transparent;
+    }
+
+    .ab--sec02--formtextarea {
+        width: 85%;
+        height: auto;
+        border-radius: 5px;
+        border: none;
+        padding: 0.5rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        border: 1px solid #00C6FF;
+        background: transparent;
+    }
+
+    .ab--sec02--formbutton {
+        width: 40%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 5px; */
+        gap: 0.5rem;
+        border: 2px solid #00C6FF;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        /* bottom: 1rem; */
+        /* position: absolute */
+        /* transform: translate */
+        margin-left: 33%;
+
+
+    }
+
+    .ab--sec02--formbuttonimg {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec02--formbuttontext {
+        font-family: "Inria Sans";
+        color: #00C6FF;
+        /* font-size: 1rem; */
+    }
+
+    .ab--sec02--contactdiv {
+        width: 30%;
+        height: 60%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 2rem;
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        border: 1px solid #00C6FF;
+        border-radius: 5px;
+        top: 160%;
+        left: 60%;
+
+    }
+
+    .ab--sec02--contactheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+        /* font-size: 1.5rem; */
+        /* margin-bottom: 1rem; */
+    }
+
+    .ab--sec02--contactinfo {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.5rem; */
+        /* margin: 1rem 0.5rem 1rem 0.5rem; */
+        gap: 1rem;
+    }
+
+    .ab--sec02--contactinfoitem {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 1rem;
+        /* padding: 0.5rem; */
+        padding-left: 0.5rem;
+        background-color: #02313F;
+        border-radius: 5px;
+        /* border: 1px solid rgb(0, 240, 248); */
+    }
+
+    .ab--sec02--contactinfoitemimg {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec02--contactinfoitemtext {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 1px solid rgb(0, 240, 248); */
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+
+    }
+
+    .ab--sec02--contactinfoitemheading {
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+        margin-bottom: -0.5rem;
+    }
+
+    .ab--sec02--contactinfohr {
+        width: 90%;
+        height: 1px;
+        /* color: white; */
+        margin-left: 0rem;
+        background-color: white;
+
+    }
+
+    .ab--sec02--socialmediadiv {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* border: 1px solid rgb(0, 240, 248); */
+        /* margin-top: 1rem */
+
+    }
+
+    .ab--sec02--socialmediaheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+
+    }
+
+    .ab--sec02--socialmediaicons {
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .ab--sec02--socialmediaicon {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1051px) and (max-width: 1400px) {
+    .ab--sec02--headmidtext {
+        font-family: "Inria Sans";
+        color: #00C6FF;
+        font-size: 1.1rem;
+        margin: 0rem 0.2rem 0rem 0.2rem;
+    }
+
+
+    .ab--sec02--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        margin-top: 0rem;
+
+    }
+
+    .ab--sec02--div04 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    .ab--sec02--sendmessagediv {
+        width: 80%;
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid #00C6FF;
+
+    }
+
+    .ab--sec02--sendmessageheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        /* text-align: center; */
+    }
+
+    .ab--sec02--sendmessagep {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .ab--sec02--formdiv {
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid rgb(0, 240, 248); */
+    }
+
+    .ab--sec02--formindiv {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0rem 0rem 0rem 1rem;
+    }
+
+    .ab--sec02--formheading {
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .ab--sec02--forminput {
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        /* border: none; */
+        padding: 0.5rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        /* margin-bottom: 1rem; */
+        border: 1px solid #00C6FF;
+        background: transparent;
+    }
+
+    .ab--sec02--formtextarea {
+        width: 85%;
+        height: auto;
+        border-radius: 5px;
+        border: none;
+        padding: 0.5rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        border: 1px solid #00C6FF;
+        background: transparent;
+    }
+
+    .ab--sec02--formbutton {
+        width: 40%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 5px; */
+        gap: 0.5rem;
+        border: 2px solid #00C6FF;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        /* bottom: 1rem; */
+        /* position: absolute */
+        /* transform: translate */
+        margin-left: 33%;
+
+
+    }
+
+    .ab--sec02--formbuttonimg {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec02--formbuttontext {
+        font-family: "Inria Sans";
+        color: #00C6FF;
+        /* font-size: 1rem; */
+    }
+
+    .ab--sec02--contactdiv {
+        width: 30%;
+        max-width: 1200px;
+        height: 65%;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 2rem;
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        border: 1px solid #00C6FF;
+        border-radius: 5px;
+        top: 155%;
+        left: 60%;
+
+    }
+
+    .ab--sec02--contactheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+        /* font-size: 1.5rem; */
+        /* margin-bottom: 1rem; */
+        text-align: left;
+        /* margin-left: -7rem; */
+    }
+
+    .ab--sec02--contactinfo {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.5rem; */
+        /* margin: 1rem 0.5rem 1rem 0.5rem; */
+        gap: 1rem;
+    }
+
+    .ab--sec02--contactinfoitem {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 1rem;
+        /* padding: 0.5rem; */
+        padding-left: 0.5rem;
+        background-color: #02313F;
+        border-radius: 5px;
+        /* border: 1px solid rgb(0, 240, 248); */
+    }
+
+    .ab--sec02--contactinfoitemimg {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec02--contactinfoitemtext {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 1px solid rgb(0, 240, 248); */
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+
+    }
+
+    .ab--sec02--contactinfoitemheading {
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+        margin-bottom: -0.5rem;
+    }
+
+    .ab--sec02--contactinfohr {
+        width: 90%;
+        height: 1px;
+        /* color: white; */
+        margin-left: -0rem;
+        background-color: white;
+
+    }
+
+    .ab--sec02--socialmediadiv {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* border: 1px solid rgb(0, 240, 248); */
+        /* margin-top: 1rem */
+
+    }
+
+    .ab--sec02--socialmediaheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+
+    }
+
+    .ab--sec02--socialmediaicons {
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .ab--sec02--socialmediaicon {
+        width: auto;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1401px) {
+    .ab--sec02--div02 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5% 5% 5%;
+    }
+
+    .ab--sec02--headmidtext {
+        font-family: "Inria Sans";
+        color: aqua;
+        font-size: 1.1rem;
+        margin: 0rem 0.2rem 0rem 0.2rem;
+    }
+
+
+    .ab--sec02--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        margin-top: 0rem;
+
+    }
+
+    .ab--sec02--div04 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: -5rem;
+
+    }
+
+    .ab--sec02--sendmessagediv {
+        width: 80%;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        border: 1px solid #00C6FF;
+
+    }
+
+    .ab--sec02--sendmessageheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        /* text-align: center; */
+    }
+
+    .ab--sec02--sendmessagep {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .ab--sec02--formdiv {
+        width: 82%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid rgb(0, 240, 248); */
+    }
+
+    .ab--sec02--formindiv {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0rem 0rem 0rem 1rem;
+    }
+
+    .ab--sec02--formheading {
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .ab--sec02--forminput {
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        /* border: none; */
+        padding: 0.5rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        /* margin-bottom: 1rem; */
+        border: 1px solid #00C6FF;
+        background: transparent;
+        /* outline-color: #00C6FF; */
+
+
+    }
+
+    .ab--sec02--formtextarea {
+        width: 96%;
+        height: auto;
+        border-radius: 5px;
+        border: none;
+        padding: 0.5rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        border: 1px solid #00C6FF;
+        background: transparent;
+    }
+
+    .ab--sec02--formbutton {
+        width: 20%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 5px; */
+        gap: 0.5rem;
+        border: 2px solid #00C6FF;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        /* bottom: 1rem; */
+        /* position: absolute */
+        /* transform: translate */
+        margin-left: 60%;
+
+
+    }
+
+    .ab--sec02--formbuttonimg {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec02--formbuttontext {
+        font-family: "Inria Sans";
+        color: #00C6FF;
+        /* font-size: 1rem; */
+    }
+
+    .ab--sec02--contactdiv {
+        width: 30%;
+        max-width: 350px;
+        height: auto;
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 1rem; */
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        border: 1px solid #00C6FF;
+        border-radius: 5px;
+        /* top: 161px; */
+        /* left: 65px; */
+        margin-left: -10%;
+        margin-top: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    .ab--sec02--contactheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+        /* font-size: 1.5rem; */
+        /* margin-bottom: 1rem; */
+        /* text-align: left; */
+        margin-left: -5rem;
+    }
+
+    .ab--sec02--contactinfo {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.5rem; */
+        /* margin: 1rem 0.5rem 1rem 0.5rem; */
+        gap: 1rem;
+    }
+
+    .ab--sec02--contactinfoitem {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 1rem;
+        /* padding: 0.5rem; */
+        padding-left: 0.5rem;
+        background-color: #02313F;
+        border-radius: 5px;
+        /* border: 1px solid rgb(0, 240, 248); */
+    }
+
+    .ab--sec02--contactinfoitemimg {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec02--contactinfoitemtext {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 1px solid rgb(0, 240, 248); */
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+
+    }
+
+    .ab--sec02--contactinfoitemheading {
+        font-family: "Inria Sans";
+        color: rgb(250, 250, 250);
+        margin-bottom: -0.5rem;
+    }
+
+    .ab--sec02--contactinfohr {
+        width: 90%;
+        height: 1px;
+        /* color: white; */
+        background-color: white;
+
+    }
+
+    .ab--sec02--socialmediadiv {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* border: 1px solid rgb(0, 240, 248); */
+        /* margin-top: 1rem */
+
+    }
+
+    .ab--sec02--socialmediaheading {
+        font-family: "Kaisei Decol";
+        color: rgb(250, 250, 250);
+
+    }
+
+    .ab--sec02--socialmediaicons {
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .ab--sec02--socialmediaicon {
+        width: auto;
+        height: auto;
+    }
+}
+
+.ab--sec03 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+}
+
+.ab--sec03--div01 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ab--sec03--mapdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1401px) {
+    .ab--sec03--div01 {
+        width: 100%;
+        max-width: 1400px;
+        ;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
