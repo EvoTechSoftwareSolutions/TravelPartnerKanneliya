@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Partner Kanneliya</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Component Styles -->
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="hero.css">
+
+  <style>
+    /* Global reset & page base */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #080f14;
+      color: #fff;
+      font-family: 'Jost', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Placeholder sections for demo */
+    .placeholder-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 4vw, 52px);
+      color: rgba(255,255,255,0.15);
+      border-top: 1px solid rgba(78,205,196,0.08);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==============================
+       HEADER (Reusable Component)
+       header.html content inlined:
+  ============================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-logo">
+      <div class="logo-circle">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" stroke="#4ecdc4" stroke-width="1.5"/>
+          <path d="M30 12 C20 18 15 26 20 32 C24 37 28 34 30 30 C32 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.8"/>
+          <path d="M30 12 C40 18 45 26 40 32 C36 37 32 34 30 30 C28 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.5"/>
+          <ellipse cx="30" cy="36" rx="10" ry="5" fill="#4ecdc4" opacity="0.6"/>
+          <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">Kanneliya</span>
+        <span class="logo-sub">Travel Partner</span>
+      </div>
+    </div>
+
+    <nav class="header-nav">
+      <a href="#home"      class="nav-link active">Home</a>
+      <a href="#packages"  class="nav-link">Packages</a>
+      <a href="#about"     class="nav-link">About</a>
+      <a href="#kanneliya" class="nav-link">Kanneliya</a>
+      <a href="#gallery"   class="nav-link">Gallery</a>
+      <a href="#contact"   class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#contact" class="cta-btn">Call Us</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#home"      class="mobile-nav-link">Home</a>
+      <a href="#packages"  class="mobile-nav-link">Packages</a>
+      <a href="#about"     class="mobile-nav-link">About</a>
+      <a href="#kanneliya" class="mobile-nav-link">Kanneliya</a>
+      <a href="#gallery"   class="mobile-nav-link">Gallery</a>
+      <a href="#contact"   class="mobile-nav-link">Contact</a>
+      <a href="#contact"   class="mobile-cta-btn">Call Us</a>
+    </div>
+  </header>
+
+  <!-- ==============================
+       HERO SECTION (hero.html)
+  ============================== -->
+  <section class="hero" id="home">
+
+    <!-- Background Slider -->
+    <div class="hero-slider" id="heroSlider">
+      <div class="slide active" data-index="0">
+        <img
+          src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85"
+          alt="Kanneliya Forest 1"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide" data-index="1">
+        <img
+          src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85"
+          alt="Kanneliya Forest 2"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide" data-index="2">
+        <img
+          src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=85"
+          alt="Kanneliya Forest 3"
+          class="slide-img"
+        />
+      </div>
+      <div class="slide" data-index="3">
+        <img
+          src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=85"
+          alt="Kanneliya Forest 4"
+          class="slide-img"
+        />
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Social sidebar -->
+    <div class="hero-social">
+      <span class="social-label">Follow Us</span>
+      <div class="social-icons">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.7a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Travel Partner Kanneliya</span>
+      </div>
+      <h1 class="hero-title" id="heroTitle"></h1>
+    </div>
+
+    <!-- Vertical counter -->
+    <div class="hero-counter" id="heroCounter">
+      <div class="counter-track">
+        <span class="counter-item" data-num="01">0.1</span>
+        <span class="counter-item" data-num="02">0.2</span>
+        <span class="counter-item" data-num="03">0.3</span>
+        <span class="counter-item" data-num="04">0.4</span>
+      </div>
+      <div class="counter-bar">
+        <div class="counter-bar-fill" id="counterBarFill"></div>
+      </div>
+    </div>
+
+    <!-- Mouse scroll indicator -->
+    <div class="mouse-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <div class="mouse-tail"></div>
+    </div>
+
+  </section>
+
+  <!-- ==============================
+       OTHER SECTIONS (demo)
+  ============================== -->
+  <section class="placeholder-section" id="packages">Packages</section>
+  <section class="placeholder-section" id="about">About</section>
+  <section class="placeholder-section" id="kanneliya">Kanneliya</section>
+  <section class="placeholder-section" id="gallery">Gallery</section>
+  <section class="placeholder-section" id="contact">Contact</section>
+
+  <!-- Scripts -->
+  <script src="header.js"></script>
+  <script src="hero.js"></script>
+
+</body>
+</html>

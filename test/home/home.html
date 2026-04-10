@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanneliya – Travel Partner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="../components/header/header.css" />
+</head>
+
+<body>
+
+  <!-- ══ HEADER ══ -->
+<header class="kn-header" id="header">
+  <a class="kn-logo" href="#">
+    <div class="kn-logo-circle">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="17" stroke="#4dd9ac" stroke-width="1.5" fill="none"/>
+        <path d="M20 31 L20 19" stroke="#4dd9ac" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M20 19 C20 19 13 14.5 13 10 C13 7 16 5.5 20 8 C24 5.5 27 7 27 10 C27 14.5 20 19 20 19Z" fill="#4dd9ac" opacity="0.88"/>
+        <path d="M20 19 C20 19 16 15.5 14.5 12" stroke="#4dd9ac" stroke-width="0.9" opacity="0.55" stroke-linecap="round"/>
+        <path d="M20 19 C20 19 24 15.5 25.5 12" stroke="#4dd9ac" stroke-width="0.9" opacity="0.55" stroke-linecap="round"/>
+        <path d="M13 31 Q20 25.5 27 31" stroke="#4dd9ac" stroke-width="1.1" fill="none" opacity="0.6" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </a>
+ 
+  <nav>
+    <ul class="kn-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Kanneliya</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <button class="kn-cta">Call Us</button>
+ 
+  <div class="kn-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+ 
+<!-- Mobile Nav -->
+<div class="kn-mobile-nav" id="mobileNav">
+  <a href="#">Home</a>
+  <a href="#">Packages</a>
+  <a href="#">About</a>
+  <a href="#">Kanneliya</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact</a>
+  <button class="kn-mobile-cta">Call Us</button>
+</div>
+ 
+<!-- Social Sidebar -->
+<div class="kn-social">
+  <span class="kn-social-label">Follow Us</span>
+  <a href="#" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+  </a>
+  <a href="#" aria-label="YouTube">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+  </a>
+  <a href="#" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+  </a>
+</div>
+ 
+<!-- ══ HERO ══ -->
+<section class="hero" id="hero">
+ 
+  <!-- Background Images -->
+  <img class="hero-bg-img active" id="img0"
+    src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600&q=80" alt="Forest"/>
+  <img class="hero-bg-img" id="img1"
+    src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1600&q=80" alt="Jungle"/>
+  <img class="hero-bg-img" id="img2"
+    src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1600&q=80" alt="Wildlife"/>
+  <img class="hero-bg-img" id="img3"
+    src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&q=80" alt="River"/>
+ 
+  <!-- Overlays -->
+  <div class="hero-overlay-btm"></div>
+  <div class="hero-overlay-side"></div>
+ 
+  <!-- Text Content -->
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text show" id="eyebrow">TRAVEL PARTNER KANNELIYA</span>
+    </div>
+    <h1 class="hero-title show" id="heroTitle">Explore The Hidden<br>Gems Of The<br>Rainforest</h1>
+  </div>
+ 
+  <!-- Slide Counter -->
+  <div class="hero-counter" id="counter">
+    <div class="hero-counter-item active" onclick="goTo(0)">
+      <span class="hero-counter-label">01</span>
+      <div class="hero-counter-bar"><div class="hero-counter-fill" id="fill0"></div></div>
+    </div>
+    <div class="hero-counter-item" onclick="goTo(1)">
+      <span class="hero-counter-label">02</span>
+      <div class="hero-counter-bar"><div class="hero-counter-fill" id="fill1"></div></div>
+    </div>
+    <div class="hero-counter-item" onclick="goTo(2)">
+      <span class="hero-counter-label">03</span>
+      <div class="hero-counter-bar"><div class="hero-counter-fill" id="fill2"></div></div>
+    </div>
+    <div class="hero-counter-item" onclick="goTo(3)">
+      <span class="hero-counter-label">04</span>
+      <div class="hero-counter-bar"><div class="hero-counter-fill" id="fill3"></div></div>
+    </div>
+  </div>
+ 
+  <!-- Mouse Scroll Icon -->
+  <div class="hero-mouse">
+    <svg viewBox="0 0 24 36" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="1" y="1" width="22" height="34" rx="11"/>
+      <line x1="12" y1="7" x2="12" y2="13" stroke-linecap="round" stroke-width="2"/>
+    </svg>
+    <div class="hero-mouse-tail"></div>
+  </div>
+ 
+</section>
+
+  <section class="about" id="about">
+  <div class="about-inner">
+ 
+    <!-- LEFT: Images + heading -->
+    <div class="about-left">
+ 
+      <div class="about-eyebrow" id="eyebrow">
+        <div class="about-eyebrow-line"></div>
+        <span class="about-eyebrow-text">About Us</span>
+      </div>
+ 
+      <h2 class="about-heading" id="heading">Topic For About Us</h2>
+ 
+      <div class="about-images">
+        <!-- Top right -->
+        <div class="about-img-top" id="imgTop">
+          <img
+            src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1600&q=80"
+            alt="Mountain valley view"/>
+        </div>
+ 
+        <!-- Main center (people on river rocks) -->
+        <div class="about-img-main" id="imgMain">
+          <img
+            src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1600&q=80"
+            alt="Kanneliya forest trek"/>
+        </div>
+ 
+        <!-- Bottom left -->
+        <div class="about-img-btm" id="imgBtm">
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80"
+            alt="Misty forest hills"/>
+        </div>
+ 
+        <!-- Explore button -->
+        <button class="about-explore-btn" id="exploreBtn">Explore More</button>
+      </div>
+    </div>
+ 
+    <!-- RIGHT: Text blocks -->
+    <div class="about-right" id="textRight">
+      <div class="about-text-block" id="txt1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="about-text-block" id="txt2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="about-text-block" id="txt3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+  <script src="home.js"></script>
+</body>
+
+</html>

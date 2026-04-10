@@ -1,0 +1,55 @@
+<!-- header.html - Reusable Header Component -->
+<!-- Include this in any page with: 
+     <link rel="stylesheet" href="header.css">
+     Then paste this HTML, and include header.js -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="header.css">
+
+<header class="site-header" id="siteHeader">
+  <div class="header-logo">
+    <div class="logo-circle">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="#4ecdc4" stroke-width="1.5"/>
+        <path d="M30 12 C20 18 15 26 20 32 C24 37 28 34 30 30 C32 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.8"/>
+        <path d="M30 12 C40 18 45 26 40 32 C36 37 32 34 30 30 C28 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.5"/>
+        <ellipse cx="30" cy="36" rx="10" ry="5" fill="#4ecdc4" opacity="0.6"/>
+        <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-main">Kanneliya</span>
+      <span class="logo-sub">TRAVEL PARTNER</span>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#packages" class="nav-link">Packages</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#kanneliya" class="nav-link">Kanneliya</a>
+    <a href="#gallery" class="nav-link">Gallery</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="header-cta">
+    <a href="#contact" class="cta-btn">Call Us</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#packages" class="mobile-nav-link">Packages</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#kanneliya" class="mobile-nav-link">Kanneliya</a>
+    <a href="#gallery" class="mobile-nav-link">Gallery</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="mobile-cta-btn">Call Us</a>
+  </div>
+</header>
+
+<script src="header.js"></script>
