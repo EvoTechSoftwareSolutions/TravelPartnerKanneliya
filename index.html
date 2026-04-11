@@ -9,41 +9,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Component Styles -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="hero.css">
-
-  <style>
-    /* Global reset & page base */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      background: #080f14;
-      color: #fff;
-      font-family: 'Jost', sans-serif;
-      overflow-x: hidden;
-    }
-
-    /* Placeholder sections for demo */
-    .placeholder-section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(28px, 4vw, 52px);
-      color: rgba(255,255,255,0.15);
-      border-top: 1px solid rgba(78,205,196,0.08);
-      letter-spacing: 0.06em;
-    }
-  </style>
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
-  <!-- ==============================
-       HEADER (Reusable Component)
-       header.html content inlined:
-  ============================== -->
+  <!-- ================================================
+       HEADER
+  ================================================ -->
   <header class="site-header" id="siteHeader">
     <div class="header-logo">
       <div class="logo-circle">
@@ -88,47 +64,28 @@
     </div>
   </header>
 
-  <!-- ==============================
-       HERO SECTION (hero.html)
-  ============================== -->
+  <!-- ================================================
+       SECTION 01 — HERO
+  ================================================ -->
   <section class="hero" id="home">
 
-    <!-- Background Slider -->
     <div class="hero-slider" id="heroSlider">
       <div class="slide active" data-index="0">
-        <img
-          src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85"
-          alt="Kanneliya Forest 1"
-          class="slide-img"
-        />
+        <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85" alt="Kanneliya Forest 1" class="slide-img"/>
       </div>
       <div class="slide" data-index="1">
-        <img
-          src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85"
-          alt="Kanneliya Forest 2"
-          class="slide-img"
-        />
+        <img src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85" alt="Kanneliya Forest 2" class="slide-img"/>
       </div>
       <div class="slide" data-index="2">
-        <img
-          src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=85"
-          alt="Kanneliya Forest 3"
-          class="slide-img"
-        />
+        <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=85" alt="Kanneliya Forest 3" class="slide-img"/>
       </div>
       <div class="slide" data-index="3">
-        <img
-          src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=85"
-          alt="Kanneliya Forest 4"
-          class="slide-img"
-        />
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=85" alt="Kanneliya Forest 4" class="slide-img"/>
       </div>
     </div>
 
-    <!-- Overlay -->
     <div class="hero-overlay"></div>
 
-    <!-- Social sidebar -->
     <div class="hero-social">
       <span class="social-label">Follow Us</span>
       <div class="social-icons">
@@ -144,7 +101,6 @@
       </div>
     </div>
 
-    <!-- Hero content -->
     <div class="hero-content">
       <div class="hero-eyebrow">
         <span class="eyebrow-line"></span>
@@ -153,7 +109,6 @@
       <h1 class="hero-title" id="heroTitle"></h1>
     </div>
 
-    <!-- Vertical counter -->
     <div class="hero-counter" id="heroCounter">
       <div class="counter-track">
         <span class="counter-item" data-num="01">0.1</span>
@@ -166,7 +121,6 @@
       </div>
     </div>
 
-    <!-- Mouse scroll indicator -->
     <div class="mouse-indicator">
       <div class="mouse-icon">
         <div class="mouse-wheel"></div>
@@ -176,18 +130,808 @@
 
   </section>
 
-  <!-- ==============================
-       OTHER SECTIONS (demo)
-  ============================== -->
-  <section class="placeholder-section" id="packages">Packages</section>
-  <section class="placeholder-section" id="about">About</section>
-  <section class="placeholder-section" id="kanneliya">Kanneliya</section>
-  <section class="placeholder-section" id="gallery">Gallery</section>
-  <section class="placeholder-section" id="contact">Contact</section>
+  <!-- ================================================
+       SECTION 02 — ABOUT
+  ================================================ -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+
+      <!-- Left column -->
+      <div class="about-left">
+
+        <div class="about-eyebrow reveal d1">
+          <span class="about-eyebrow-line"></span>
+          <span class="about-eyebrow-label">About Us</span>
+        </div>
+
+        <h2 class="about-heading reveal d2">Topic For About Us</h2>
+
+        <div class="about-image-grid reveal-left d3">
+
+          <!-- Top-right: behind centre -->
+          <div class="about-img-box about-img-top-right">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Mountain landscape" />
+          </div>
+
+          <!-- Centre main -->
+          <div class="about-img-box about-img-center">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80" alt="Forest path" />
+          </div>
+
+          <!-- Bottom-left overlap -->
+          <div class="about-img-box about-img-bot-left">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain fog" />
+          </div>
+
+          <button class="about-explore-btn">Explore More</button>
+
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="about-right">
+        <p class="reveal d3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="reveal d4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="reveal d5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 03 — DESTINATIONS
+  ================================================ -->
+  <section class="dest-section" id="kanneliya">
+    <div class="dest-inner">
+
+      <!--
+        Grid layout (4 col × 3 row):
+
+        Row 1: img-a  | img-b  | heading (spans col3+col4)
+        Row 2: img-a  | img-b  | img-c   | img-d
+        Row 3: sm(e)  | big(f) | sm(g)   | sm(h)
+      -->
+      <div class="dest-grid">
+
+        <!-- Col 1 — spans row 1+2 -->
+        <div class="dest-card dest-a reveal d1"
+             data-name="Kanneliya River Trail"
+             data-src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80" alt="Kanneliya River Trail" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <!-- Col 2 — spans row 1+2 -->
+        <div class="dest-card dest-b reveal d2"
+             data-name="Ancient Rock Stream"
+             data-src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&q=80" alt="Ancient Rock Stream" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <!-- Col 3+4 row 1 — heading spans both columns -->
+        <div class="dest-heading-block reveal d1">
+          <div class="dest-eyebrow">
+            <span class="dest-eyebrow-line"></span>
+            <span class="dest-eyebrow-label">Destinations</span>
+          </div>
+          <h2 class="dest-heading">Topic For<br>Destinations</h2>
+        </div>
+
+        <!-- Col 3 row 2 — image-c -->
+        <div class="dest-card dest-c reveal d3"
+             data-name="Forest Pavilion"
+             data-src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=800&q=80" alt="Forest Pavilion" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <!-- Col 4 row 2 — image-d -->
+        <div class="dest-card dest-d reveal d4"
+             data-name="Hidden Waterfall"
+             data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Hidden Waterfall" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <!-- Bottom row — sm | big | sm | sm -->
+        <div class="dest-card dest-e reveal d2"
+             data-name="Misty Forest Path"
+             data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Misty Forest Path" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <div class="dest-card dest-f reveal d3"
+             data-name="Treetop Watchtower"
+             data-src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80" alt="Treetop Watchtower" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <div class="dest-card dest-g reveal d4"
+             data-name="Jungle Creek"
+             data-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Jungle Creek" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+        <div class="dest-card dest-h reveal d5"
+             data-name="Deep Rainforest"
+             data-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Deep Rainforest" />
+          <div class="dest-card-label">Destination Name</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="dest-lightbox" id="destLightbox">
+    <div class="dest-lightbox-inner">
+      <button class="dest-lightbox-close" id="destLbClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="dest-lb-arrow dest-lb-prev" id="destLbPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="dest-lb-arrow dest-lb-next" id="destLbNext" aria-label="Next">
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <img class="dest-lightbox-img" id="destLbImg" src="" alt="" />
+      <div class="dest-lightbox-caption" id="destLbCaption"></div>
+    </div>
+  </div>
+
+  <!-- ================================================
+       PLACEHOLDER SECTIONS
+  ================================================ -->
+  <!-- ================================================
+       SECTION 04 — PACKAGES
+  ================================================ -->
+  <section class="pkg-section" id="packages">
+    <div class="pkg-inner">
+
+      <!-- Heading -->
+      <div class="pkg-heading-wrap reveal d1">
+        <div class="pkg-eyebrow">
+          <span class="pkg-eyebrow-line"></span>
+          <span class="pkg-eyebrow-label">Packages</span>
+          <span class="pkg-eyebrow-line"></span>
+        </div>
+        <h2 class="pkg-heading">Topic For Packages</h2>
+      </div>
+
+      <!-- Carousel track -->
+      <div class="pkg-carousel-wrap">
+        <button class="pkg-arrow pkg-prev" id="pkgPrev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="pkg-arrow pkg-next" id="pkgNext" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="pkg-track" id="pkgTrack">
+
+          <!-- Card 1 -->
+          <div class="pkg-card" data-index="0">
+            <div class="pkg-card-inner">
+              <div class="pkg-card-notch"></div>
+              <h3 class="pkg-card-title">Package 01</h3>
+              <div class="pkg-plan-block">
+                <h4 class="pkg-plan-title">Day Out Plan 01</h4>
+                <div class="pkg-divider"></div>
+                <ol class="pkg-list">
+                  <li>Kithul Experience</li>
+                  <li>Kanneliya Forest Visiting</li>
+                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
+                  <li>Forest Hermitage Visiting</li>
+                </ol>
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-meals-block">
+                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <p class="pkg-meal-type">Breakfast</p>
+                <ul class="pkg-meal-list">
+                  <li>String Hoppers</li>
+                  <li>Dhull Curry</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="pkg-card" data-index="1">
+            <div class="pkg-card-inner">
+              <div class="pkg-card-notch"></div>
+              <h3 class="pkg-card-title">Package 02</h3>
+              <div class="pkg-plan-block">
+                <h4 class="pkg-plan-title">Day Out Plan 01</h4>
+                <div class="pkg-divider"></div>
+                <ol class="pkg-list">
+                  <li>Kithul Experience</li>
+                  <li>Kanneliya Forest Visiting</li>
+                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
+                  <li>Forest Hermitage Visiting</li>
+                </ol>
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-meals-block">
+                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <p class="pkg-meal-type">Breakfast</p>
+                <ul class="pkg-meal-list">
+                  <li>String Hoppers</li>
+                  <li>Dhull Curry</li>
+                  <li>Egg</li>
+                  <li>Polsambola</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pkg-card" data-index="2">
+            <div class="pkg-card-inner">
+              <div class="pkg-card-notch"></div>
+              <h3 class="pkg-card-title">Package 03</h3>
+              <div class="pkg-plan-block">
+                <h4 class="pkg-plan-title">Day Out Plan 01</h4>
+                <div class="pkg-divider"></div>
+                <ol class="pkg-list">
+                  <li>Kithul Experience</li>
+                  <li>Kanneliya Forest Visiting</li>
+                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
+                  <li>Forest Hermitage Visiting</li>
+                </ol>
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-meals-block">
+                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <p class="pkg-meal-type">Breakfast</p>
+                <ul class="pkg-meal-list">
+                  <li>String Hoppers</li>
+                  <li>Dhull Curry</li>
+                  <li>Egg</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="pkg-card" data-index="3">
+            <div class="pkg-card-inner">
+              <div class="pkg-card-notch"></div>
+              <h3 class="pkg-card-title">Package 04</h3>
+              <div class="pkg-plan-block">
+                <h4 class="pkg-plan-title">Day Out Plan 02</h4>
+                <div class="pkg-divider"></div>
+                <ol class="pkg-list">
+                  <li>Kithul Experience</li>
+                  <li>Kanneliya Forest Visiting</li>
+                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
+                  <li>Forest Hermitage Visiting</li>
+                  <li>Evening River Walk</li>
+                </ol>
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-meals-block">
+                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <p class="pkg-meal-type">Breakfast + Lunch</p>
+                <ul class="pkg-meal-list">
+                  <li>String Hoppers</li>
+                  <li>Dhull Curry</li>
+                  <li>Egg</li>
+                  <li>Polsambola</li>
+                  <li>Rice & Curry</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="pkg-card" data-index="4">
+            <div class="pkg-card-inner">
+              <div class="pkg-card-notch"></div>
+              <h3 class="pkg-card-title">Package 05</h3>
+              <div class="pkg-plan-block">
+                <h4 class="pkg-plan-title">Day Out Plan 03</h4>
+                <div class="pkg-divider"></div>
+                <ol class="pkg-list">
+                  <li>Kithul Experience</li>
+                  <li>Kanneliya Forest Visiting</li>
+                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
+                  <li>Forest Hermitage Visiting</li>
+                </ol>
+              </div>
+              <div class="pkg-divider"></div>
+              <div class="pkg-meals-block">
+                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <p class="pkg-meal-type">Breakfast + Dinner</p>
+                <ul class="pkg-meal-list">
+                  <li>String Hoppers</li>
+                  <li>Polsambola</li>
+                  <li>BBQ Dinner</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /pkg-track -->
+      </div><!-- /pkg-carousel-wrap -->
+
+      <!-- Dot indicators -->
+      <div class="pkg-dots" id="pkgDots"></div>
+
+    </div>
+  </section>
+  <!-- ================================================
+       SECTION 05 — WHY CHOOSE US
+  ================================================ -->
+  <section class="why-section" id="why">
+    <div class="why-inner">
+
+      <!-- Heading -->
+      <div class="why-heading-wrap reveal d1">
+        <div class="why-eyebrow">
+          <span class="why-eyebrow-line"></span>
+          <span class="why-eyebrow-label">Why Choose Us</span>
+        </div>
+        <h2 class="why-heading">Topic For Why Choose Us</h2>
+      </div>
+
+      <!-- Accordion cards -->
+      <div class="why-cards" id="whyCards">
+
+        <!-- Card 1 — active by default (large) -->
+        <div class="why-card why-active" data-index="0">
+          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=80" alt="Kanneliya Waterfall" />
+          <div class="why-card-content">
+            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
+            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card" data-index="1">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80" alt="Forest Path" />
+          <div class="why-card-content">
+            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
+            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card" data-index="2">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80" alt="Mountain View" />
+          <div class="why-card-content">
+            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
+            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card" data-index="3">
+          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=900&q=80" alt="Sky & Forest" />
+          <div class="why-card-content">
+            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
+            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 06 — TESTIMONIALS
+  ================================================ -->
+  <section class="testi-section" id="testimonials">
+    <div class="testi-inner">
+
+      <!-- Heading -->
+      <div class="testi-heading-wrap reveal d1">
+        <div class="testi-eyebrow">
+          <span class="testi-eyebrow-line"></span>
+          <span class="testi-eyebrow-label">Testimonials</span>
+          <span class="testi-eyebrow-line"></span>
+        </div>
+        <h2 class="testi-heading">Topic For Testimonials</h2>
+      </div>
+
+      <!-- 3-column scroll grid -->
+      <div class="testi-grid">
+
+        <!-- Column 1 — scrolls top→bottom -->
+        <div class="testi-col testi-col-down">
+          <div class="testi-track">
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 — scrolls bottom→top -->
+        <div class="testi-col testi-col-up">
+          <div class="testi-track">
+            <div class="testi-card testi-card-partial">
+              <p class="testi-card-text">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card testi-card-partial">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="testi-card testi-card-partial">
+              <p class="testi-card-text">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card testi-card-partial">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3 — scrolls top→bottom -->
+        <div class="testi-col testi-col-down">
+          <div class="testi-track">
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="testi-card">
+              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
+              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /testi-grid -->
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-body">
+
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-circle">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="28" stroke="#4ecdc4" stroke-width="1.5"/>
+              <path d="M30 12 C20 18 15 26 20 32 C24 37 28 34 30 30 C32 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.8"/>
+              <path d="M30 12 C40 18 45 26 40 32 C36 37 32 34 30 30 C28 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.5"/>
+              <ellipse cx="30" cy="36" rx="10" ry="5" fill="#4ecdc4" opacity="0.6"/>
+              <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="footer-logo-name">Travel Partner Kanneliya</span>
+        </div>
+        <p class="footer-brand-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="footer-touch-label">Get In Touch</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.128.558 4.122 1.532 5.852L.057 23.428a.5.5 0 00.611.61l5.608-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.5-5.24-1.375l-.374-.216-3.878 1.009 1.032-3.768-.234-.386A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer-social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.7a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-links">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#kanneliya">Kanneliya</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Ask -->
+      <div class="footer-ask">
+        <h4 class="footer-col-title">Ask Something Quick</h4>
+        <textarea class="footer-textarea" id="footerMsg" placeholder="Type your message here..." aria-label="Quick message"></textarea>
+        <div class="footer-send-row">
+          <button class="footer-send-btn" id="footerSendBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            SEND
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-copy">Copy Right 2025</div>
+  </footer>
 
   <!-- Scripts -->
   <script src="header.js"></script>
   <script src="hero.js"></script>
+  <script src="footer.js"></script>
+  <script>
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left');
+    const revealIO = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealIO.observe(el));
+  </script>
+
+  <script>
+    // ── Destinations Lightbox ──────────────────────────────
+    const cards      = Array.from(document.querySelectorAll('.dest-card'));
+    const lightbox   = document.getElementById('destLightbox');
+    const lbImg      = document.getElementById('destLbImg');
+    const lbCaption  = document.getElementById('destLbCaption');
+    const lbClose    = document.getElementById('destLbClose');
+    const lbPrev     = document.getElementById('destLbPrev');
+    const lbNext     = document.getElementById('destLbNext');
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+      currentIndex = index;
+      const card = cards[index];
+      lbImg.src        = card.dataset.src;
+      lbImg.alt        = card.dataset.name;
+      lbCaption.textContent = card.dataset.name;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+      setTimeout(() => { lbImg.src = ''; }, 350);
+    }
+
+    function showPrev() {
+      openLightbox((currentIndex - 1 + cards.length) % cards.length);
+    }
+
+    function showNext() {
+      openLightbox((currentIndex + 1) % cards.length);
+    }
+
+    cards.forEach((card, i) => {
+      card.addEventListener('click', () => openLightbox(i));
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', showPrev);
+    lbNext.addEventListener('click', showNext);
+
+    // Close on backdrop click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape')     closeLightbox();
+      if (e.key === 'ArrowLeft')  showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    });
+  </script>
+  <script>
+  // ── Packages Carousel (drag + swipe + click) ──────────────
+  (function () {
+    const track    = document.getElementById('pkgTrack');
+    const cards    = Array.from(track.querySelectorAll('.pkg-card'));
+    const dotsWrap = document.getElementById('pkgDots');
+    const btnPrev  = document.getElementById('pkgPrev');
+    const btnNext  = document.getElementById('pkgNext');
+    const total    = cards.length;
+    let current    = 1;
+
+    // ── Drag state ──
+    let isDragging  = false;
+    let dragStartX  = 0;
+    let dragDeltaX  = 0;
+    let dragMoved   = false;
+    const DRAG_THRESHOLD = 60; // px needed to trigger a slide change
+
+    // Build dots
+    cards.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 'pkg-dot';
+      d.setAttribute('aria-label', `Package ${i + 1}`);
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    });
+
+    const dots = Array.from(dotsWrap.querySelectorAll('.pkg-dot'));
+
+    function goTo(index) {
+      current = (index + total) % total;
+      render();
+    }
+
+    function render() {
+      cards.forEach((card, i) => {
+        card.classList.remove('pkg-pos-center','pkg-pos-left','pkg-pos-right','pkg-pos-hidden','pkg-dragging');
+        const diff = i - current;
+        if (diff === 0) {
+          card.classList.add('pkg-pos-center');
+        } else if (diff === 1 || diff === -(total - 1)) {
+          card.classList.add('pkg-pos-right');
+        } else if (diff === -1 || diff === (total - 1)) {
+          card.classList.add('pkg-pos-left');
+        } else {
+          card.classList.add('pkg-pos-hidden');
+        }
+      });
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    // ── Pointer events (mouse + touch unified) ──
+    function onPointerDown(e) {
+      isDragging = true;
+      dragMoved  = false;
+      dragStartX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+      dragDeltaX = 0;
+      track.style.cursor = 'grabbing';
+    }
+
+    function onPointerMove(e) {
+      if (!isDragging) return;
+      const x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+      dragDeltaX = x - dragStartX;
+      if (Math.abs(dragDeltaX) > 8) dragMoved = true;
+    }
+
+    function onPointerUp() {
+      if (!isDragging) return;
+      isDragging = false;
+      track.style.cursor = 'grab';
+
+      if (Math.abs(dragDeltaX) >= DRAG_THRESHOLD) {
+        dragDeltaX < 0 ? goTo(current + 1) : goTo(current - 1);
+      }
+      dragDeltaX = 0;
+    }
+
+    // Mouse events
+    track.addEventListener('mousedown',  onPointerDown);
+    window.addEventListener('mousemove', onPointerMove);
+    window.addEventListener('mouseup',   onPointerUp);
+
+    // Touch events
+    track.addEventListener('touchstart', onPointerDown, { passive: true });
+    track.addEventListener('touchmove',  onPointerMove, { passive: true });
+    track.addEventListener('touchend',   onPointerUp);
+
+    // Prevent image drag interference
+    track.addEventListener('dragstart', e => e.preventDefault());
+
+    // ── Click handler (only fires if NOT a drag) ──
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        if (dragMoved) return; // was a drag, not a click
+        if (card.classList.contains('pkg-pos-center')) {
+          window.location.href = 'packages.html';
+        } else if (card.classList.contains('pkg-pos-right')) {
+          goTo(current + 1);
+        } else if (card.classList.contains('pkg-pos-left')) {
+          goTo(current - 1);
+        }
+      });
+    });
+
+    // Arrow buttons
+    btnPrev.addEventListener('click', () => goTo(current - 1));
+    btnNext.addEventListener('click', () => goTo(current + 1));
+
+    // Keyboard
+    document.addEventListener('keydown', e => {
+      const section = document.getElementById('packages');
+      const rect = section.getBoundingClientRect();
+      if (rect.top > window.innerHeight || rect.bottom < 0) return;
+      if (e.key === 'ArrowLeft')  goTo(current - 1);
+      if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+
+    // Initial cursor
+    track.style.cursor = 'grab';
+
+    render();
+  })();
+  </script>
+  <script>
+  // ── Why Choose Us — Horizontal Accordion ──────────────────
+  (function () {
+    const cards = Array.from(document.querySelectorAll('.why-card'));
+
+    function activate(index) {
+      cards.forEach((card, i) => {
+        card.classList.toggle('why-active', i === index);
+      });
+    }
+
+    cards.forEach((card, i) => {
+      card.addEventListener('click', () => activate(i));
+    });
+  })();
+  </script>
 
 </body>
 </html>
