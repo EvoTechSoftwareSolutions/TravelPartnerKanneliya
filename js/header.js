@@ -1,66 +1,77 @@
-// Header scroll effect - Add background color on scroll
-const header = document.getElementById('header');
+// header.js - Header interactivity
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
+(function () {
+  const header      = document.getElementById('siteHeader');
+  const menuToggle  = document.getElementById('menuToggle');
+  const slidePanel  = document.getElementById('slidePanel');
+  const panelOverlay = document.getElementById('panelOverlay');
+  const panelClose  = document.getElementById('panelClose');
 
-// Mobile menu toggle
-const menuToggle = document.getElementById('menuToggle');
-const nav = document.getElementById('nav');
-const overlay = document.getElementById('overlay');
+  // ── Scroll effect ────────────────────────────────────────────
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 30);
+  });
 
-menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    nav.classList.toggle('active');
-    overlay.classList.toggle('active');
+  // ── Panel helpers ────────────────────────────────────────────
+  function openPanel() {
+    menuToggle.classList.add('open');
+    slidePanel.classList.add('open');
+    panelOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden'; // prevent bg scroll
+  }
 
-    // Prevent body scroll when menu is open
-    document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
-});
-
-// Close menu when clicking overlay
-overlay.addEventListener('click', () => {
-    closeMenu();
-});
-
-// Active navigation highlighting
-const navLinks = document.querySelectorAll('.nav-link');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        // Remove active class from all links
-        navLinks.forEach(l => l.classList.remove('active'));
-        // Add active class to clicked link
-        link.classList.add('active');
-
-        // Close mobile menu
-        closeMenu();
-    });
-});
-
-// Close menu function
-function closeMenu() {
-    menuToggle.classList.remove('active');
-    nav.classList.remove('active');
-    overlay.classList.remove('active');
+  function closePanel() {
+    menuToggle.classList.remove('open');
+    slidePanel.classList.remove('open');
+    panelOverlay.classList.remove('open');
     document.body.style.overflow = '';
-}
+  }
 
-// Close menu on window resize (if open and switching to desktop)
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        closeMenu();
-    }
-});
+  // ── Toggle on hamburger click ────────────────────────────────
+  if (menuToggle && slidePanel) {
+    menuToggle.addEventListener('click', () => {
+      slidePanel.classList.contains('open') ? closePanel() : openPanel();
+    });
+  }
 
-// Close menu on escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && nav.classList.contains('active')) {
-        closeMenu();
-    }
-});
+  // ── Close button inside panel ────────────────────────────────
+  if (panelClose) {
+    panelClose.addEventListener('click', closePanel);
+  }
+
+  // ── Close on overlay click ───────────────────────────────────
+  if (panelOverlay) {
+    panelOverlay.addEventListener('click', closePanel);
+  }
+
+  // ── Close on nav link click ──────────────────────────────────
+  if (slidePanel) {
+    slidePanel.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closePanel);
+    });
+  }
+
+  // ── Close on Escape key ──────────────────────────────────────
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closePanel();
+  });
+
+  // ── Active nav link on scroll ────────────────────────────────
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (sections.length && navLinks.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(s => observer.observe(s));
+  }
+
+})();

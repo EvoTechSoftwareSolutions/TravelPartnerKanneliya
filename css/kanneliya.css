@@ -223,7 +223,7 @@ body {
 .kanneliya-article-section {
     width: 100%;
     padding: 100px 72px 120px;
-    background: linear-gradient(180deg, #071217 0%, #0a1d25 50%, #071217 100%);
+    /* background: linear-gradient(180deg, #071217 0%, #0a1d25 50%, #071217 100%); */
     overflow: hidden;
     position: relative;
 }
@@ -349,7 +349,7 @@ body {
 .attraction-final-section {
     width: 100%;
     padding: 100px 72px 120px;
-    background: linear-gradient(160deg, #071217 0%, #0a1d25 50%, #071217 100%);
+    /* background: linear-gradient(160deg, #071217 0%, #0a1d25 50%, #071217 100%); */
     overflow: hidden;
     position: relative;
 }
@@ -805,7 +805,7 @@ body {
 .destinations-section {
     width: 100%;
     padding: 80px 72px 100px;
-    background: linear-gradient(180deg, #071217 0%, #0a1d25 50%, #071217 100%);
+    /* background: linear-gradient(180deg, #071217 0%, #0a1d25 50%, #071217 100%); */
     overflow: hidden;
     position: relative;
 }

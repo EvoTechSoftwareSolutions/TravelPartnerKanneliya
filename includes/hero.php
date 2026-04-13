@@ -1,10 +1,16 @@
-<!-- hero.html - Hero Section Component -->
-<!-- Usage: Include hero.css and hero.js, then paste this HTML block -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="hero.css">
-
+<link rel="stylesheet" href="../css/hero.css">
+</head>
+<body>
+  
 <section class="hero" id="home">
 
   <!-- Background Slider (vertical scroll images) -->
@@ -92,4 +98,11 @@
 
 </section>
 
-<script src="hero.js"></script>
+<script src="../js/hero.js"></script>
+
+</body>
+</html>
+
+
+
+

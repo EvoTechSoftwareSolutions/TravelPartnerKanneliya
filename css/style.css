@@ -82,7 +82,7 @@ body {
 .about-section {
   width: 100%;
   padding: 90px 72px;
-  background: linear-gradient(150deg, #0c1f26 0%, #071217 55%);
+  /* background: linear-gradient(150deg, #0c1f26 0%, #071217 55%); */
   overflow: hidden;
 }
 
@@ -308,7 +308,7 @@ body {
 .dest-section {
   width: 100%;
   padding: 90px 72px;
-  background: linear-gradient(160deg, #071217 0%, #0a1c22 60%, #071217 100%);
+  /* background: linear-gradient(160deg, #071217 0%, #0a1c22 60%, #071217 100%); */
   overflow: hidden;
 }
 
@@ -621,7 +621,7 @@ body {
 .pkg-section {
   width: 100%;
   padding: 90px 0 110px;
-  background: linear-gradient(160deg, #071217 0%, #061318 50%, #071c24 100%);
+  /* background: linear-gradient(160deg, #071217 0%, #061318 50%, #071c24 100%); */
   overflow: hidden;
   position: relative;
 }
@@ -947,7 +947,7 @@ body {
 .why-section {
   width: 100%;
   padding: 90px 72px;
-  background: linear-gradient(150deg, #071217 0%, #0a1d25 55%, #071217 100%);
+  /* background: linear-gradient(150deg, #071217 0%, #0a1d25 55%, #071217 100%); */
   overflow: hidden;
   position: relative;
 }
@@ -1174,7 +1174,7 @@ body {
 .testi-section {
   width: 100%;
   padding: 90px 72px;
-  background: linear-gradient(160deg, #071217 0%, #0b1e27 50%, #071217 100%);
+  /* background: linear-gradient(160deg, #071217 0%, #0b1e27 50%, #071217 100%); */
   overflow: hidden;
 }
 

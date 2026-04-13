@@ -235,7 +235,7 @@ body {
 .gallery-section {
     width: 100%;
     padding: 80px 72px 100px;
-    background: linear-gradient(160deg, #071217 0%, #0a1d25 60%, #071217 100%);
+    /* background: linear-gradient(160deg, #071217 0%, #0a1d25 60%, #071217 100%); */
     overflow: hidden;
 }
  

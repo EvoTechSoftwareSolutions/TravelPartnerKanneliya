@@ -1,191 +1,1325 @@
-/* ============================================
-   KANNELIYA — About Section Styles
-   about.css
-   ============================================ */
-
-.about {
-  position: relative;
-  width: 100%;
-  background: linear-gradient(135deg, #08120e 0%, #0d1f17 50%, #081610 100%);
-  padding: 100px 0 110px;
-  overflow: hidden;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Subtle radial glow */
-.about::before {
-  content: '';
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 30% 50%, rgba(77,217,172,0.04) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 80% 30%, rgba(77,217,172,0.03) 0%, transparent 60%);
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-.about-inner {
-  position: relative;
-  z-index: 1;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+body {
+    background: #071217;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* ── Left Side ── */
-.about-left { position: relative; }
+/* ============================================================
+   PAGE BANNER SECTION
+============================================================ */
 
-.about-eyebrow {
-  margin-bottom: 22px;
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.about-eyebrow.visible { opacity: 1; transform: translateX(0); }
-
-.about-heading {
-  font-family: var(--font-display);
-  font-size: clamp(36px, 4vw, 64px);
-  font-weight: 300;
-  color: var(--clr-white);
-  line-height: 1.06;
-  margin-bottom: 52px;
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.8s 0.15s ease, transform 0.8s 0.15s ease;
-}
-.about-heading.visible { opacity: 1; transform: translateY(0); }
-
-/* ── Image Grid ── */
-.about-images {
-  position: relative;
-  height: 380px;
+.page-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 560px;
+    overflow: hidden;
 }
 
-.about-img-top {
-  position: absolute;
-  top: 0; right: 0;
-  width: 72%; height: 54%;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0,0,0,0.55);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s 0.25s ease, transform 0.8s 0.25s ease;
-}
-.about-img-top.visible { opacity: 1; transform: translateY(0); }
-
-.about-img-main {
-  position: absolute;
-  top: 36px; left: 18%;
-  width: 62%; height: 88%;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  box-shadow: 0 28px 70px rgba(0,0,0,0.65);
-  z-index: 2;
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.85s 0.35s ease, transform 0.85s 0.35s ease;
-}
-.about-img-main.visible { opacity: 1; transform: translateY(0); }
-
-.about-img-btm {
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 38%; height: 46%;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-  z-index: 3;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s 0.5s ease, transform 0.8s 0.5s ease;
-}
-.about-img-btm.visible { opacity: 1; transform: translateY(0); }
-
-.about-img-top img,
-.about-img-main img,
-.about-img-btm img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.7s ease;
-}
-.about-img-top:hover img,
-.about-img-main:hover img,
-.about-img-btm:hover img {
-  transform: scale(1.05);
+/* Background image */
+.banner-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
-/* Explore More button */
-.about-explore-btn {
-  position: absolute;
-  bottom: 10px; right: 0;
-  z-index: 10;
-  border: 1px solid rgba(255,255,255,0.45);
-  color: var(--clr-white);
-  background: transparent;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 13px 32px;
-  border-radius: 2px;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.7s 0.65s ease, transform 0.7s 0.65s ease,
-              background 0.35s ease, border-color 0.35s ease, color 0.35s ease;
-}
-.about-explore-btn.visible { opacity: 1; transform: translateY(0); }
-.about-explore-btn:hover {
-  background: var(--clr-accent);
-  border-color: var(--clr-accent);
-  color: var(--clr-bg);
-  transform: translateY(-2px) !important;
+.banner-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: brightness(0.52) saturate(0.75);
 }
 
-/* ── Right Side ── */
-.about-right {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+/* Bottom-to-top dark overlay */
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to top,
+            rgba(5, 15, 20, 0.88) 0%,
+            rgba(5, 15, 20, 0.45) 40%,
+            rgba(5, 15, 20, 0.15) 100%);
 }
 
-.about-text-block {
-  opacity: 0;
-  transform: translateX(20px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
-}
-.about-text-block.visible      { opacity: 1; transform: translateX(0); }
-.about-text-block:nth-child(1) { transition-delay: 0.2s; }
-.about-text-block:nth-child(2) { transition-delay: 0.35s; }
-.about-text-block:nth-child(3) { transition-delay: 0.5s; }
-
-.about-text-block p {
-  font-size: 14.5px;
-  font-weight: 300;
-  line-height: 1.85;
-  color: rgba(255,255,255,0.65);
+/* ── Content — bottom left ── */
+.banner-content {
+    position: absolute;
+    bottom: 13vh;
+    left: 80px;
+    z-index: 10;
+    max-width: 680px;
 }
 
-.about-text-block + .about-text-block {
-  padding-top: 28px;
-  border-top: 1px solid var(--clr-white-08);
+.banner-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.banner-eyebrow-line {
+    display: block;
+    width: 44px;
+    height: 1px;
+    background: #4ecdc4;
+    flex-shrink: 0;
+}
+
+.banner-eyebrow-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.32em;
+    color: #4ecdc4;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.18;
+    color: #ffffff;
+    letter-spacing: 0.01em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: bannerTitleIn 0.9s ease 0.2s forwards;
+}
+
+@keyframes bannerTitleIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ── Right side — vertical scroll indicator ── */
+.banner-scroll-indicator {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6), transparent);
+    margin-bottom: 10px;
+    animation: lineFlicker 2.8s ease-in-out infinite;
+}
+
+@keyframes lineFlicker {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.3);
+        transform-origin: top;
+    }
+
+    30% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleY(0.3);
+        transform-origin: bottom;
+    }
+}
+
+.scroll-text {
+    font-family: 'Jost', sans-serif;
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.22em;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    animation: scrollTextFade 2.8s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes scrollTextFade {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg) translateY(-8px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: rotate(180deg) translateY(0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: rotate(180deg) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(180deg) translateY(8px);
+    }
+}
+
+/* ── Placeholder content below banner ── */
+.page-content {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(24px, 3vw, 42px);
+    color: rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.06em;
+    border-top: 1px solid rgba(78, 205, 196, 0.08);
 }
 
 /* ── Responsive ── */
-@media (max-width: 1024px) {
-  .about-inner { gap: 56px; padding: 0 40px; }
+@media (max-width: 900px) {
+    .banner-content {
+        left: 48px;
+        max-width: calc(100% - 80px);
+    }
 }
-@media (max-width: 860px) {
-  .about-inner             { grid-template-columns: 1fr; gap: 60px; padding: 0 28px; }
-  .about-images            { height: 340px; }
-  .about                   { padding: 72px 0 80px; }
+
+@media (max-width: 600px) {
+    .banner-content {
+        left: 24px;
+        right: 40px;
+        max-width: 100%;
+        bottom: 12vh;
+    }
+
+    .banner-scroll-indicator {
+        right: 8px;
+    }
+
+    .scroll-line {
+        height: 56px;
+    }
 }
-@media (max-width: 540px) {
-  .about-images            { height: 280px; }
-  .about-img-top           { width: 68%; height: 50%; }
-  .about-img-main          { left: 16%; width: 60%; height: 85%; }
-  .about-img-btm           { width: 36%; height: 42%; }
-  .about-explore-btn       { bottom: -8px; padding: 11px 24px; font-size: 11px; }
+
+
+/* ============================================================
+   ABOUT SECTION 01 — BASE (mobile-first)
+============================================================ */
+
+.ab--sec01 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.ab--sec01--div01 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec01--div02 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 5% 0% 5%;
+}
+
+.ab--sec01--div03 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec01--headdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1rem;
+}
+
+.ab--sec01--headleftline {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec01--headmidtext {
+    font-family: "Inria Sans";
+    color: aqua;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.ab--sec01--headrightline {
+    width: auto;
+    height: auto;
+}
+
+.ab--sec01--heading {
+    font-family: "Kaisei Decol";
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* ── div04: image + text block — stacked on mobile ── */
+.ab--sec01--div04 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.ab--sec01--leftdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec01--leftdivimg {
+    width: 100%;
+    height: auto;
+}
+
+.ab--sec01--leftdivp {
+    font-family: "Inter";
+    color: white;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+}
+
+.ab--sec01--centdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-family: "Inter";
+    font-size: 0.9rem;
+    text-align: justify;
+    color: white;
+    margin: 1rem 0;
+}
+
+.ab--sec01--rightdiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab--sec01--rightdivp {
+    font-family: "Inter";
+    color: white;
+    text-align: justify;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.ab--sec01--rightdivimg {
+    width: 100%;
+    height: auto;
+}
+
+/* ── div05: cards grid — mobile first ── */
+.ab--sec01--div05 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.ab--sec01--card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: radial-gradient(circle at 100% 100%, #091E24 0, #091E24 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 0 100%, #091E24 0, #091E24 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 100% 0, #091E24 0, #091E24 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+        radial-gradient(circle at 0 0, #091E24 0, #091E24 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+        linear-gradient(#091E24, #091E24) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+        linear-gradient(#091E24, #091E24) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+        linear-gradient(247deg, transparent 0%, #00C6FF 200%);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ab--sec01--card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.ab--sec01--cardimg {
+    width: 30%;
+    height: auto;
+}
+
+.ab--sec01--cardtext {
+    font-family: "Inria Sans";
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+============================================================ */
+
+/* ── max 719px (small mobile) ── */
+@media only screen and (max-width: 719px) {
+
+.ab--sec01--div02 {
+        padding: 0 1rem;
+    }
+
+    .ab--sec01--div05 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+
+    /* 5th card: center it alone on its row */
+    .ab--sec01--card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* ── 720px – 850px (tablet portrait) ── */
+@media only screen and (min-width: 720px) and (max-width: 850px) {
+
+    .ab--sec01--div02 {
+        padding: 0 2rem;
+    }
+
+    .ab--sec01--heading {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ab--sec01--div04 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .ab--sec01--leftdiv,
+    .ab--sec01--rightdiv {
+        width: 100%;
+    }
+
+    .ab--sec01--centdiv {
+        position: static;
+        width: 100%;
+        height: auto;
+        font-size: 0.85rem;
+        color: white;
+    }
+
+    .ab--sec01--leftdivp,
+    .ab--sec01--rightdivp {
+        font-size: 0.85rem;
+    }
+
+    /* ── Cards: 3 per row, last 2 centered ── */
+    .ab--sec01--div05 {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+ 
+    /* First 3 cards span 2 columns each → fills 6 columns */
+    .ab--sec01--card:nth-child(1) { grid-column: 1 / 3; }
+    .ab--sec01--card:nth-child(2) { grid-column: 3 / 5; }
+    .ab--sec01--card:nth-child(3) { grid-column: 5 / 7; }
+ 
+    /* Last 2 cards: centered in row 2 */
+    .ab--sec01--card:nth-child(4) { grid-column: 2 / 4; }
+    .ab--sec01--card:nth-child(5) { grid-column: 4 / 6; }
+}
+
+/* ── 851px – 1050px ── */
+@media only screen and (min-width: 851px) and (max-width: 1050px) {
+
+    .ab--sec01--div04 {
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .ab--sec01--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .ab--sec01--centdiv {
+        width: 50%;
+        height: 27%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        font-family: "Inter";
+        font-size: 0.7rem;
+        text-align: justify;
+        color: white;
+    }
+
+    .ab--sec01--leftdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.7rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+        padding-top: 4rem;
+    }
+
+    .ab--sec01--rightdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.7rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .ab--sec01--div05 {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0 1rem;
+        gap: 0.75rem;
+    }
+}
+
+/* ── 1051px – 1400px ── */
+@media only screen and (min-width: 1051px) and (max-width: 1400px) {
+
+    .ab--sec01--div04 {
+        width: auto;
+        max-width: 1050px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab--sec01--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .ab--sec01--centdiv {
+        width: 50%;
+        height: 32%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        font-family: "Inter";
+        font-size: 0.9rem;
+        text-align: justify;
+        color: white;
+    }
+
+    .ab--sec01--leftdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin-top: 7rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+    }
+
+    .ab--sec01--rightdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin-bottom: 8rem;
+        margin-left: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .ab--sec01--div05 {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 1050px;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+}
+
+/* ── 1401px and above ── */
+@media only screen and (min-width: 1401px) {
+
+    .ab--sec01 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab--sec01--div01 {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab--sec01--div02 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0% 5% 0% 5%;
+    }
+
+    .ab--sec01--div03 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab--sec01--headdiv {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -1rem;
+    }
+
+    .ab--sec01--headleftline {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec01--headmidtext {
+        font-family: "Inria Sans";
+        color: aqua;
+        font-size: 0.9rem;
+        margin: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .ab--sec01--headrightline {
+        width: auto;
+        height: auto;
+    }
+
+    .ab--sec01--heading {
+        font-family: "Kaisei Decol";
+        font-size: 2.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .ab--sec01--div04 {
+        width: auto;
+        max-width: 1400px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ab--sec01--centdiv {
+        width: 40%;
+        max-width: 1400px;
+        height: 35%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        font-family: "Inter";
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        text-align: justify;
+        color: white;
+    }
+
+    .ab--sec01--leftdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+        padding-right: 1rem;
+    }
+
+    .ab--sec01--rightdivp {
+        font-family: "Inter";
+        color: white;
+        text-align: justify;
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+
+    .ab--sec01--div05 {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 1400px;
+        padding: 0 1rem;
+        gap: 1.25rem;
+    }
+
+    .ab--sec01--cardtext {
+        font-family: "Inria Sans";
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* ============================================================
+   CONTACT SECTION — OVERLAP LAYOUT UPDATE
+   Replace the existing .ct--sec01 rules in about.css with these
+============================================================ */
+
+.ct--sec01 {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem; 
+}
+
+.ct--sec01--div01 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct--sec01--div02 {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+/* ── Header ── */
+.ct--sec01--headdiv {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-bottom: -1rem;
+}
+
+.ct--sec01--headmidtext {
+    font-family: "Inria Sans", sans-serif;
+    color: aqua;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.ct--sec01--headleftline,
+.ct--sec01--headrightline {
+    width: auto;
+    height: auto;
+}
+
+.ct--sec01--heading {
+    font-family: "Kaisei Decol", serif;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    align-self: center;
+}
+
+/* ── Outer container — relative, enables overlap ── */
+.ct--sec01--grid {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ═══════════════════════════════════════════
+   LEFT PANEL — contact form
+   65% wide, starts at top:0, z-index:1
+═══════════════════════════════════════════ */
+.ct--sec01--formpanel {
+    width: 65%;
+    border: 1px solid rgba(0, 198, 255, 0.25);
+    border-radius: 0.5rem;
+    padding: 2rem 1.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.ct--sec01--formtitle {
+    font-family: "Kaisei Decol", serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.ct--sec01--formdesc {
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.82rem;
+    text-align: justify;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+}
+
+/* Field rows */
+.ct--sec01--fieldrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ct--sec01--fieldrow--full {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ct--sec01--fieldgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.ct--sec01--label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.04em;
+}
+
+.ct--sec01--input {
+    background: transparent;
+    border: 1px solid rgba(0, 198, 255, 0.22);
+    border-radius: 4px;
+    padding: 0.55rem 0.75rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Inter", sans-serif;
+    font-size: 0.82rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+    width: 100%;
+}
+
+.ct--sec01--input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+}
+
+.ct--sec01--input:focus {
+    border-color: rgba(0, 198, 255, 0.6);
+    box-shadow: 0 0 0 2px rgba(0, 198, 255, 0.08);
+}
+
+/* Mobile number row */
+.ct--sec01--mobilewrap {
+    display: flex;
+    gap: 0;
+    border: 1px solid rgba(0, 198, 255, 0.22);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.ct--sec01--mobilewrap:focus-within {
+    border-color: rgba(0, 198, 255, 0.6);
+    box-shadow: 0 0 0 2px rgba(0, 198, 255, 0.08);
+}
+
+.ct--sec01--mobileprefix {
+    background: rgba(0, 198, 255, 0.08);
+    border: none;
+    border-right: 1px solid rgba(0, 198, 255, 0.2);
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Inter", sans-serif;
+    font-size: 0.82rem;
+    padding: 0.55rem 0.6rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.ct--sec01--mobileinput {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Inter", sans-serif;
+    font-size: 0.82rem;
+    padding: 0.55rem 0.75rem;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+}
+
+.ct--sec01--mobileinput::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+}
+
+.ct--sec01--textarea {
+    background: transparent;
+    border: 1px solid rgba(0, 198, 255, 0.22);
+    border-radius: 4px;
+    padding: 0.6rem 0.75rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Inter", sans-serif;
+    font-size: 0.82rem;
+    resize: vertical;
+    min-height: 120px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.ct--sec01--textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+}
+
+.ct--sec01--textarea:focus {
+    border-color: rgba(0, 198, 255, 0.6);
+    box-shadow: 0 0 0 2px rgba(0, 198, 255, 0.08);
+}
+
+/* Submit button */
+.ct--sec01--submitrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.25rem;
+}
+
+.ct--sec01--submitbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid rgba(0, 198, 255, 0.55);
+    border-radius: 4px;
+    padding: 0.55rem 1.4rem;
+    color: rgba(0, 198, 255, 0.9);
+    font-family: "Inria Sans", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ct--sec01--submitbtn:hover {
+    background: rgba(0, 198, 255, 0.1);
+    box-shadow: 0 0 12px rgba(0, 198, 255, 0.25);
+    color: #4ecdc4;
+}
+
+.ct--sec01--submitbtn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════
+   RIGHT PANEL — info + socials
+   42% wide, absolute top:0 right:0, z-index:2
+   overlaps left panel ~40%
+═══════════════════════════════════════════ */
+.ct--sec01--infopanel {
+    width: 42%;
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+    background: rgba(9, 30, 40, 0.97);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    z-index: 2;
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.6);
+}
+
+.ct--sec01--infotitle {
+    font-family: "Kaisei Decol", serif;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+}
+
+.ct--sec01--infocard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 50, 70, 0.55);
+    border: 1px solid rgba(0, 198, 255, 0.12);
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.ct--sec01--infocard:hover {
+    border-color: rgba(0, 198, 255, 0.35);
+}
+
+.ct--sec01--iconwrap {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 198, 255, 0.12);
+    border: 1px solid rgba(0, 198, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ct--sec01--iconwrap svg {
+    width: 16px;
+    height: 16px;
+    color: #4ecdc4;
+    stroke: #4ecdc4;
+}
+
+.ct--sec01--infolabel {
+    font-family: "Inter", sans-serif;
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2px;
+}
+
+.ct--sec01--infovalue {
+    font-family: "Inter", sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: white;
+}
+
+.ct--sec01--divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 198, 255, 0.12);
+    margin: 0.25rem 0;
+}
+
+.ct--sec01--socialtitle {
+    font-family: "Kaisei Decol", serif;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.ct--sec01--socials {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.ct--sec01--socialbtn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.ct--sec01--socialbtn:hover {
+    background: rgba(0, 198, 255, 0.15);
+    border-color: rgba(0, 198, 255, 0.45);
+    transform: scale(1.08);
+}
+
+.ct--sec01--socialbtn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* ============================================================
+   RESPONSIVE — CONTACT SECTION
+============================================================ */
+
+/* ── max 719px ── */
+@media only screen and (max-width: 719px) {
+    .ct--sec01--div02 {
+        padding: 0 1rem;
+    }
+
+    .ct--sec01--grid {
+        position: static;
+    }
+
+    .ct--sec01--formpanel {
+        width: 100%;
+        position: static;
+    }
+
+    .ct--sec01--infopanel {
+        width: 100%;
+        position: static;
+        margin-top: 1.5rem;
+        box-shadow: none;
+    }
+
+    .ct--sec01--fieldrow {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── 720px – 850px ── */
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+    .ct--sec01--heading {
+        font-size: 2rem;
+    }
+
+    .ct--sec01--grid {
+        position: static;
+    }
+
+    .ct--sec01--formpanel {
+        width: 100%;
+        position: static;
+    }
+
+    .ct--sec01--infopanel {
+        width: 100%;
+        position: static;
+        margin-top: 1.5rem;
+        box-shadow: none;
+    }
+}
+
+/* ── 851px and above: overlap layout active ── */
+@media only screen and (min-width: 801px) {
+    .ct--sec01--grid {
+        position: relative;
+        min-height: 700px; /* Ensure enough space for info panel */
+    }
+
+    .ct--sec01--formrowdiv{
+    width: 90%;
+}
+
+    .ct--sec01--formpanel {
+        width: 65%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .ct--sec01--infopanel {
+        width: 42%;
+        position: absolute;
+        top: 170px;
+        right: 0;
+        z-index: 2;
+    }
+
+    /* FIX: Ensure Email and Mobile fields have same width */
+    .ct--sec01--fieldrow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .ct--sec01--fieldgroup {
+        width: 100%;
+        min-width: 0; /* Prevents flex/grid items from overflowing */
+    }
+
+    .ct--sec01--input,
+    .ct--sec01--mobilewrap {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ── 1051px – 1400px ── */
+@media only screen and (min-width: 1051px) and (max-width: 1400px) {
+    .ct--sec01--heading {
+        font-size: 2.5rem;
+    }
+}
+
+/* ── 1401px and above ── */
+@media only screen and (min-width: 1401px) {
+    .ct--sec01--heading {
+        font-size: 2.5rem;
+    }
+
+    .ct--sec01--infotitle {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+.ct--sec02{
+    margin-bottom: 5rem;
+}
+
+.ct--sec02--div01{
+    width: 100%;
 }
