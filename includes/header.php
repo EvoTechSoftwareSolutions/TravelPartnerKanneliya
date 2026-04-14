@@ -18,8 +18,8 @@
   <header class="site-header" id="siteHeader">
 
     <!-- Logo -->
-    <a href="#home" class="header-logo">
-      <div class="logo-circle">
+    <a href="index.php" class="header-logo">
+      <!-- <div class="logo-circle">
         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="30" cy="30" r="28" stroke="#4ecdc4" stroke-width="1.5" />
           <path d="M30 12 C20 18 15 26 20 32 C24 37 28 34 30 30 C32 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.8" />
@@ -27,7 +27,9 @@
           <ellipse cx="30" cy="36" rx="10" ry="5" fill="#4ecdc4" opacity="0.6" />
           <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5" />
         </svg>
-      </div>
+      </div> -->
+        <img src="../_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
+
       <div class="logo-text">
         <span class="logo-main">Kanneliya</span>
         <span class="logo-sub">TRAVEL PARTNER</span>
@@ -36,7 +38,7 @@
 
     <!-- Desktop Nav -->
     <nav class="header-nav">
-      <a href="home.php" class="nav-link active">Home</a>
+      <a href="index.php" class="nav-link active">Home</a>
       <a href="packages.php" class="nav-link">Packages</a>
       <a href="about.php" class="nav-link">About</a>
       <a href="kanneliya.php" class="nav-link">Kanneliya</a>
@@ -68,8 +70,8 @@
 
     <!-- Panel top bar -->
     <div class="slide-panel-header">
-      <a href="#home" class="slide-panel-logo">
-        <div class="logo-circle">
+      <a href="index.php" class="slide-panel-logo">
+        <!-- <div class="logo-circle">
           <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="30" cy="30" r="28" stroke="#4ecdc4" stroke-width="1.5" />
             <path d="M30 12 C20 18 15 26 20 32 C24 37 28 34 30 30 C32 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.8" />
@@ -77,7 +79,9 @@
             <ellipse cx="30" cy="36" rx="10" ry="5" fill="#4ecdc4" opacity="0.6" />
             <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5" />
           </svg>
-        </div>
+        </div> -->
+        <img src="../_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
+
         <div class="logo-text">
           <span class="logo-main">Kanneliya</span>
           <span class="logo-sub">TRAVEL PARTNER</span>
@@ -93,7 +97,7 @@
 
     <!-- Nav links -->
     <div class="slide-panel-nav">
-      <a href="#home" class="slide-panel-link">Home</a>
+      <a href="index.php" class="slide-panel-link">Home</a>
       <a href="packages.php" class="slide-panel-link">Packages</a>
       <a href="about.php" class="slide-panel-link">About</a>
       <a href="kanneliya.php" class="slide-panel-link">Kanneliya</a>

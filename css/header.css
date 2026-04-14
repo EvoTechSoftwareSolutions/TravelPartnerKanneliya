@@ -13,6 +13,15 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+body {
+  background: url("../_resource/img/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--white);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;

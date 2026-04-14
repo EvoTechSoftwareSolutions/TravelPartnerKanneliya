@@ -51,10 +51,14 @@ body {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(to top,
-            rgba(5, 15, 20, 0.88) 0%,
-            rgba(5, 15, 20, 0.45) 40%,
-            rgba(5, 15, 20, 0.15) 100%);
+    background: linear-gradient(
+    to top,
+    rgb(9, 30, 36) 0%,
+    rgba(9, 30, 36, 0.836) 35%,
+    rgba(9, 30, 36, 0.18) 65%,
+    rgba(9, 30, 36, 0.08) 100%
+  );
+  mix-blend-mode: normal;
 }
 
 /* ── Content — bottom left ── */
