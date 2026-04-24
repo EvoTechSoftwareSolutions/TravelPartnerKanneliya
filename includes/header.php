@@ -28,7 +28,7 @@
           <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5" />
         </svg>
       </div> -->
-        <img src="../_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
+      <img src="_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
 
       <div class="logo-text">
         <span class="logo-main">Kanneliya</span>
@@ -80,7 +80,7 @@
             <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5" />
           </svg>
         </div> -->
-        <img src="../_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
+        <img src="_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
 
         <div class="logo-text">
           <span class="logo-main">Kanneliya</span>

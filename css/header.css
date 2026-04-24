@@ -350,3 +350,8 @@ body {
 @media (max-width: 480px) {
   .logo-text { display: none; }
 }
+
+
+.logo-image{
+  width: 5rem;
+}

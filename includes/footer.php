@@ -18,7 +18,7 @@
       <div class="footer-brand">
 
         <div class="footer-logo">
-          <div class="footer-logo-circle">
+          <!-- <div class="footer-logo-circle">
             <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="30" cy="30" r="28" stroke="#4ecdc4" stroke-width="1.5" />
               <path d="M30 12 C20 18 15 26 20 32 C24 37 28 34 30 30 C32 26 30 20 30 12Z" fill="#4ecdc4" opacity="0.8" />
@@ -26,7 +26,8 @@
               <ellipse cx="30" cy="36" rx="10" ry="5" fill="#4ecdc4" opacity="0.6" />
               <line x1="10" y1="44" x2="50" y2="44" stroke="#4ecdc4" stroke-width="1" opacity="0.5" />
             </svg>
-          </div>
+          </div> -->
+          <img src="_resource/img/logo.png" alt="Kanneliya Logo" class="logo-image">
           <span class="footer-logo-name">Travel Partner Kanneliya</span>
         </div>
 
