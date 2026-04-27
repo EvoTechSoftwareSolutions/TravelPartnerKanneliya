@@ -81,7 +81,7 @@ body {
     display: block;
     width: 44px;
     height: 1px;
-    background: #4ecdc4;
+    background: linear-gradient(to right, transparent, #4ecdc4);
     flex-shrink: 0;
 }
 

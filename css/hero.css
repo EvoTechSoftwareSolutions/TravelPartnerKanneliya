@@ -175,9 +175,9 @@
 
 .eyebrow-line {
   display: block;
-  width: 40px;
+  width: 100px;
   height: 1px;
-  background: var(--accent);
+ background: linear-gradient(to right, transparent, #4ecdc4);
   flex-shrink: 0;
 }
 
@@ -356,4 +356,10 @@
 
   .counter-track { gap: 14px; }
   .counter-bar { height: 120px; }
+}
+
+@media screen and (max-width:403px) {
+  .eyebrow-line {
+  display: none;
+}
 }

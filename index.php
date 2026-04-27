@@ -181,7 +181,7 @@
             <span class="dest-eyebrow-line"></span>
             <span class="dest-eyebrow-label">Destinations</span>
           </div>
-          <h2 class="dest-heading">Topic For<br>Destinations</h2>
+          <h2 class="dest-heading">Topic For Destinations</h2>
         </div>
 
         <!-- Col 3 row 2 — image-c -->

@@ -105,7 +105,7 @@ body {
   position: absolute;
   bottom: -4px; left: 0;
   width: 0; height: 1px;
-  background: var(--accent);
+  background: linear-gradient(to left, transparent, #4ecdc4, transparent);
   transition: width 0.3s ease;
 }
 

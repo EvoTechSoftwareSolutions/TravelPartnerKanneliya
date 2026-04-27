@@ -76,9 +76,9 @@ body {
 
 .banner-eyebrow-line {
     display: block;
-    width: 44px;
+    width: 100px;
     height: 1px;
-    background: #4ecdc4;
+   background: linear-gradient(to right, transparent, #4ecdc4);
     flex-shrink: 0;
 }
 
@@ -125,7 +125,7 @@ body {
 .scroll-line {
     width: 1px;
     height: 80px;
-    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6), transparent);
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.6));
     margin-bottom: 10px;
     animation: lineFlicker 2.8s ease-in-out infinite;
 }
@@ -259,10 +259,14 @@ body {
 
 .kanneliya-article-eyebrow-line {
     display: block;
-    width: 80px;
+    width: 100px;
     height: 1px;
-    background: linear-gradient(to right, transparent, #4ecdc4, transparent);
+    background: linear-gradient(to left, transparent, #4ecdc4);
     flex-shrink: 0;
+}
+
+.kanneliya-article-eyebrow-line:nth-child(1) {
+    background: linear-gradient(to right, transparent, #4ecdc4);
 }
 
 .kanneliya-article-eyebrow-label {
