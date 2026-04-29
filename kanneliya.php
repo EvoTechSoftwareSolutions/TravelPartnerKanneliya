@@ -41,12 +41,10 @@
         <div class="banner-content">
             <div class="banner-eyebrow">
                 <span class="banner-eyebrow-line"></span>
-                <span class="banner-eyebrow-label">Packages</span>
+                <span class="banner-eyebrow-label">Kanneliya</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy<br>
-                Text Of The Printing And<br>
-                Typesetting
+                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry
             </h1>
         </div>
 
@@ -61,319 +59,457 @@
     <!-- ================================================
    KANNELIYA ARTICLE SECTION
 ================================================ -->
-<section class="kanneliya-article-section" id="kanneliya-article">
-    <div class="kanneliya-article-inner">
+    <section class="kanneliya-article-section" id="kanneliya-article">
+        <div class="kanneliya-article-inner">
 
-        <div class="kanneliya-article-eyebrow reveal">
-            <span class="kanneliya-article-eyebrow-line"></span>
-            <span class="kanneliya-article-eyebrow-label">Kanneliya</span>
-            <span class="kanneliya-article-eyebrow-line"></span>
+            <div class="kanneliya-article-eyebrow reveal">
+                <span class="kanneliya-article-eyebrow-line"></span>
+                <span class="kanneliya-article-eyebrow-label">Kanneliya</span>
+                <span class="kanneliya-article-eyebrow-line"></span>
+            </div>
+
+            <h2 class="kanneliya-article-heading reveal">
+                Topic For Kanneliya Article
+            </h2>
+
+            <p class="kanneliya-article-desc reveal">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
         </div>
+    </section>
 
-        <h2 class="kanneliya-article-heading reveal">
-            Topic For Kanneliya Article
-        </h2>
-
-        <p class="kanneliya-article-desc reveal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-    </div>
-</section>
-
-<!-- ================================================
+    <!-- ================================================
    ATTRACTION SECTION - FINAL VERSION
 ================================================ -->
-<section class="attraction-final-section" id="attraction-final">
-    <div class="attraction-final-inner">
+    <section class="attraction-final-section" id="attraction-final">
+        <div class="attraction-final-inner">
 
-        <div class="attraction-final-grid">
-            
-            <!-- Left Column -->
-            <div class="attraction-final-left reveal">
-                
-                <div class="attraction-final-header">
-                    <span class="attraction-final-numeral">I.</span>
-                    <h2 class="attraction-final-title">Natural Bat's Cave</h2>
-                </div>
-                
-                <p class="attraction-final-desc">
-                    A small cave located along the main trail in the <span class="highlight">Kanneliya Forest</span> is home to a colony of bats. It is located <span class="highlight">1.5 K.M</span> from the entrance. This area consists of several large rocks that create a cave-like structure and can be explored by visitors. Although some may find the crawling to be a bit of a thrill, it provides a glimpse of the diverse fauna of the rainforest. This cave is a notable stop on the way to other attractions such as the <span class="highlight">Anagimale Falls</span>.
-                </p>
+            <div class="attraction-final-grid">
 
-                <div class="attraction-final-left-images">
-                    <div class="attraction-final-img" data-index="0">
-                        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall" loading="lazy" />
-                        <div class="attraction-final-img-overlay">
-                            <div class="attraction-final-expand-icon">
-                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                <!-- Left Column -->
+                <div class="attraction-final-left reveal">
+
+                    <div class="attraction-final-header">
+                        <span class="attraction-final-numeral">I.</span>
+                        <h2 class="attraction-final-title">Natural Bat's Cave</h2>
+                    </div>
+
+                    <p class="attraction-final-desc">
+                        A small cave located along the main trail in the <span class="highlight">Kanneliya Forest</span> is home to a colony of bats. It is located <span class="highlight">1.5 K.M</span> from the entrance. This area consists of several large rocks that create a cave-like structure and can be explored by visitors. Although some may find the crawling to be a bit of a thrill, it provides a glimpse of the diverse fauna of the rainforest. This cave is a notable stop on the way to other attractions such as the <span class="highlight">Anagimale Falls</span>.
+                    </p>
+
+                    <div class="attraction-final-left-images">
+                        <div class="attraction-final-img" data-index="0">
+                            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-index="1">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Mountain view" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Landscape" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img" data-index="1">
-                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Mountain view" loading="lazy" />
+                </div>
+
+                <!-- Right Column -->
+                <div class="attraction-final-right reveal">
+
+                    <div class="attraction-final-img attraction-final-right-tall" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Green hills" loading="lazy" />
                         <div class="attraction-final-img-overlay">
-                            <div class="attraction-final-expand-icon">
-                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            <div class="attraction-final-expand-hint">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                                <span>Click to Expand</span>
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img" data-index="2">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Landscape" loading="lazy" />
+
+                    <div class="attraction-final-img attraction-final-right-top" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Aerial view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
-                            <div class="attraction-final-expand-icon">
-                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            <div class="attraction-final-expand-hint">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                                <span>Click to Expand</span>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Right Column -->
-            <!-- Order: tall image first (col 2, spans both rows), then top-left small, bottom-left small -->
-            <div class="attraction-final-right reveal">
-
-                <!-- Tall image — right side, full height -->
-                <div class="attraction-final-img attraction-final-right-tall" data-index="3">
-                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Green hills" loading="lazy" />
-                    <div class="attraction-final-img-overlay">
-                        <div class="attraction-final-expand-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    <div class="attraction-final-img attraction-final-right-bottom" data-index="5">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty hills" loading="lazy" />
+                        <div class="attraction-final-img-overlay">
+                            <div class="attraction-final-expand-hint">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                                <span>Click to Expand</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Top-left small -->
-                <div class="attraction-final-img attraction-final-right-top" data-index="4">
-                    <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Aerial view" loading="lazy" />
-                    <div class="attraction-final-img-overlay">
-                        <div class="attraction-final-expand-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bottom-left small -->
-                <div class="attraction-final-img attraction-final-right-bottom" data-index="5">
-                    <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty hills" loading="lazy" />
-                    <div class="attraction-final-img-overlay">
-                        <div class="attraction-final-expand-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                        </div>
-                    </div>
                 </div>
 
             </div>
 
         </div>
+    </section>
 
+    <!-- Lightbox 1 -->
+    <div class="kb-lightbox" id="attractionFinalLightbox">
+        <div class="kb-lightbox-inner">
+            <button class="kb-lightbox-close" id="attractionFinalClose" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <button class="kb-lb-arrow kb-lb-prev" id="attractionFinalPrev" aria-label="Previous">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="kb-lb-arrow kb-lb-next" id="attractionFinalNext" aria-label="Next">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+            <img class="kb-lightbox-img" id="attractionFinalLightboxImg" src="" alt="" />
+            <div class="kb-lightbox-caption" id="attractionFinalCaption"></div>
+        </div>
     </div>
-</section>
 
-<!-- Lightbox -->
-<div class="attraction-final-lightbox" id="attractionFinalLightbox" role="dialog" aria-modal="true">
-    <div class="attraction-final-lightbox-backdrop" id="attractionFinalBackdrop"></div>
-    <div class="attraction-final-lightbox-content">
-        <button class="attraction-final-lightbox-close" id="attractionFinalClose" aria-label="Close">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-        <button class="attraction-final-lightbox-nav attraction-final-lightbox-prev" id="attractionFinalPrev" aria-label="Previous">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <img id="attractionFinalLightboxImg" src="" alt="Attraction image" />
-        <button class="attraction-final-lightbox-nav attraction-final-lightbox-next" id="attractionFinalNext" aria-label="Next">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-        <span class="attraction-final-lightbox-counter" id="attractionFinalCounter"></span>
-    </div>
-</div>
- 
-<!-- ================================================
+    <!-- ================================================
    ATTRACTION 2 — REVERSED (text left, images right)
 ================================================ -->
-<section class="attraction-final-section" id="attraction-2">
-    <div class="attraction-final-inner">
-        <div class="attraction-final-grid attraction-reversed">
+    <section class="attraction-final-section" id="attraction-2">
+        <div class="attraction-final-inner">
+            <div class="attraction-final-grid attraction-reversed">
 
-            <!-- Left Column — Text + images (same structure as section 1) -->
-            <div class="attraction-final-left reveal">
+                <div class="attraction-final-left reveal">
 
-                <div class="attraction-final-header">
-                    <span class="attraction-final-numeral">II.</span>
-                    <h2 class="attraction-final-title">Anagimala Ella Waterfall</h2>
+                    <div class="attraction-final-header">
+                        <span class="attraction-final-numeral">II.</span>
+                        <h2 class="attraction-final-title">Anagimala Ella Waterfall</h2>
+                    </div>
+
+                    <p class="attraction-final-desc">
+                        This is the most accessible waterfall in the <span class="highlight">Kanneliya Reserve</span>, located just about <span class="highlight">2–3 km</span> from the entrance. It is a beautiful cascade that flows over a series of large rocks. The name "Anagimala" has a local folklore connection, telling the story of a young village woman named Anagi who is said to have plunged to her death at this spot. While bathing and climbing are now prohibited by the Forest Department, it remains a popular and easy-to-reach site for visitors. The area around the falls is rich in flora and fauna, including various orchids and butterfly species. The falls are most vibrant during the rainy season, from <span class="highlight">May to June</span>.
+                    </p>
+
+                    <div class="attraction-final-left-images">
+                        <div class="attraction-final-img" data-lb="2" data-index="0">
+                            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Anagimala Waterfall" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-lb="2" data-index="1">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Forest view" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-lb="2" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain mist" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <p class="attraction-final-desc">
-                    This is the most accessible waterfall in the <span class="highlight">Kanneliya Reserve</span>, located just about <span class="highlight">2–3 km</span> from the entrance. It is a beautiful cascade that flows over a series of large rocks. The name "Anagimala" has a local folklore connection, telling the story of a young village woman named Anagi who is said to have plunged to her death at this spot. While bathing and climbing are now prohibited by the Forest Department, it remains a popular and easy-to-reach site for visitors. The area around the falls is rich in flora and fauna, including various orchids and butterfly species. The falls are most vibrant during the rainy season, from <span class="highlight">May to June</span>.
-                </p>
-
-                <div class="attraction-final-left-images">
-                    <div class="attraction-final-img" data-lb="2" data-index="0">
-                        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Anagimala Waterfall" loading="lazy" />
+                <div class="attraction-final-right reveal">
+                    <div class="attraction-final-img attraction-final-right-tall" data-lb="2" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Valley view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
-                            <div class="attraction-final-expand-icon">
-                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            <div class="attraction-final-expand-hint">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                                <span>Click to Expand</span>
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img" data-lb="2" data-index="1">
-                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Forest view" loading="lazy" />
+                    <div class="attraction-final-img attraction-final-right-top" data-lb="2" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty hills" loading="lazy" />
                         <div class="attraction-final-img-overlay">
-                            <div class="attraction-final-expand-icon">
-                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            <div class="attraction-final-expand-hint">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                                <span>Click to Expand</span>
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img" data-lb="2" data-index="2">
-                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain mist" loading="lazy" />
+                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="2" data-index="5">
+                        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall close" loading="lazy" />
                         <div class="attraction-final-img-overlay">
-                            <div class="attraction-final-expand-icon">
-                                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                            <div class="attraction-final-expand-hint">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    <line x1="11" y1="8" x2="11" y2="14" />
+                                    <line x1="8" y1="11" x2="14" y2="11" />
+                                </svg>
+                                <span>Click to Expand</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+    </section>
 
-            <!-- Right Column — tall + 2 images (same structure as section 1) -->
-            <div class="attraction-final-right reveal">
-                <div class="attraction-final-img attraction-final-right-tall" data-lb="2" data-index="3">
-                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Valley view" loading="lazy" />
-                    <div class="attraction-final-img-overlay">
-                        <div class="attraction-final-expand-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="attraction-final-img attraction-final-right-top" data-lb="2" data-index="4">
-                    <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty hills" loading="lazy" />
-                    <div class="attraction-final-img-overlay">
-                        <div class="attraction-final-expand-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="attraction-final-img attraction-final-right-bottom" data-lb="2" data-index="5">
-                    <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall close" loading="lazy" />
-                    <div class="attraction-final-img-overlay">
-                        <div class="attraction-final-expand-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    <!-- Lightbox 2 -->
+    <div class="kb-lightbox" id="attractionLightbox2">
+        <div class="kb-lightbox-inner">
+            <button class="kb-lightbox-close" id="attractionClose2" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <button class="kb-lb-arrow kb-lb-prev" id="attractionPrev2" aria-label="Previous">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="kb-lb-arrow kb-lb-next" id="attractionNext2" aria-label="Next">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+            <img class="kb-lightbox-img" id="attractionLightboxImg2" src="" alt="" />
+            <div class="kb-lightbox-caption" id="attractionCaption2"></div>
         </div>
     </div>
-</section>
 
-<!-- Lightbox 2 -->
-<div class="attraction-final-lightbox" id="attractionLightbox2" role="dialog" aria-modal="true">
-    <div class="attraction-final-lightbox-backdrop" id="attractionBackdrop2"></div>
-    <div class="attraction-final-lightbox-content">
-        <button class="attraction-final-lightbox-close" id="attractionClose2" aria-label="Close">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-        <button class="attraction-final-lightbox-nav attraction-final-lightbox-prev" id="attractionPrev2" aria-label="Previous">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <img id="attractionLightboxImg2" src="" alt="Attraction image" />
-        <button class="attraction-final-lightbox-nav attraction-final-lightbox-next" id="attractionNext2" aria-label="Next">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-        <span class="attraction-final-lightbox-counter" id="attractionCounter2"></span>
-    </div>
-</div>
-
-<!-- ================================================
+    <!-- ================================================
    DESTINATIONS GRID SECTION
 ================================================ -->
-<section class="destinations-section" id="destinations">
-    <div class="destinations-inner">
+    <section class="destinations-section" id="destinations">
+        <div class="destinations-inner">
 
-        <p class="destinations-desc reveal">
-            Our tourist area offers convenient access to a wide range of popular attractions, each offering a unique experience for travelers. Whether you wish to explore cultural landmarks, scenic spots, or local hidden gems, we are here to assist you in planning and arranging a personalized itinerary that suits your interests and schedule. This way, you can enjoy a truly memorable and flexible travel experience tailored just for you.
-        </p>
+            <p class="destinations-desc reveal">
+                Our tourist area offers convenient access to a wide range of popular attractions, each offering a unique experience for travelers. Whether you wish to explore cultural landmarks, scenic spots, or local hidden gems, we are here to assist you in planning and arranging a personalized itinerary that suits your interests and schedule. This way, you can enjoy a truly memorable and flexible travel experience tailored just for you.
+            </p>
 
-        <div class="destinations-grid reveal">
-            
-            <!-- Card 1 - Large with Plus Icon -->
-            <div class="destination-card" data-index="0">
-                <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <div class="destination-card-plus">
-                    <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <div class="destinations-grid reveal">
+
+                <div class="destination-card" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
                 </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="destination-card" data-index="1">
-                <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="River rocks" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <span class="destination-card-name">Destination Name</span>
-            </div>
+                <div class="destination-card" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="River rocks" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
+                </div>
 
-            <!-- Card 3 - Wide -->
-            <div class="destination-card" data-index="2">
-                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80" alt="Forest path" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <span class="destination-card-name">Destination Name</span>
-            </div>
+                <div class="destination-card" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80" alt="Forest path" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
+                </div>
 
-            <!-- Card 4 -->
-            <div class="destination-card" data-index="3">
-                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Bamboo forest" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <span class="destination-card-name">Destination Name</span>
-            </div>
+                <div class="destination-card" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Bamboo forest" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
+                </div>
 
-            <!-- Card 5 - Wide (Overlapped) -->
-            <div class="destination-card" data-index="4">
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Watchtower" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <span class="destination-card-name">Destination Name</span>
-            </div>
+                <div class="destination-card" data-index="4">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Watchtower" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
+                </div>
 
-            <!-- Card 6 (Overlapping from left) -->
-            <div class="destination-card" data-index="5">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Stream" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <span class="destination-card-name">Destination Name</span>
-            </div>
+                <div class="destination-card" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Stream" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
+                </div>
 
-            <!-- Card 7 (Overlapping from left) -->
-            <div class="destination-card" data-index="6">
-                <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=800&q=80" alt="Waterfall close" loading="lazy" />
-                <div class="destination-card-overlay"></div>
-                <span class="destination-card-name">Destination Name</span>
+                <div class="destination-card" data-index="6">
+                    <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=800&q=80" alt="Waterfall close" loading="lazy" />
+                    <div class="destination-card-overlay"></div>
+                    <div class="destination-card-hint">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            <line x1="11" y1="8" x2="11" y2="14" />
+                            <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                        <span>Click to Expand</span>
+                    </div>
+                    <span class="destination-card-name">Destination Name</span>
+                </div>
+
             </div>
 
         </div>
+    </section>
 
+    <!-- Lightbox 3 -->
+    <div class="kb-lightbox" id="destinationsLightbox">
+        <div class="kb-lightbox-inner">
+            <button class="kb-lightbox-close" id="destinationsClose" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <button class="kb-lb-arrow kb-lb-prev" id="destinationsPrev" aria-label="Previous">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+            <button class="kb-lb-arrow kb-lb-next" id="destinationsNext" aria-label="Next">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+            <img class="kb-lightbox-img" id="destinationsLightboxImg" src="" alt="" />
+            <div class="kb-lightbox-caption" id="destinationsCaption"></div>
+        </div>
     </div>
-</section>
-
-<!-- Lightbox -->
-<div class="destinations-lightbox" id="destinationsLightbox" role="dialog" aria-modal="true">
-    <div class="destinations-lightbox-backdrop" id="destinationsBackdrop"></div>
-    <div class="destinations-lightbox-content">
-        <button class="destinations-lightbox-close" id="destinationsClose" aria-label="Close">
-            <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-        </button>
-        <button class="destinations-lightbox-nav destinations-lightbox-prev" id="destinationsPrev" aria-label="Previous">
-            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <img id="destinationsLightboxImg" src="" alt="Destination image" />
-        <button class="destinations-lightbox-nav destinations-lightbox-next" id="destinationsNext" aria-label="Next">
-            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-        <span class="destinations-lightbox-counter" id="destinationsCounter"></span>
-    </div>
-</div>
 
     <!-- ── Footer ── -->
     <?php include 'includes/footer.php'; ?>
- 
+
     <script src="js/header.js"></script>
     <script src="js/kanneliya.js"></script>
     <script src="js/footer.js"></script>

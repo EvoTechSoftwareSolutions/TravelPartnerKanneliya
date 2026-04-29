@@ -9,9 +9,8 @@
     <link rel="icon" href="_resource/img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -41,12 +40,10 @@
         <div class="banner-content">
             <div class="banner-eyebrow">
                 <span class="banner-eyebrow-line"></span>
-                <span class="banner-eyebrow-label">Packages</span>
+                <span class="banner-eyebrow-label">About & Contact</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy<br>
-                Text Of The Printing And<br>
-                Typesetting
+                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry
             </h1>
         </div>
 
@@ -67,18 +64,16 @@
             <div class="ab--sec01--div02">
                 <div class="ab--sec01--div03">
                     <div class="ab--sec01--headdiv">
-                        <img src="../_resource/img/aboutContact/sec01/Rectangle 3.png" alt=""
-                            class="ab--sec01--headleftline" />
+                        <span class="ab--sec01--headleftline"></span>
                         <h4 class="ab--sec01--headmidtext">ABOUT US</h4>
-                        <img src="../_resource/img/aboutContact/sec01/Rectangle 4.png" alt=""
-                            class="ab--sec01--headrightline" />
+                        <span class="ab--sec01--headrightline"></span>
                     </div>
                     <h1 class="ab--sec01--heading">Topic For About</h1>
                 </div>
 
                 <div class="ab--sec01--div04">
                     <div class="ab--sec01--leftdiv">
-                        <img src="../_resource/img/aboutContact/sec01/Kanneliya-1-1 2.png" alt="Mountain View"
+                        <img src="_resource/img/aboutContact/sec01/Kanneliya-1-1 2.png" alt="Mountain View"
                             class="ab--sec01--leftdivimg" />
                         <p class="ab--sec01--leftdivp">
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -120,30 +115,30 @@
                             cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est
                         </p>
-                        <img src="../_resource/img/aboutContact/sec01/gal1 2.png" alt="Hillside View"
+                        <img src="_resource/img/aboutContact/sec01/gal1 2.png" alt="Hillside View"
                             class="ab--sec01--rightdivimg" />
                     </div>
                 </div>
 
                 <div class="ab--sec01--div05">
                     <div class="ab--sec01--card">
-                        <img src="../_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="../_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="../_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="../_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="../_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
                     </div>
                 </div>
@@ -152,8 +147,7 @@
     </section>
 
     <!-- ================================================
-   CONTACT SECTION — paste after .ab--sec01 closing tag
-   Add: <link rel="stylesheet" href="contact-section.css"> to <head>
+   CONTACT SECTION
 ================================================ -->
 
     <section class="ct--sec01" id="contact">
@@ -162,11 +156,9 @@
 
                 <!-- ── Header (same pattern as ab--sec01) ── -->
                 <div class="ct--sec01--headdiv">
-                    <img src="../_resource/img/aboutContact/sec01/Rectangle 3.png" alt=""
-                        class="ct--sec01--headleftline" />
+                    <span class="ct--sec01--headleftline"></span>
                     <h4 class="ct--sec01--headmidtext">Contact Us</h4>
-                    <img src="../_resource/img/aboutContact/sec01/Rectangle 4.png" alt=""
-                        class="ct--sec01--headrightline" />
+                    <span class="ct--sec01--headrightline"></span>
                 </div>
                 <h1 class="ct--sec01--heading">Topic For Contact</h1>
 

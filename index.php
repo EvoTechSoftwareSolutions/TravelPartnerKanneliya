@@ -542,9 +542,6 @@
         <!-- Column 2 — scrolls bottom→top -->
         <div class="testi-col testi-col-up">
           <div class="testi-track">
-            <div class="testi-card testi-card-partial">
-              <p class="testi-card-text">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
             <div class="testi-card">
               <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
               <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -558,9 +555,6 @@
               <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur</p>
             </div>
             <!-- Duplicate for seamless loop -->
-            <div class="testi-card testi-card-partial">
-              <p class="testi-card-text">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
             <div class="testi-card">
               <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
               <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

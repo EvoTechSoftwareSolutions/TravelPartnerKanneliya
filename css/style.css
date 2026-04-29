@@ -920,7 +920,7 @@ body {
 
 /* Notch at top centre */
 .pkg-card-notch {
-  width: 48px;
+  width: 150px;
   height: 6px;
   background: var(--accent);
   border-radius: 0 0 6px 6px;
@@ -941,6 +941,7 @@ body {
     0 0 80px rgba(78, 205, 196, 0.12),
     0 24px 60px rgba(0, 0, 0, 0.6);
   filter: none;
+  border-radius: 18px;
 }
 
 .pkg-pos-center .pkg-card-inner {
@@ -1541,7 +1542,9 @@ body {
   padding: 24px 22px;
   flex-shrink: 0;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
+-webkit-box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
+-moz-box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
 }
 
 .testi-card:hover {

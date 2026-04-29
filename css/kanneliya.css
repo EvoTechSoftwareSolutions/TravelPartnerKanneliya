@@ -1,21 +1,52 @@
+/* ============================================================
+   kanneliya.css — Kanneliya Page Styles
+   ============================================================ */
+
+/* ── CSS Variables ────────────────────────────────────────── */
+:root {
+  --bg: #071217;
+  --bg-dark: #080f14;
+  --accent: #4ecdc4;
+  --accent-dim: rgba(78, 205, 196, 0.12);
+  --white: #ffffff;
+  --white-70: rgba(255, 255, 255, 0.70);
+  --white-40: rgba(255, 255, 255, 0.38);
+  --white-08: rgba(255, 255, 255, 0.07);
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Jost', sans-serif;
+}
+
+/* ── Global Reset ─────────────────────────────────────────── */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    /* background: #071217; */
-    color: #fff;
-    font-family: 'Jost', sans-serif;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+  /* background: var(--bg-dark); */
+  color: var(--white);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scroll Reveal Utilities ──────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
 }
 
 /* ============================================================
@@ -183,18 +214,6 @@ body {
     }
 }
 
-.page-content {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(24px, 3vw, 42px);
-    color: rgba(255, 255, 255, 0.1);
-    letter-spacing: 0.06em;
-    border-top: 1px solid rgba(78, 205, 196, 0.08);
-}
-
 @media (max-width: 900px) {
     .banner-content {
         left: 48px;
@@ -226,21 +245,10 @@ body {
 
 .kanneliya-article-section {
     width: 100%;
-    padding: 100px 72px 120px;
-    /* background: linear-gradient(180deg, #071217 0%, #0a1d25 50%, #071217 100%); */
+    padding: 100px 72px 0px;
     overflow: hidden;
     position: relative;
 }
-
-/* .kanneliya-article-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 20% 80%, rgba(78, 205, 196, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(78, 205, 196, 0.02) 0%, transparent 50%);
-    pointer-events: none;
-} */
 
 .kanneliya-article-inner {
     max-width: 1000px;
@@ -351,13 +359,12 @@ body {
 
 
 /* ============================================================
-   ATTRACTION SECTION - FINAL POLISHED VERSION
+   ATTRACTION SECTION
    ============================================================ */
 
 .attraction-final-section {
     width: 100%;
-    padding: 100px 72px 120px;
-    /* background: linear-gradient(160deg, #071217 0%, #0a1d25 50%, #071217 100%); */
+    padding: 90px 72px 90px;
     overflow: hidden;
     position: relative;
 }
@@ -589,112 +596,6 @@ body {
     .attraction-reversed .attraction-final-right { order: unset; }
 }
 
-/* ── Lightbox ── */
-.attraction-final-lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
-
-.attraction-final-lightbox.active {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.attraction-final-lightbox-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(4, 12, 16, 0.96);
-    backdrop-filter: blur(10px);
-}
-
-.attraction-final-lightbox-content {
-    position: relative;
-    z-index: 2;
-    max-width: 90vw;
-    max-height: 85vh;
-    transform: scale(0.9);
-    transition: transform 0.5s cubic-bezier(0.34, 1.3, 0.64, 1);
-}
-
-.attraction-final-lightbox.active .attraction-final-lightbox-content {
-    transform: scale(1);
-}
-
-.attraction-final-lightbox-content img {
-    max-width: 90vw;
-    max-height: 85vh;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
-}
-
-.attraction-final-lightbox-close {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(78, 205, 196, 0.5);
-    border-radius: 50%;
-    background: rgba(8, 22, 30, 0.9);
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.attraction-final-lightbox-close:hover {
-    border-color: #4ecdc4;
-    background: rgba(78, 205, 196, 0.2);
-    transform: rotate(90deg);
-}
-
-.attraction-final-lightbox-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgba(78, 205, 196, 0.4);
-    border-radius: 50%;
-    background: rgba(8, 22, 30, 0.8);
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.attraction-final-lightbox-nav:hover {
-    border-color: #4ecdc4;
-    background: rgba(78, 205, 196, 0.15);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.attraction-final-lightbox-prev { left: -70px; }
-.attraction-final-lightbox-next { right: -70px; }
-
-.attraction-final-lightbox-counter {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Jost', sans-serif;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
-    letter-spacing: 0.15em;
-}
-
 /* ── Responsive ── */
 @media (max-width: 1100px) {
     .attraction-final-section {
@@ -793,16 +694,6 @@ body {
         grid-column: 1 !important;
         grid-row: 2 !important;
     }
-
-    .attraction-final-lightbox-prev,
-    .attraction-final-lightbox-next {
-        top: auto;
-        bottom: -60px;
-        transform: none;
-    }
-
-    .attraction-final-lightbox-prev { left: calc(50% - 55px); }
-    .attraction-final-lightbox-next { right: calc(50% - 55px); }
 }
 
 
@@ -813,7 +704,6 @@ body {
 .destinations-section {
     width: 100%;
     padding: 80px 72px 100px;
-    /* background: linear-gradient(180deg, #071217 0%, #0a1d25 50%, #071217 100%); */
     overflow: hidden;
     position: relative;
 }
@@ -826,9 +716,9 @@ body {
     transform: translateY(-50%);
     width: 100%;
     height: 60%;
-    background:
+    /* background:
         linear-gradient(90deg, transparent 0%, rgba(78, 205, 196, 0.03) 20%, transparent 40%),
-        linear-gradient(90deg, transparent 60%, rgba(78, 205, 196, 0.03) 80%, transparent 100%);
+        linear-gradient(90deg, transparent 60%, rgba(78, 205, 196, 0.03) 80%, transparent 100%); */
     pointer-events: none;
 }
 
@@ -846,8 +736,8 @@ body {
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.9;
     text-align: center;
-    max-width: 900px;
-    margin: 0 auto 50px;
+    max-width: 98%;
+    margin: 0 auto 60px;
 }
 
 .destinations-desc strong {
@@ -1001,112 +891,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* ── Lightbox ── */
-.destinations-lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
-
-.destinations-lightbox.active {
-    opacity: 1;
-    pointer-events: all;
-}
-
-.destinations-lightbox-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(4, 12, 16, 0.96);
-    backdrop-filter: blur(12px);
-}
-
-.destinations-lightbox-content {
-    position: relative;
-    z-index: 2;
-    max-width: 90vw;
-    max-height: 85vh;
-    transform: scale(0.9);
-    transition: transform 0.5s cubic-bezier(0.34, 1.3, 0.64, 1);
-}
-
-.destinations-lightbox.active .destinations-lightbox-content {
-    transform: scale(1);
-}
-
-.destinations-lightbox-content img {
-    max-width: 90vw;
-    max-height: 85vh;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
-}
-
-.destinations-lightbox-close {
-    position: absolute;
-    top: -50px;
-    right: 0;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(78, 205, 196, 0.5);
-    border-radius: 50%;
-    background: rgba(8, 22, 30, 0.9);
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.destinations-lightbox-close:hover {
-    border-color: #4ecdc4;
-    background: rgba(78, 205, 196, 0.2);
-    transform: rotate(90deg);
-}
-
-.destinations-lightbox-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgba(78, 205, 196, 0.4);
-    border-radius: 50%;
-    background: rgba(8, 22, 30, 0.8);
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.destinations-lightbox-nav:hover {
-    border-color: #4ecdc4;
-    background: rgba(78, 205, 196, 0.15);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.destinations-lightbox-prev { left: -70px; }
-.destinations-lightbox-next { right: -70px; }
-
-.destinations-lightbox-counter {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Jost', sans-serif;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
-    letter-spacing: 0.15em;
-}
-
 /* ── Responsive ── */
 @media (max-width: 1100px) {
     .destinations-grid {
@@ -1179,14 +963,148 @@ body {
     .destination-card-name {
         font-size: 14px;
     }
+}
 
-    .destinations-lightbox-prev,
-    .destinations-lightbox-next {
-        top: auto;
-        bottom: -60px;
-        transform: none;
-    }
 
-    .destinations-lightbox-prev { left: calc(50% - 55px); }
-    .destinations-lightbox-next { right: calc(50% - 55px); }
+/* ============================================================
+   LIGHTBOX — Matches index.php dest-lightbox style
+   ============================================================ */
+
+.kb-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(4, 12, 16, 0.96);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.kb-lightbox.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.kb-lightbox-inner {
+  position: relative;
+  max-width: 880px;
+  width: 90vw;
+  transform: scale(0.92) translateY(20px);
+  transition: transform 0.38s ease;
+}
+
+.kb-lightbox.open .kb-lightbox-inner {
+  transform: scale(1) translateY(0);
+}
+
+.kb-lightbox-img {
+  width: 100%;
+  max-height: 72vh;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.8);
+}
+
+.kb-lightbox-caption {
+  margin-top: 18px;
+  font-family: var(--font-serif);
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.kb-lightbox-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  z-index: 1;
+}
+
+.kb-lightbox-close:hover {
+  background: #3ab8b0;
+  transform: rotate(90deg) scale(1.1);
+}
+
+.kb-lightbox-close svg {
+  width: 16px;
+  height: 16px;
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.kb-lb-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, border-color 0.3s;
+  z-index: 2;
+}
+
+.kb-lb-arrow:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
+
+.kb-lb-arrow svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.kb-lb-prev {
+  left: -60px;
+}
+
+.kb-lb-next {
+  right: -60px;
+}
+
+/* ── Lightbox Responsive ── */
+@media (max-width: 1050px) {
+  .kb-lb-prev {
+    left: -10px;
+  }
+  .kb-lb-next {
+    right: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kb-lightbox-inner {
+    width: 95vw;
+  }
+
+  .kb-lb-prev,
+  .kb-lb-next {
+    display: none;
+  }
 }

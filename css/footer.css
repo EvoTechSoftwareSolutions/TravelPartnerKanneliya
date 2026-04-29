@@ -10,9 +10,9 @@
 }
 
 /* ── Main footer body ── */
+/* ── Main footer body ── */
 .footer-body {
-  border: 1px solid rgba(78, 205, 196, 0.3);
-  border-radius: 8px;
+  position: relative;
   margin: 32px 0 0;
   padding: 44px 52px;
   display: grid;
@@ -20,6 +20,21 @@
   gap: 48px;
   align-items: start;
   background: #071217;
+  /* border-radius: 8px; */
+}
+
+.footer-body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* border-radius: 8px; */
+  padding: 2px;
+  background: linear-gradient(37deg, rgba(78, 205, 197, 0.507), rgba(78, 205, 197, 0.514), rgba(78, 205, 197, 0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 /* ── Column 1 — Brand ── */
@@ -185,8 +200,8 @@
   align-items: center;
   gap: 8px;
   background: transparent;
-  border: 1.5px solid rgba(255,255,255,0.35);
-  color: #ffffff;
+  border: 1.5px solid #4ecdc4;
+  color: #4ecdc4;
   font-family: 'Jost', sans-serif;
   font-size: 12px;
   font-weight: 500;

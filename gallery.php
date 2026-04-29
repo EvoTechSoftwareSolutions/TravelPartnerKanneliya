@@ -41,12 +41,10 @@
         <div class="banner-content">
             <div class="banner-eyebrow">
                 <span class="banner-eyebrow-line"></span>
-                <span class="banner-eyebrow-label">Packages</span>
+                <span class="banner-eyebrow-label">Gallery</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy<br>
-                Text Of The Printing And<br>
-                Typesetting
+                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry
             </h1>
         </div>
 
