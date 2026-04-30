@@ -2,7 +2,7 @@
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.getElementById('galleryLightbox');
     const lbImg = document.getElementById('galleryLightboxImg');
-    const lbTitle = document.getElementById('galleryTitle');
+    // const lbTitle = document.getElementById('galleryTitle');
     const lbCounter = document.getElementById('galleryCounter');
     const lbClose = document.getElementById('galleryClose');
     const lbBackdrop = document.getElementById('galleryBackdrop');
@@ -31,7 +31,7 @@
     function updateLB() {
         lbImg.src = imgData[currentIdx].src;
         lbImg.alt = imgData[currentIdx].alt;
-        lbTitle.textContent = imgData[currentIdx].title;
+        // lbTitle.textContent = imgData[currentIdx].title;
         lbCounter.textContent = (currentIdx + 1) + ' / ' + imgData.length;
     }
 

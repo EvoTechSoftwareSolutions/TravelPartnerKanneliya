@@ -172,16 +172,16 @@
         <!-- Col 1 — spans row 1+2 -->
         <div class="dest-card dest-a reveal d1"
           data-name="Natural Bat's Cave"
-          data-src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80" alt="Natural Bat's Cave" />
+          data-src="_resource/img/kanneliya/batCave/1.jpg">
+          <img src="_resource/img/kanneliya/batCave/1.jpg" alt="Natural Bat's Cave" />
           <div class="dest-card-label">Natural Bat's Cave</div>
         </div>
 
         <!-- Col 2 — spans row 1+2 -->
         <div class="dest-card dest-b reveal d2"
           data-name="Anagimala Ella Waterfall"
-          data-src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&q=80" alt="Anagimala Ella Waterfallm" />
+          data-src="_resource/img/kanneliya/anagimala/3.jpg">
+          <img src="_resource/img/kanneliya/anagimala/3.jpg" alt="Anagimala Ella Waterfallm" />
           <div class="dest-card-label">Anagimala Ella Waterfall</div>
         </div>
 
@@ -267,9 +267,6 @@
     </div>
   </div>
 
-  <!-- ================================================
-       PLACEHOLDER SECTIONS
-  ================================================ -->
   <!-- ================================================
        SECTION 04 — PACKAGES
   ================================================ -->

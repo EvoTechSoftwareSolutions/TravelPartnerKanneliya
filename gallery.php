@@ -72,7 +72,7 @@
             </div>
 
             <p class="gallery-desc reveal">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Explore a collection of moments captured during our journeys through nature. From lush greenery to serene landscapes, each image reflects the beauty and experiences that await you.
             </p>
 
             <div class="gallery-grid reveal">
@@ -88,7 +88,7 @@
                                 <line x1="8" y1="11" x2="14" y2="11" />
                             </svg>
                         </div>
-                        <span class="gallery-item-title">Mountain View</span>
+                        <span class="gallery-item-title">Click to Expand</span>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
                                 <line x1="8" y1="11" x2="14" y2="11" />
                             </svg>
                         </div>
-                        <span class="gallery-item-title">Waterfall</span>
+                        <span class="gallery-item-title">Click to Expand</span>
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@
                                 <line x1="8" y1="11" x2="14" y2="11" />
                             </svg>
                         </div>
-                        <span class="gallery-item-title">Green Hills</span>
+                        <span class="gallery-item-title">Click to Expand</span>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
                                 <line x1="8" y1="11" x2="14" y2="11" />
                             </svg>
                         </div>
-                        <span class="gallery-item-title">Tea Plantation</span>
+                        <span class="gallery-item-title">Click to Expand</span>
                     </div>
                 </div>
 
