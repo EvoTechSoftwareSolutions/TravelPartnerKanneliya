@@ -206,7 +206,7 @@ body {
   left: 0;
   bottom: 0;
   z-index: 4;
-  border: 7px solid #071217;
+  border: 7px solid #091E24;
   border-radius: 16px;
 }
 
@@ -241,6 +241,7 @@ body {
   flex-direction: column;
   gap: 20px;
   padding-top: 4px;
+  align-self: center;
 }
 
 .about-right p {
@@ -386,7 +387,7 @@ body {
   grid-template-areas:
     "a  b  heading  heading"
     "a  b  c        d"
-    "e  f  g        h";
+    "e  f  c        d";
   gap: 12px;
 }
 
@@ -477,14 +478,16 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 36px 14px 12px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 0%, transparent 100%);
+  padding: 0.5rem 1rem;
+  background: #091E24;
   font-family: var(--font-sans);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--white);
   pointer-events: none;
+  width: max-content;
+  border-radius: 0 12px 0 0;
 }
 
 /* Teal accent line on hover */
@@ -541,7 +544,7 @@ body {
 .dest-heading {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(30px, 3.5vw, 56px);
+  font-size: clamp(32px, 3.5vw, 50px);
   line-height: 1.12;
   color: var(--white);
   letter-spacing: 0.01em;
@@ -690,8 +693,7 @@ body {
       "heading  heading"
       "a        b"
       "c        d"
-      "e        f"
-      "g        h";
+      "e        f";
     gap: 10px;
   }
 
@@ -710,10 +712,10 @@ body {
     min-height: 220px;
   }
 
-  .dest-c,
+  /* .dest-c,
   .dest-d {
     height: 180px;
-  }
+  } */
 
   .dest-e,
   .dest-f,
@@ -835,7 +837,7 @@ body {
 .pkg-heading {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(34px, 4vw, 58px);
+  font-size: clamp(32px, 3.5vw, 50px);
   color: var(--white);
   letter-spacing: 0.01em;
   line-height: 1.1;
@@ -1224,7 +1226,7 @@ body {
 .why-heading {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(30px, 4vw, 54px);
+  font-size: clamp(32px, 3.5vw, 50px);
   color: var(--white);
   line-height: 1.1;
   letter-spacing: 0.01em;
@@ -1468,7 +1470,7 @@ body {
 .testi-heading {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(32px, 4vw, 56px);
+  font-size: clamp(32px, 3.5vw, 50px);
   color: var(--white);
   line-height: 1.1;
   letter-spacing: 0.01em;

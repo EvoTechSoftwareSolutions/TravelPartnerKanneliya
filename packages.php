@@ -44,7 +44,7 @@
                 <span class="banner-eyebrow-label">Packages</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry.
+                Explore Our Tour Packages.
             </h1>
         </div>
 
@@ -77,7 +77,7 @@
                 <!-- Package 01 -->
                 <div class="dayout-row">
                     <div class="dayout-main-card reveal">
-                        <h3 class="dayout-pkg-title">Day Out Package #01</h3>
+                        <h3 class="dayout-pkg-title">Day Out Package&nbsp;&nbsp;<span class="package--num">#01</span></h3>
                         <div class="dayout-pkg-divider"></div>
                         <ol class="dayout-activity-list">
                             <li>Kithul Experience</li>
@@ -102,7 +102,7 @@
                 <!-- Package 02 -->
                 <div class="dayout-row">
                     <div class="dayout-main-card reveal">
-                        <h3 class="dayout-pkg-title">Day Out Package #02</h3>
+                        <h3 class="dayout-pkg-title">Day Out Package&nbsp;&nbsp;<span class="package--num">#02</span></h3>
                         <div class="dayout-pkg-divider"></div>
                         <ol class="dayout-activity-list">
                             <li>Kithul Experience</li>
@@ -147,7 +147,8 @@
                 <!-- Package 01 -->
                 <div class="tdtrip-row">
                     <div class="tdtrip-main-card reveal">
-                        <h3 class="tdtrip-day-title">Day #01</h3>
+                        <h2 class="tdtrip-day-titleMain">Package&nbsp;&nbsp;<span class="package--num">#01</span></h2>
+                        <h3 class="tdtrip-day-title">Day&nbsp;&nbsp;<span class="package--num">01</span></h3>
                         <div class="tdtrip-divider"></div>
                         <ol class="tdtrip-activity-list">
                             <li>Kithul Experience</li>
@@ -157,7 +158,7 @@
                         </ol>
                         <div class="tdtrip-day-separator"></div>
                         <div class="tdtrip-day2">
-                            <h3 class="tdtrip-day-title">Day #02</h3>
+                            <h3 class="tdtrip-day-title">Day&nbsp;&nbsp;<span class="package--num">02</span></h3>
                             <div class="tdtrip-divider2"></div>
                             <ol class="tdtrip-activity-list">
                                 <li>Tea Factory Visiting</li>
@@ -176,7 +177,7 @@
                             <li>Evening Snack</li>
                             <li>BBQ Night</li>
                             <li>Dinner</li>
-                            <li>Accommodation</li>
+                            <li>Accommodations</li>
                         </ul>
                     </div>
                 </div>
@@ -184,7 +185,8 @@
                 <!-- Package 02 -->
                 <div class="tdtrip-row">
                     <div class="tdtrip-main-card reveal">
-                        <h3 class="tdtrip-day-title">Day #01</h3>
+                        <h2 class="tdtrip-day-titleMain">Package&nbsp;&nbsp;<span class="package--num">#02</span></h2>
+                        <h3 class="tdtrip-day-title">Day&nbsp;&nbsp;<span class="package--num">01</span></h3>
                         <div class="tdtrip-divider"></div>
                         <ol class="tdtrip-activity-list">
                             <li>Kithul Experience</li>
@@ -194,12 +196,13 @@
                         </ol>
                         <div class="tdtrip-day-separator"></div>
                         <div class="tdtrip-day21">
-                        <h3 class="tdtrip-day-title">Day #02</h3>
-                        <div class="tdtrip-divider2"></div>
-                        <ol class="tdtrip-activity-list">
-                            <li>Tea Factory Visiting</li>
-                            <li>Lankagama Visiting (7 Water Falls)</li>
-                        </ol>
+                            <h3 class="tdtrip-day-title">Day&nbsp;&nbsp;<span class="package--num">02</span></h3>
+                            <div class="tdtrip-divider2"></div>
+                            <ol class="tdtrip-activity-list">
+                                <li>Visiting Galle Fort & National Maritime Museum</li>
+                                <li>Visting Rumassala</li>
+                                <li>Visiting Sea Turtle Hatchery</li>
+                            </ol>
                         </div>
                     </div>
                     <div class="tdtrip-include-card reveal">
@@ -212,7 +215,7 @@
                             <li>Evening Snack</li>
                             <li>BBQ Night</li>
                             <li>Dinner</li>
-                            <li>Accommodation</li>
+                            <li>Accommodations</li>
                         </ul>
                     </div>
                 </div>
@@ -232,7 +235,7 @@
                     <span class="additional-eyebrow-line"></span>
                     <span class="additional-eyebrow-label">Additional Details</span>
                 </div>
-                <h2 class="additional-heading">Topi For Additional Details <span class="asterisk">*</span></h2>
+                <h2 class="additional-heading">Additional Information <span class="asterisk">*</span></h2>
             </div>
 
             <p class="additional-body reveal">
@@ -243,6 +246,48 @@
                 Meal At Your Leisure. This Option Allows You To Experience Authentic Flavors Without The Commitment Of A
                 Package. For Detailed Pricing And Further Arrangements, We Kindly Invite You To Contact The Owner
                 Directly Through Our Website.
+            </p>
+            <br>
+            <p class="additional-body reveal">
+                And also our tourist area offers access to the following tourist attractions and if you want to visit those places, you can discuss with us and arrange your own package. (Click on a location you want to explore and you will find its breathtaking views.)
+                <br /><br>
+            <ol class="tdtrip-activity-list">
+                <ol class="tdtrip-activity-list">
+                    <a href="https://www.google.com/search?sca_esv=a29fc145d0f7951e&sxsrf=ANbL-n57OP-yCmn5Y8u0fJ_ExxJq75Z82w:1777554856135&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vWUtYx0DZdicpfE1faGYemgRoIlsYZty-Utxz9md5OUNVIR8UWIeONn0x9udiA6owPcsm9a2FWjTU2D--h0ataw1RjuPvW99M6VfDAmnfjj_MM5sV_QNv39crzDAQNXKFWAmluwiyyBb_fzqzobg0OUaXdibusPiNKmfAlU0p5PQ6ZKRw&q=kanneliya+rain+forest&sa=X&sqi=2&ved=2ahUKEwj895Lu05WUAxWsWHADHaLuGfkQtKgLegQIFBAB&biw=1920&bih=911&dpr=1" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Kanneliya Rain Forest</li>
+                    </a>
+                    <a href="https://www.google.com/search?sca_esv=a29fc145d0f7951e&sxsrf=ANbL-n6M_cdelVjsYXAxdzitFQDgFGfC-g:1777554903255&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-SiiHLMuwmCQZ7DqSL8AQqoSIk1BYswodlhpBOe1LPdQ1OExD3w2EXDFwm3ypVsilybnoiYv-hLcES5XZTJz-kZj7JNwLQGRc-BiDzcmsFejlQNdgy1rYeeZMxkVfefVfy__6Mr1886ie_4U5Vj7QLrlLCm_w&q=lankagama&sa=X&sqi=2&ved=2ahUKEwiD7s6E1JWUAxXnSGwGHVIuIhkQtKgLegQIGRAB&biw=1920&bih=911&dpr=1" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Lankagama</li>
+                    </a>
+                    <a href="https://www.google.com/search?sca_esv=a29fc145d0f7951e&sxsrf=ANbL-n4X8yV0QzJZJZJZJZJZJZJZJZJZJ:1777554950234&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vWUtYx0DZdicpfE1faGYemgRoIlsYZty-Utxz9md5OUNVIR8UWIeONn0x9udiA6owPcsm9a2FWjTU2D--h0ataw1RjuPvW99M6VfDAmnfjj_MM5sV_QNv39crzDAQNXKFWAmluwiyyBb_fzqzobg0OUaXdibusPiNKmfAlU0p5PQ6ZKRw&q=forest+hermitage+kanduboda&sa=X&sqi=2&ved=2ahUKEwj895Lu05WUAxWsWHADHaLuGfkQtKgLegQIFBAB&biw=1920&bih=911&dpr=1" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Forest Hermitage</li>
+                    </a>
+                    <a href="https://www.google.com/search?sca_esv=a29fc145d0f7951e&sxsrf=ANbL-n6M_cdelVjsYXAxdzitFQDgFGfC-g:1777554903255&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-SiiHLMuwmCQZ7DqSL8AQqoSIk1BYswodlhpBOe1LPdQ1OExD3w2EXDFwm3ypVsilybnoiYv-hLcES5XZTJz-kZj7JNwLQGRc-BiDzcmsFejlQNdgy1rYeeZMxkVfefVfy__6Mr1886ie_4U5Vj7QLrlLCm_w&q=kalwari+shrine+hiniduma&sa=X&sqi=2&ved=2ahUKEwiD7s6E1JWUAxXnSGwGHVIuIhkQtKgLegQIGRAB&biw=1920&bih=911&dpr=1" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Kalwari Shrine Hiniduma</li>
+                    </a>
+                    <a href="https://www.google.com/search?sca_esv=a29fc145d0f7951e&sxsrf=ANbL-n4X8yV0QzJZJZJZJZJZJZJZJZJZJ:1777554950234&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vWUtYx0DZdicpfE1faGYemgRoIlsYZty-Utxz9md5OUNVIR8UWIeONn0x9udiA6owPcsm9a2FWjTU2D--h0ataw1RjuPvW99M6VfDAmnfjj_MM5sV_QNv39crzDAQNXKFWAmluwiyyBb_fzqzobg0OUaXdibusPiNKmfAlU0p5PQ6ZKRw&q=sinharaja+rain+forest&sa=X&sqi=2&ved=2ahUKEwj895Lu05WUAxWsWHADHaLuGfkQtKgLegQIFBAB&biw=1920&bih=911&dpr=1" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Sinharaja Rain Forest</li>
+                    </a>
+                    <a href="https://www.google.com/search?sca_esv=a29fc145d0f7951e&sxsrf=ANbL-n4e6l8QVeDQzzcazlBakw6oJwamVg:1777554981802&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-TQd_NQw4mbt3svWnS3z6wTrBmKuYNFfQ2JXY83qLk_NGtuTSH6TKM0zk8QKm9ued8puawxbCr9F1PQDggc221cMnfMKa-QVG4fG9ckEmaOpLpn0kEZeb4R8J8BBxI0kv55mBFOzAuO5WLgaUlRJLVUCzOBdw&q=dooli+ella+waterfall&sa=X&ved=2ahUKEwjm_Yiq1JWUAxW3cmwGHXxUCHkQtKgLegQIFxAB&biw=1920&bih=911&dpr=1" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Dooli Ella Waterfall</li>
+                    </a>
+                    <a href="https://www.google.com/search?q=Galle+Fort&sca_esv=a29fc145d0f7951e&udm=2&biw=1920&bih=911&sxsrf=ANbL-n7jU7wJ1PVKJr5qpPhlTzxVfLs0Ew%3A1777554983352&ei=J1bzaYmbFcmLnesP2a_SoAk&ved=0ahUKEwjJyueq1JWUAxXJRWcHHdmXFJQQ4dUDCBI&uact=5&oq=Galle+Fort&gs_lp=Egtnd3Mtd2l6LWltZyIKR2FsbGUgRm9ydDIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARImw9Q3ghY3ghwA3gAkAEAmAHXAaAB1wGqAQMyLTG4AQPIAQD4AQL4AQGYAgSgAuUBmAMAiAYBkgcFMy4wLjGgB7cEsgcDMi0xuAfdAcIHBTEuMS4yyAcJgAgB&sclient=gws-wiz-img" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Galle Fort</li>
+                    </a>
+                    <a href="https://www.google.com/search?q=Rumassala&sca_esv=a29fc145d0f7951e&udm=2&biw=1920&bih=911&sxsrf=ANbL-n5XiUt22vK3urSAy6Iz5f1d3kORzg%3A1777555051731&ei=a1bzaZOcLNiuwcsP07fp4AU&ved=0ahUKEwjT_bTL1JWUAxVYV3ADHdNbGlwQ4dUDCBI&uact=5&oq=Rumassala&gs_lp=Egtnd3Mtd2l6LWltZyIJUnVtYXNzYWxhMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjZnwFQ-AhY-AhwAngAkAEAmAHBAaABlgOqAQMxLjK4AQPIAQD4AQL4AQGYAgWgAqoDwgIGEAAYBxgewgIEEAAYHpgDAOIDBRIBMSBAiAYBkgcDMy4yoAfZEbIHAzEuMrgHowPCBwUwLjEuNMgHEIAIAQ&sclient=gws-wiz-img" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Rumassala</li>
+                    </a>
+                    <a href="https://www.google.com/search?q=national+maritime+museum+galle&sca_esv=a29fc145d0f7951e&udm=2&biw=1920&bih=911&sxsrf=ANbL-n4S0MHTHAP2AFkGRW0CYgt07MJ8MQ%3A1777555177377&ei=6Vbzae_YFp2RseMPh73X0QE&oq=National+Maritime+Museum+&gs_lp=Egtnd3Mtd2l6LWltZyIZTmF0aW9uYWwgTWFyaXRpbWUgTXVzZXVtICoCCAAyChAAGIAEGIoFGEMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI6A9QxQZYxQZwAXgAkAEAmAGpAaABqQGqAQMwLjG4AQHIAQD4AQGYAgKgArEBwgIGEAAYBxgemAMAiAYBkgcDMS4xoAeABrIHAzAuMbgHrAHCBwUwLjEuMcgHBoAIAQ&sclient=gws-wiz-img" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>National Maritime Museum - Galle</li>
+                    </a>
+                    <a href="https://www.google.com/search?q=Sea+Turtle+Hatchery&sca_esv=a29fc145d0f7951e&udm=2&biw=1920&bih=911&sxsrf=ANbL-n7HFQJbOHwUqDjFpaLkudtuFgcMDg%3A1777555181767&ei=7VbzafHGLs-ZnesPs_vU8QQ&ved=0ahUKEwix8bWJ1ZWUAxXPTGcHHbM9NU4Q4dUDCBI&uact=5&oq=Sea+Turtle+Hatchery&gs_lp=Egtnd3Mtd2l6LWltZyITU2VhIFR1cnRsZSBIYXRjaGVyeTIKEAAYgAQYigUYQzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiqFVDuCFjuCHADeACQAQCYAYgCoAGIAqoBAzItMbgBA8gBAPgBAvgBAZgCBKAClwLCAgQQABgewgIGEAAYCBgewgIGEAAYBxgemAMAiAYBkgcFMy4wLjGgB9cFsgcDMi0xuAeMAsIHBTAuMS4zyAcMgAgB&sclient=gws-wiz-img" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Sea Turtle Hatchery</li>
+                    </a>
+                    <a href="https://www.google.com/search?q=Martin+Wickremasinghe+Museum&sca_esv=a29fc145d0f7951e&udm=2&biw=1920&bih=911&sxsrf=ANbL-n4Zb9GsKBaJnaKBnUcU1vJx7SsyBQ%3A1777555020480&ei=TFbzaeGAHb3TwcsPh-uiiAM&ved=0ahUKEwjh1sG81JWUAxW9aXADHYe1CDEQ4dUDCBI&uact=5&oq=Martin+Wickremasinghe+Museum&gs_lp=Egtnd3Mtd2l6LWltZyIcTWFydGluIFdpY2tyZW1hc2luZ2hlIE11c2V1bUipE1DLCljLCnADeACQAQCYAcoBoAHKAaoBAzItMbgBA8gBAPgBAvgBAZgCA6ACDMICBxAjGMkCGCfCAgYQABgHGB6YAwCIBgGSBwEzoAcMsgcAuAcAwgcDMi0zyAcKgAgB&sclient=gws-wiz-img" target="_blank" rel="noopener noreferrer" class="location-link">
+                        <li>Martin Wickramasinghe Museum</li>
+                    </a>
+                </ol>
+            </ol>
             </p>
 
         </div>
@@ -260,7 +305,7 @@
                     <span class="accom-eyebrow-label">Accommodations</span>
                     <span class="accom-eyebrow-line"></span>
                 </div>
-                <h2 class="accom-heading">Topi For Accommodations</h2>
+                <h2 class="accom-heading">Comfortable Stays</h2>
             </div>
 
             <p class="accom-intro reveal">

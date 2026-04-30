@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travel Partner Kanneliya</title>
 
   <link rel="icon" href="_resource/img/logo.png">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
 
   <!-- ================================================
@@ -31,16 +33,16 @@
 
     <div class="hero-slider" id="heroSlider">
       <div class="slide active" data-index="0">
-        <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85" alt="Kanneliya Forest 1" class="slide-img"/>
+        <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85" alt="Kanneliya Forest 1" class="slide-img" />
       </div>
       <div class="slide" data-index="1">
-        <img src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85" alt="Kanneliya Forest 2" class="slide-img"/>
+        <img src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85" alt="Kanneliya Forest 2" class="slide-img" />
       </div>
       <div class="slide" data-index="2">
-        <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=85" alt="Kanneliya Forest 3" class="slide-img"/>
+        <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=85" alt="Kanneliya Forest 3" class="slide-img" />
       </div>
       <div class="slide" data-index="3">
-        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=85" alt="Kanneliya Forest 4" class="slide-img"/>
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=85" alt="Kanneliya Forest 4" class="slide-img" />
       </div>
     </div>
 
@@ -50,13 +52,21 @@
       <span class="social-label">Follow Us</span>
       <div class="social-icons">
         <a href="#" class="social-link" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>
         </a>
         <a href="#" class="social-link" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
         </a>
         <a href="#" class="social-link" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.7a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.7a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z" />
+          </svg>
         </a>
       </div>
     </div>
@@ -104,7 +114,7 @@
           <span class="about-eyebrow-label">About Us</span>
         </div>
 
-        <h2 class="about-heading reveal d2">Topic For About Us</h2>
+        <h2 class="about-heading reveal d2">Experience Nature Better</h2>
 
         <div class="about-image-grid reveal-left d3">
 
@@ -131,13 +141,13 @@
       <!-- Right column -->
       <div class="about-right">
         <p class="reveal d3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          We are a dedicated tourism service provider specializing in unforgettable travel experiences in and around Kanneliya. With a passion for nature and a deep understanding of what travelers truly seek, we focus on delivering well-organized, comfortable, and memorable journeys for every visitor. Our goal is not just to take you to a destination, but to ensure you experience it in the most enjoyable and hassle-free way.
         </p>
         <p class="reveal d4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Our team is made up of experienced professionals and knowledgeable local guides who are committed to providing high-quality service from start to finish. From the moment you plan your trip with us, we assist you with everything—from tour arrangements and transportation to guided excursions and personalized recommendations. We pay attention to every detail so you can relax and fully enjoy your adventure.
         </p>
         <p class="reveal d5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          We believe that every traveler is different. That’s why we offer flexible and customizable tour packages designed to match your preferences, schedule, and budget. Whether you’re looking for a peaceful nature escape, an adventurous trek, or a group outing, we tailor each experience to meet your expectations...
         </p>
       </div>
 
@@ -161,18 +171,18 @@
 
         <!-- Col 1 — spans row 1+2 -->
         <div class="dest-card dest-a reveal d1"
-             data-name="Kanneliya River Trail"
-             data-src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80" alt="Kanneliya River Trail" />
-          <div class="dest-card-label">Destination Name</div>
+          data-name="Natural Bat's Cave"
+          data-src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80" alt="Natural Bat's Cave" />
+          <div class="dest-card-label">Natural Bat's Cave</div>
         </div>
 
         <!-- Col 2 — spans row 1+2 -->
         <div class="dest-card dest-b reveal d2"
-             data-name="Ancient Rock Stream"
-             data-src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&q=80" alt="Ancient Rock Stream" />
-          <div class="dest-card-label">Destination Name</div>
+          data-name="Anagimala Ella Waterfall"
+          data-src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&q=80" alt="Anagimala Ella Waterfallm" />
+          <div class="dest-card-label">Anagimala Ella Waterfall</div>
         </div>
 
         <!-- Col 3+4 row 1 — heading spans both columns -->
@@ -181,41 +191,41 @@
             <span class="dest-eyebrow-line"></span>
             <span class="dest-eyebrow-label">Destinations</span>
           </div>
-          <h2 class="dest-heading">Topic For Destinations</h2>
+          <h2 class="dest-heading">Hidden Gems of Kanneliya</h2>
         </div>
 
         <!-- Col 3 row 2 — image-c -->
         <div class="dest-card dest-c reveal d3"
-             data-name="Forest Pavilion"
-             data-src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=800&q=80" alt="Forest Pavilion" />
-          <div class="dest-card-label">Destination Name</div>
+          data-name="Giant Nawada Tree"
+          data-src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=800&q=80" alt="Giant Nawada Tree" />
+          <div class="dest-card-label">Giant Nawada Tree</div>
         </div>
 
         <!-- Col 4 row 2 — image-d -->
         <div class="dest-card dest-d reveal d4"
-             data-name="Hidden Waterfall"
-             data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Hidden Waterfall" />
-          <div class="dest-card-label">Destination Name</div>
+          data-name="Kuda Kabbale Peak"
+          data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Kuda Kabbale Peak" />
+          <div class="dest-card-label">Kuda Kabbale Peak</div>
         </div>
 
         <!-- Bottom row — sm | big | sm | sm -->
         <div class="dest-card dest-e reveal d2"
-             data-name="Misty Forest Path"
-             data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Misty Forest Path" />
-          <div class="dest-card-label">Destination Name</div>
+          data-name="Narangas Ella Waterfall"
+          data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Narangas Ella Waterfall" />
+          <div class="dest-card-label">Narangas Ella Waterfall</div>
         </div>
 
         <div class="dest-card dest-f reveal d3"
-             data-name="Treetop Watchtower"
-             data-src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80" alt="Treetop Watchtower" />
-          <div class="dest-card-label">Destination Name</div>
+          data-name="Maha Kabbale Peak"
+          data-src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1200&q=85">
+          <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80" alt="Maha Kabbale Peak" />
+          <div class="dest-card-label">Maha Kabbale Peak</div>
         </div>
 
-        <div class="dest-card dest-g reveal d4"
+        <!-- <div class="dest-card dest-g reveal d4"
              data-name="Jungle Creek"
              data-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=85">
           <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Jungle Creek" />
@@ -227,7 +237,7 @@
              data-src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=85">
           <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Deep Rainforest" />
           <div class="dest-card-label">Destination Name</div>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -237,13 +247,20 @@
   <div class="dest-lightbox" id="destLightbox">
     <div class="dest-lightbox-inner">
       <button class="dest-lightbox-close" id="destLbClose" aria-label="Close">
-        <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <svg viewBox="0 0 24 24" fill="none">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
       </button>
       <button class="dest-lb-arrow dest-lb-prev" id="destLbPrev" aria-label="Previous">
-        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        <svg viewBox="0 0 24 24">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
       </button>
       <button class="dest-lb-arrow dest-lb-next" id="destLbNext" aria-label="Next">
-        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        <svg viewBox="0 0 24 24">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
       </button>
       <img class="dest-lightbox-img" id="destLbImg" src="" alt="" />
       <div class="dest-lightbox-caption" id="destLbCaption"></div>
@@ -266,16 +283,20 @@
           <span class="pkg-eyebrow-label">Packages</span>
           <span class="pkg-eyebrow-line"></span>
         </div>
-        <h2 class="pkg-heading">Topic For Packages</h2>
+        <h2 class="pkg-heading">Plan Your Perfect Escape</h2>
       </div>
 
       <!-- Carousel track -->
       <div class="pkg-carousel-wrap">
         <button class="pkg-arrow pkg-prev" id="pkgPrev" aria-label="Previous">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
         </button>
         <button class="pkg-arrow pkg-next" id="pkgNext" aria-label="Next">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
         </button>
 
         <div class="pkg-track" id="pkgTrack">
@@ -286,23 +307,25 @@
               <div class="pkg-card-notch"></div>
               <h3 class="pkg-card-title">Package 01</h3>
               <div class="pkg-plan-block">
-                <h4 class="pkg-plan-title">Day Out Plan 01</h4>
+                <h4 class="pkg-plan-title">Day out Package 01</h4>
                 <div class="pkg-divider"></div>
                 <ol class="pkg-list">
-                  <li>Kithul Experience</li>
                   <li>Kanneliya Forest Visiting</li>
-                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
-                  <li>Forest Hermitage Visiting</li>
+                  <li>Launch Time In Our Hotel</li>
+                  <li>Natural Pool Bathing</li>
                 </ol>
               </div>
               <div class="pkg-divider"></div>
               <div class="pkg-meals-block">
-                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <h4 class="pkg-plan-title">Package Include</h4>
+                <p class="pkg-meal-type">Welcome Drink</p>
                 <p class="pkg-meal-type">Breakfast</p>
-                <ul class="pkg-meal-list">
+                <p class="pkg-meal-type">Launch & Dessert</p>
+                <p class="pkg-meal-type">Evening Snack</p>
+                <!-- <ul class="pkg-meal-list">
                   <li>String Hoppers</li>
                   <li>Dhull Curry</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -313,7 +336,7 @@
               <div class="pkg-card-notch"></div>
               <h3 class="pkg-card-title">Package 02</h3>
               <div class="pkg-plan-block">
-                <h4 class="pkg-plan-title">Day Out Plan 01</h4>
+                <h4 class="pkg-plan-title">Day Out Package 02</h4>
                 <div class="pkg-divider"></div>
                 <ol class="pkg-list">
                   <li>Kithul Experience</li>
@@ -324,14 +347,17 @@
               </div>
               <div class="pkg-divider"></div>
               <div class="pkg-meals-block">
-                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <h4 class="pkg-plan-title">Package Include</h4>
+                <p class="pkg-meal-type">Welcome Drink</p>
                 <p class="pkg-meal-type">Breakfast</p>
-                <ul class="pkg-meal-list">
+                <p class="pkg-meal-type">Launch & Dessert</p>
+                <p class="pkg-meal-type">Evening Snack</p>
+                <!-- <ul class="pkg-meal-list">
                   <li>String Hoppers</li>
                   <li>Dhull Curry</li>
                   <li>Egg</li>
                   <li>Polsambola</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -342,24 +368,31 @@
               <div class="pkg-card-notch"></div>
               <h3 class="pkg-card-title">Package 03</h3>
               <div class="pkg-plan-block">
-                <h4 class="pkg-plan-title">Day Out Plan 01</h4>
+                <h4 class="pkg-plan-title">Two days trip Plan 01</h4>
                 <div class="pkg-divider"></div>
+                <p class="pkg-meal-type">DAY 01</p>
                 <ol class="pkg-list">
                   <li>Kithul Experience</li>
-                  <li>Kanneliya Forest Visiting</li>
-                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
-                  <li>Forest Hermitage Visiting</li>
+                  <li>Kanneliya Forest Visiting ...</li>
+                </ol>
+                <br/>
+                <p class="pkg-meal-type">DAY 02</p>
+                <ol class="pkg-list">
+                  <li>Tea Factory Visiting.</li>
+                  <li>Lankagama Visiting  (See 7 Water Falls) ...</li>
                 </ol>
               </div>
               <div class="pkg-divider"></div>
               <div class="pkg-meals-block">
-                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
+                <h4 class="pkg-plan-title">Package Include</h4>
+                <p class="pkg-meal-type">Welcome Drink</p>
                 <p class="pkg-meal-type">Breakfast</p>
-                <ul class="pkg-meal-list">
+                <p class="pkg-meal-type">Launch & Dessert ...</p>
+                <!-- <ul class="pkg-meal-list">
                   <li>String Hoppers</li>
                   <li>Dhull Curry</li>
                   <li>Egg</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -370,55 +403,31 @@
               <div class="pkg-card-notch"></div>
               <h3 class="pkg-card-title">Package 04</h3>
               <div class="pkg-plan-block">
-                <h4 class="pkg-plan-title">Day Out Plan 02</h4>
+                <h4 class="pkg-plan-title">Two days trip Plan 02</h4>
                 <div class="pkg-divider"></div>
+                <p class="pkg-meal-type">DAY 01</p>
                 <ol class="pkg-list">
                   <li>Kithul Experience</li>
-                  <li>Kanneliya Forest Visiting</li>
-                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
-                  <li>Forest Hermitage Visiting</li>
-                  <li>Evening River Walk</li>
+                  <li>Kanneliya Forest Visiting ...</li>
+                </ol>
+                <br/>
+                <p class="pkg-meal-type">DAY 02</p>
+                <ol class="pkg-list">
+                  <li>Visiting Galle Fort & National Maritime Museum.</li>
+                  <li>Visting Rumassala ...</li>
                 </ol>
               </div>
               <div class="pkg-divider"></div>
               <div class="pkg-meals-block">
-                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
-                <p class="pkg-meal-type">Breakfast + Lunch</p>
-                <ul class="pkg-meal-list">
+                <h4 class="pkg-plan-title">Package Include</h4>
+                <p class="pkg-meal-type">Welcome Drink</p>
+                <p class="pkg-meal-type">Breakfast</p>
+                <p class="pkg-meal-type">Launch & Dessert ...</p>
+                <!-- <ul class="pkg-meal-list">
                   <li>String Hoppers</li>
                   <li>Dhull Curry</li>
                   <li>Egg</li>
-                  <li>Polsambola</li>
-                  <li>Rice & Curry</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="pkg-card" data-index="4">
-            <div class="pkg-card-inner">
-              <div class="pkg-card-notch"></div>
-              <h3 class="pkg-card-title">Package 05</h3>
-              <div class="pkg-plan-block">
-                <h4 class="pkg-plan-title">Day Out Plan 03</h4>
-                <div class="pkg-divider"></div>
-                <ol class="pkg-list">
-                  <li>Kithul Experience</li>
-                  <li>Kanneliya Forest Visiting</li>
-                  <li>Launch Time (Place- Natural Pool Pokuna)</li>
-                  <li>Forest Hermitage Visiting</li>
-                </ol>
-              </div>
-              <div class="pkg-divider"></div>
-              <div class="pkg-meals-block">
-                <h4 class="pkg-plan-title">Package Include Meals Menu</h4>
-                <p class="pkg-meal-type">Breakfast + Dinner</p>
-                <ul class="pkg-meal-list">
-                  <li>String Hoppers</li>
-                  <li>Polsambola</li>
-                  <li>BBQ Dinner</li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -443,7 +452,7 @@
           <span class="why-eyebrow-line"></span>
           <span class="why-eyebrow-label">Why Choose Us</span>
         </div>
-        <h2 class="why-heading">Topic For Why Choose Us</h2>
+        <h2 class="why-heading">Experience You Can Trust</h2>
       </div>
 
       <!-- Accordion cards -->
@@ -453,8 +462,8 @@
         <div class="why-card why-active" data-index="0">
           <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=80" alt="Kanneliya Waterfall" />
           <div class="why-card-content">
-            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
-            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h3 class="why-card-title">Unforgettable Rainforest Adventures</h3>
+            <p class="why-card-text">Experience the magic of Kanneliya through expertly guided tours, hidden waterfalls, and breathtaking जंगल trails that bring you closer to nature.</p>
           </div>
         </div>
 
@@ -462,8 +471,8 @@
         <div class="why-card" data-index="1">
           <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80" alt="Forest Path" />
           <div class="why-card-content">
-            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
-            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h3 class="why-card-title">Expert Local Guides</h3>
+            <p class="why-card-text">Our knowledgeable guides ensure safe, insightful, and enriching journeys through the rainforest.</p>
           </div>
         </div>
 
@@ -471,8 +480,8 @@
         <div class="why-card" data-index="2">
           <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80" alt="Mountain View" />
           <div class="why-card-content">
-            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
-            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h3 class="why-card-title">Eco-Friendly Travel</h3>
+            <p class="why-card-text">We promote sustainable tourism that protects nature while supporting local communities.</p>
           </div>
         </div>
 
@@ -480,8 +489,16 @@
         <div class="why-card" data-index="3">
           <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=900&q=80" alt="Sky & Forest" />
           <div class="why-card-content">
-            <h3 class="why-card-title">TOPIC OR SOMETHING</h3>
-            <p class="why-card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h3 class="why-card-title">Customized Experiences</h3>
+            <p class="why-card-text">Enjoy flexible tour packages tailored to your interests, time, and comfort.</p>
+          </div>
+        </div>
+
+        <div class="why-card" data-index="4">
+          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=900&q=80" alt="Sky & Forest" />
+          <div class="why-card-content">
+            <h3 class="why-card-title">Breathtaking Locations</h3>
+            <p class="why-card-text">Explore waterfalls, wildlife, and scenic viewpoints unique to Kanneliya.</p>
           </div>
         </div>
 
@@ -502,7 +519,7 @@
           <span class="testi-eyebrow-label">Testimonials</span>
           <span class="testi-eyebrow-line"></span>
         </div>
-        <h2 class="testi-heading">Topic For Testimonials</h2>
+        <h2 class="testi-heading">Voices of Our Happy Travellers</h2>
       </div>
 
       <!-- 3-column scroll grid -->
@@ -617,4 +634,5 @@
   <script src="js/footer.js"></script>
 
 </body>
+
 </html>

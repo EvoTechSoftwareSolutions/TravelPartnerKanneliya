@@ -44,7 +44,7 @@
                 <span class="banner-eyebrow-label">Gallery</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry
+                Explore Our Gallery
             </h1>
         </div>
 
@@ -68,7 +68,7 @@
                     <span class="gallery-eyebrow-label">Gallery</span>
                     <span class="gallery-eyebrow-line"></span>
                 </div>
-                <h2 class="gallery-heading">Topic For Gallery</h2>
+                <h2 class="gallery-heading">Moments from Kanneliya</h2>
             </div>
 
             <p class="gallery-desc reveal">

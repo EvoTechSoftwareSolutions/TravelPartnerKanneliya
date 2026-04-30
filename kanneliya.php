@@ -44,7 +44,7 @@
                 <span class="banner-eyebrow-label">Kanneliya</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry
+                Kanneliya: A Hidden Paradise
             </h1>
         </div>
 
@@ -69,11 +69,11 @@
             </div>
 
             <h2 class="kanneliya-article-heading reveal">
-                Topic For Kanneliya Article
+                Explore the Heart of Nature
             </h2>
 
             <p class="kanneliya-article-desc reveal">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Kanneliya Forest Reserve is one of Sri Lanka’s most biologically rich and ecologically significant rainforests, offering a truly immersive escape into nature. Surrounded by lush greenery, flowing streams, and diverse wildlife, this nature sanctuary provides a peaceful retreat far from the noise of everyday life. Our goal is to introduce travelers to this hidden gem while preserving its natural beauty for future generations.
             </p>
 
         </div>

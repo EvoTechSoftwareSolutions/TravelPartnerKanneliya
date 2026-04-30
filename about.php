@@ -43,7 +43,7 @@
                 <span class="banner-eyebrow-label">About & Contact</span>
             </div>
             <h1 class="banner-title">
-                Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry
+                Who We Are & How to Reach Us
             </h1>
         </div>
 
@@ -76,44 +76,22 @@
                         <img src="_resource/img/aboutContact/sec01/Kanneliya-1-1 2.png" alt="Mountain View"
                             class="ab--sec01--leftdivimg" />
                         <p class="ab--sec01--leftdivp">
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia deserunt mollit anim id est laborum.Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est
+                            Customer satisfaction is at the heart of everything we do. We take pride in building trust, ensuring safety, and delivering a service that exceeds expectations. By choosing us, you’re not just booking a tour you’re partnering with a team that genuinely cares about making your journey special and unforgettable.
                         </p>
                     </div>
 
                     <div class="ab--sec01--centdiv">
                         <p class="ab--sec01--centdivp">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Our team is made up of experienced professionals and knowledgeable local guides who are committed to providing high-quality service from start to finish. From the moment you plan your trip with us, we assist you with everything from tour arrangements and transportation to guided excursions and personalized recommendations. We pay attention to every detail so you can relax and fully enjoy your adventure.
                         </p>
                         <p class="ab--sec01--centdivp">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            We believe that every traveler is different. That’s why we offer flexible and customizable tour packages designed to match your preferences, schedule, and budget. Whether you’re looking for a peaceful nature escape, an adventurous trek, or a group outing, we tailor each experience to meet your expectations.
                         </p>
                     </div>
 
                     <div class="ab--sec01--rightdiv">
                         <p class="ab--sec01--rightdivp">
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia deserunt mollit anim id est laborum.Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est
+                            We are a dedicated tourism service provider specializing in unforgettable travel experiences in and around Kanneliya. With a passion for nature and a deep understanding of what travelers truly seek, we focus on delivering well-organized, comfortable, and memorable journeys for every visitor. Our goal is not just to take you to a destination, but to ensure you experience it in the most enjoyable and hassle-free way.
                         </p>
                         <img src="_resource/img/aboutContact/sec01/gal1 2.png" alt="Hillside View"
                             class="ab--sec01--rightdivimg" />
@@ -160,7 +138,7 @@
                     <h4 class="ct--sec01--headmidtext">Contact Us</h4>
                     <span class="ct--sec01--headrightline"></span>
                 </div>
-                <h1 class="ct--sec01--heading">Topic For Contact</h1>
+                <h1 class="ct--sec01--heading">Get in Touch</h1>
 
                 <!-- ── Two-column grid ── -->
                 <div class="ct--sec01--grid">
@@ -170,16 +148,7 @@
                         <div class="ct--sec01--formtitlediv">
                             <h2 class="ct--sec01--formtitle">Send Us A Message</h2>
                             <p class="ct--sec01--formdesc">
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit
-                                anim id est
-                                laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt
-                                mollit anim
-                                id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia
-                                deserunt
-                                mollit anim id est.
+                                Have a question or need more information? Feel free to send us a message anytime. Whether it’s about our services, locations, or general inquiries, our team is here to help and will get back to you as soon as possible.
                             </p>
                         </div>
 

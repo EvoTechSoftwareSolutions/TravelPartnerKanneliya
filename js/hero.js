@@ -7,7 +7,7 @@
       subtitle: "Where Ancient Forest Meets Modern Adventure"
     },
     {
-      title: "Breathe The Mist\nOf Tropical Rainforests",
+      title: "Breathe The Mist Of\nTropical Rainforests",
       subtitle: "Untouched Wilderness Awaits You"
     },
     {

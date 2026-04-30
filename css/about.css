@@ -684,6 +684,7 @@ body {
         font-size: 0.9rem;
         text-align: justify;
         color: white;
+        line-height: 1.5;
     }
 
     .ab--sec01--leftdivp {
@@ -815,7 +816,7 @@ body {
     .ab--sec01--centdiv {
         width: 40%;
         max-width: 1400px;
-        height: 35%;
+        height: 30%;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -833,6 +834,7 @@ body {
         margin-top: 1rem;
         text-align: justify;
         color: white;
+        line-height: 1.7;
     }
 
     .ab--sec01--leftdivp {
