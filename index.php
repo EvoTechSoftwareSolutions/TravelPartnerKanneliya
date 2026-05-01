@@ -197,8 +197,8 @@
         <!-- Col 3 row 2 — image-c -->
         <div class="dest-card dest-c reveal d3"
           data-name="Giant Nawada Tree"
-          data-src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=800&q=80" alt="Giant Nawada Tree" />
+          data-src="_resource/img/kanneliya/tree/3.webp">
+          <img src="_resource/img/kanneliya/tree/3.webp" alt="Giant Nawada Tree" />
           <div class="dest-card-label">Giant Nawada Tree</div>
         </div>
 
@@ -213,8 +213,8 @@
         <!-- Bottom row — sm | big | sm | sm -->
         <div class="dest-card dest-e reveal d2"
           data-name="Narangas Ella Waterfall"
-          data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=85">
-          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Narangas Ella Waterfall" />
+          data-src="_resource/img/kanneliya/narangas/1.webp">
+          <img src="_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" />
           <div class="dest-card-label">Narangas Ella Waterfall</div>
         </div>
 
@@ -457,7 +457,7 @@
 
         <!-- Card 1 — active by default (large) -->
         <div class="why-card why-active" data-index="0">
-          <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1200&q=80" alt="Kanneliya Waterfall" />
+          <img src="_resource/img/home/why/y1.jpg" alt="Kanneliya Waterfall" />
           <div class="why-card-content">
             <h3 class="why-card-title">Unforgettable Rainforest Adventures</h3>
             <p class="why-card-text">Experience the magic of Kanneliya through expertly guided tours, hidden waterfalls, and breathtaking जंगल trails that bring you closer to nature.</p>
@@ -466,7 +466,7 @@
 
         <!-- Card 2 -->
         <div class="why-card" data-index="1">
-          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80" alt="Forest Path" />
+          <img src="_resource/img/home/why/y2.jpg" alt="Forest Path" />
           <div class="why-card-content">
             <h3 class="why-card-title">Expert Local Guides</h3>
             <p class="why-card-text">Our knowledgeable guides ensure safe, insightful, and enriching journeys through the rainforest.</p>
@@ -475,7 +475,7 @@
 
         <!-- Card 3 -->
         <div class="why-card" data-index="2">
-          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=80" alt="Mountain View" />
+          <img src="_resource/img/home/why/y3.jpg" alt="Mountain View" />
           <div class="why-card-content">
             <h3 class="why-card-title">Eco-Friendly Travel</h3>
             <p class="why-card-text">We promote sustainable tourism that protects nature while supporting local communities.</p>
@@ -484,7 +484,7 @@
 
         <!-- Card 4 -->
         <div class="why-card" data-index="3">
-          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=900&q=80" alt="Sky & Forest" />
+          <img src="_resource/img/home/why/y4.jpg" alt="Sky & Forest" />
           <div class="why-card-content">
             <h3 class="why-card-title">Customized Experiences</h3>
             <p class="why-card-text">Enjoy flexible tour packages tailored to your interests, time, and comfort.</p>
@@ -492,7 +492,7 @@
         </div>
 
         <div class="why-card" data-index="4">
-          <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=900&q=80" alt="Sky & Forest" />
+          <img src="_resource/img/home/why/y5.jpg" alt="Sky & Forest" />
           <div class="why-card-content">
             <h3 class="why-card-title">Breathtaking Locations</h3>
             <p class="why-card-text">Explore waterfalls, wildlife, and scenic viewpoints unique to Kanneliya.</p>

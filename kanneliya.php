@@ -80,7 +80,7 @@
     </section>
 
     <!-- ================================================
-   ATTRACTION SECTION - FINAL VERSION
+   ATTRACTION SECTION
 ================================================ -->
     <section class="attraction-final-section" id="attraction-final">
         <div class="attraction-final-inner">
@@ -101,7 +101,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall" loading="lazy" />
+                            <img src="_resource/img/kanneliya/batCave/1.jpg" alt="Waterfall" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-index="1">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Mountain view" loading="lazy" />
+                            <img src="_resource/img/kanneliya/batCave/2.webp" alt="Mountain view" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-index="2">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Landscape" loading="lazy" />
+                            <img src="_resource/img/kanneliya/batCave/3.jpg" alt="Landscape" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -244,7 +244,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="2" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Anagimala Waterfall" loading="lazy" />
+                            <img src="_resource/img/kanneliya/anagimala/1.jpg" alt="Anagimala Waterfall" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -258,7 +258,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="2" data-index="1">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Forest view" loading="lazy" />
+                            <img src="_resource/img/kanneliya/anagimala/2.jpg" alt="Forest view" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -272,7 +272,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="2" data-index="2">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain mist" loading="lazy" />
+                            <img src="_resource/img/kanneliya/anagimala/3.jpg" alt="Mountain mist" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -381,7 +381,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="3" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Giant Nawada Tree" loading="lazy" />
+                            <img src="_resource/img/kanneliya/tree/1.jpg" alt="Giant Nawada Tree" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -395,7 +395,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="3" data-index="1">
-                            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=800&q=80" alt="Forest canopy" loading="lazy" />
+                            <img src="_resource/img/kanneliya/tree/2.webp" alt="Forest canopy" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -409,7 +409,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="3" data-index="2">
-                            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80" alt="Tree observation" loading="lazy" />
+                            <img src="_resource/img/kanneliya/tree/3.webp" alt="Tree observation" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -427,7 +427,7 @@
 
                 <div class="attraction-final-right reveal">
                     <div class="attraction-final-img attraction-final-right-tall" data-lb="3" data-index="3">
-                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Nawada tree trunk" loading="lazy" />
+                        <img src="_resource/img/kanneliya/tree/4.webp" alt="Nawada tree trunk" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -441,7 +441,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-top" data-lb="3" data-index="4">
-                        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80" alt="Forest view" loading="lazy" />
+                        <img src="_resource/img/kanneliya/tree/5.webp" alt="Forest view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -455,7 +455,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-bottom" data-lb="3" data-index="5">
-                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Deep forest" loading="lazy" />
+                        <img src="_resource/img/kanneliya/tree/6.webp" alt="Deep forest" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -518,7 +518,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="4" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Narangas Ella Waterfall" loading="lazy" />
+                            <img src="_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -532,7 +532,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="4" data-index="1">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Jungle trail" loading="lazy" />
+                            <img src="_resource/img/kanneliya/narangas/2.webp" alt="Jungle trail" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -546,7 +546,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="4" data-index="2">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Rope bridge" loading="lazy" />
+                            <img src="_resource/img/kanneliya/narangas/3.webp" alt="Rope bridge" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -564,7 +564,7 @@
 
                 <div class="attraction-final-right reveal">
                     <div class="attraction-final-img attraction-final-right-tall" data-lb="4" data-index="3">
-                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Waterfall cascade" loading="lazy" />
+                        <img src="_resource/img/kanneliya/narangas/4.webp" alt="Waterfall cascade" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -578,7 +578,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-top" data-lb="4" data-index="4">
-                        <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Forest mist" loading="lazy" />
+                        <img src="_resource/img/kanneliya/narangas/5.webp" alt="Forest mist" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -592,7 +592,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-bottom" data-lb="4" data-index="5">
-                        <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=800&q=80" alt="Deep jungle" loading="lazy" />
+                        <img src="_resource/img/kanneliya/narangas/6.webp" alt="Deep jungle" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">

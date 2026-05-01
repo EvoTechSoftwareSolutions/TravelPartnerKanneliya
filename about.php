@@ -68,7 +68,7 @@
                         <h4 class="ab--sec01--headmidtext">ABOUT US</h4>
                         <span class="ab--sec01--headrightline"></span>
                     </div>
-                    <h1 class="ab--sec01--heading">Topic For About</h1>
+                    <h1 class="ab--sec01--heading">Your Trusted Travel Partner</h1>
                 </div>
 
                 <div class="ab--sec01--div04">
@@ -76,7 +76,7 @@
                         <img src="_resource/img/aboutContact/sec01/Kanneliya-1-1 2.png" alt="Mountain View"
                             class="ab--sec01--leftdivimg" />
                         <p class="ab--sec01--leftdivp">
-                            Customer satisfaction is at the heart of everything we do. We take pride in building trust, ensuring safety, and delivering a service that exceeds expectations. By choosing us, you’re not just booking a tour you’re partnering with a team that genuinely cares about making your journey special and unforgettable.
+                            Customer satisfaction is at the heart of everything we do. We take pride in building trust, ensuring safety, and delivering a service that exceeds expectations. By choosing us, you're not just booking a tour you're partnering with a team that genuinely cares about making your journey special and unforgettable.
                         </p>
                     </div>
 
@@ -85,7 +85,7 @@
                             Our team is made up of experienced professionals and knowledgeable local guides who are committed to providing high-quality service from start to finish. From the moment you plan your trip with us, we assist you with everything from tour arrangements and transportation to guided excursions and personalized recommendations. We pay attention to every detail so you can relax and fully enjoy your adventure.
                         </p>
                         <p class="ab--sec01--centdivp">
-                            We believe that every traveler is different. That’s why we offer flexible and customizable tour packages designed to match your preferences, schedule, and budget. Whether you’re looking for a peaceful nature escape, an adventurous trek, or a group outing, we tailor each experience to meet your expectations.
+                            We believe that every traveler is different. That's why we offer flexible and customizable tour packages designed to match your preferences, schedule, and budget. Whether you're looking for a peaceful nature escape, an adventurous trek, or a group outing, we tailor each experience to meet your expectations.
                         </p>
                     </div>
 
@@ -100,24 +100,24 @@
 
                 <div class="ab--sec01--div05">
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
-                        <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
+                        <img src="_resource/img/aboutContact/sec01/service1.png" alt="" class="ab--sec01--cardimg" />
+                        <p class="ab--sec01--cardtext">Unforgettable Rainforest Adventures</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
-                        <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
+                        <img src="_resource/img/aboutContact/sec01/service2.png" alt="" class="ab--sec01--cardimg" />
+                        <p class="ab--sec01--cardtext">Expert Local Guides</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
-                        <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
+                        <img src="_resource/img/aboutContact/sec01/service3.png" alt="" class="ab--sec01--cardimg" />
+                        <p class="ab--sec01--cardtext">Eco-Friendly Travel</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
-                        <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
+                        <img src="_resource/img/aboutContact/sec01/service4.png" alt="" class="ab--sec01--cardimg" />
+                        <p class="ab--sec01--cardtext">Customized Experiences</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/Services.png" alt="" class="ab--sec01--cardimg" />
-                        <p class="ab--sec01--cardtext">Lorem ipsum dolor sit amet,</p>
+                        <img src="_resource/img/aboutContact/sec01/service5.png" alt="" class="ab--sec01--cardimg" />
+                        <p class="ab--sec01--cardtext">Breathtaking Locations</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                         <div class="ct--sec01--formtitlediv">
                             <h2 class="ct--sec01--formtitle">Send Us A Message</h2>
                             <p class="ct--sec01--formdesc">
-                                Have a question or need more information? Feel free to send us a message anytime. Whether it’s about our services, locations, or general inquiries, our team is here to help and will get back to you as soon as possible.
+                                Have a question or need more information? Feel free to send us a message anytime. Whether it's about our services, locations, or general inquiries, our team is here to help and will get back to you as soon as possible.
                             </p>
                         </div>
 
@@ -172,13 +172,26 @@
                                     <input type="email" class="ct--sec01--input"
                                         placeholder="Enter Your Email Address" />
                                 </div>
+                                <!-- Mobile Number -->
                                 <div class="ct--sec01--fieldgroup">
                                     <label class="ct--sec01--label">Mobile Number</label>
-                                    <div class="ct--sec01--mobilewrap">
-                                        <span class="ct--sec01--mobileprefix">+94</span>
-                                        <input type="tel" class="ct--sec01--mobileinput"
-                                            placeholder="Enter Your Mobile Number" />
+                                    <div class="ct--sec01--mobilewrap" id="ctMobileWrap">
+                                        <div class="ct--country--selector" id="ctCountrySelector">
+                                            <button class="ct--country--btn" id="ctCountryBtn" type="button">
+                                                <span id="ctSelFlag">🇱🇰</span>
+                                                <span id="ctSelCode">+94</span>
+                                                <span class="ct--country--chevron" id="ctChevron">▼</span>
+                                            </button>
+                                            <div class="ct--country--dropdown" id="ctCountryDropdown">
+                                                <div class="ct--country--search">
+                                                    <input type="text" id="ctCountrySearch" placeholder="Search country..." />
+                                                </div>
+                                                <div class="ct--country--list" id="ctCountryList"></div>
+                                            </div>
+                                        </div>
+                                        <input type="tel" class="ct--sec01--mobileinput" id="ctMobileInput" placeholder="Enter Your Mobile Number" />
                                     </div>
+                                    <p class="ct--country--format" id="ctFormatNote">Format: 07X XXXXXXX</p>
                                 </div>
                             </div>
 
@@ -309,6 +322,7 @@
     <?php include 'includes/footer.php'; ?>
 
     <script src="js/header.js"></script>
+    <script src="js/about.js"></script>
     <script src="js/footer.js"></script>
 
 </body>

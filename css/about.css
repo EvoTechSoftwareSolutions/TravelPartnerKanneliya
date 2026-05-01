@@ -51,14 +51,12 @@ body {
     position: absolute;
     inset: 0;
     z-index: 1;
-    background: linear-gradient(
-    to top,
-    rgb(9, 30, 36) 0%,
-    rgba(9, 30, 36, 0.836) 35%,
-    rgba(9, 30, 36, 0.18) 65%,
-    rgba(9, 30, 36, 0.08) 100%
-  );
-  mix-blend-mode: normal;
+    background: linear-gradient(to top,
+            rgb(9, 30, 36) 0%,
+            rgba(9, 30, 36, 0.836) 35%,
+            rgba(9, 30, 36, 0.18) 65%,
+            rgba(9, 30, 36, 0.08) 100%);
+    mix-blend-mode: normal;
 }
 
 /* ── Content — bottom left ── */
@@ -455,17 +453,18 @@ body {
 }
 
 .ab--sec01--cardimg {
-    width: 30%;
+    width: 25%;
     height: auto;
+    opacity: 0.8;
 }
 
 .ab--sec01--cardtext {
     font-family: 'Jost', sans-serif;
     color: rgba(255, 255, 255, 0.85);
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -476,7 +475,7 @@ body {
 /* ── max 719px (small mobile) ── */
 @media only screen and (max-width: 719px) {
 
-.ab--sec01--div02 {
+    .ab--sec01--div02 {
         padding: 0 1rem;
     }
 
@@ -555,13 +554,26 @@ body {
     }
 
     /* First 3 cards span 2 columns each → fills 6 columns */
-    .ab--sec01--card:nth-child(1) { grid-column: 1 / 3; }
-    .ab--sec01--card:nth-child(2) { grid-column: 3 / 5; }
-    .ab--sec01--card:nth-child(3) { grid-column: 5 / 7; }
+    .ab--sec01--card:nth-child(1) {
+        grid-column: 1 / 3;
+    }
+
+    .ab--sec01--card:nth-child(2) {
+        grid-column: 3 / 5;
+    }
+
+    .ab--sec01--card:nth-child(3) {
+        grid-column: 5 / 7;
+    }
 
     /* Last 2 cards: centered in row 2 */
-    .ab--sec01--card:nth-child(4) { grid-column: 2 / 4; }
-    .ab--sec01--card:nth-child(5) { grid-column: 4 / 6; }
+    .ab--sec01--card:nth-child(4) {
+        grid-column: 2 / 4;
+    }
+
+    .ab--sec01--card:nth-child(5) {
+        grid-column: 4 / 6;
+    }
 
     .ab--sec01--headleftline,
     .ab--sec01--headrightline {
@@ -868,9 +880,9 @@ body {
         font-family: 'Jost', sans-serif;
         color: rgba(255, 255, 255, 0.85);
         text-align: center;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         font-size: 0.9rem;
-        font-weight: 300;
+        /* font-weight: 300; */
     }
 }
 
@@ -889,7 +901,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 12rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
 }
 
 .ct--sec01--div01 {
@@ -1078,14 +1090,15 @@ body {
     box-shadow: 0 0 0 2px rgba(0, 198, 255, 0.08);
 }
 
-/* Mobile number row */
+/* Mobile number row - FIXED */
 .ct--sec01--mobilewrap {
     display: flex;
     gap: 0;
-    border: 1px solid rgba(0, 198, 255, 0.22);
+    border: 1px solid #4ecdc53d;
     border-radius: 4px;
-    overflow: hidden;
+    overflow: visible !important;
     transition: border-color 0.2s ease;
+    position: relative;
 }
 
 .ct--sec01--mobilewrap:focus-within {
@@ -1096,7 +1109,7 @@ body {
 .ct--sec01--mobileprefix {
     background: rgba(0, 198, 255, 0.08);
     border: none;
-    border-right: 1px solid rgba(0, 198, 255, 0.2);
+    border-right: 1px solid #4ecdc53d;
     color: rgba(255, 255, 255, 0.75);
     font-family: 'Jost', sans-serif;
     font-size: 0.82rem;
@@ -1115,6 +1128,7 @@ body {
     outline: none;
     flex: 1;
     min-width: 0;
+    min-height: 38px;
 }
 
 .ct--sec01--mobileinput::placeholder {
@@ -1312,6 +1326,159 @@ body {
 }
 
 /* ============================================================
+   COUNTRY DROPDOWN - FIXED CSS
+   ============================================================ */
+
+/* Country selector container */
+.ct--country--selector {
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Country button */
+.ct--country--btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(0, 198, 255, 0.08);
+    border: none;
+    border-right: 1px solid rgba(0, 198, 255, 0.2);
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.82rem;
+    padding: 0.55rem 0.6rem;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 100%;
+    min-height: 38px;
+}
+
+.ct--country--btn:hover {
+    background: rgba(78, 205, 196, 0.15);
+}
+
+.ct--country--chevron {
+    font-size: 9px;
+    opacity: 0.6;
+    transition: transform 0.2s;
+}
+
+.ct--country--chevron.open {
+    transform: rotate(180deg);
+}
+
+/* DROPDOWN - FIXED: High z-index, proper positioning */
+.ct--country--dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 280px;
+    background: #0d1f27;
+    border: 1px solid rgba(78, 205, 196, 0.4);
+    border-radius: 8px;
+    z-index: 9999 !important;
+    max-height: 280px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+}
+
+.ct--country--dropdown.open {
+    display: flex;
+}
+
+/* Search box inside dropdown */
+.ct--country--search {
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(78, 205, 196, 0.15);
+    flex-shrink: 0;
+}
+
+.ct--country--search input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(78, 205, 196, 0.2);
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.ct--country--search input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ct--country--search input:focus {
+    border-color: rgba(78, 205, 196, 0.5);
+}
+
+/* Country list - scrollable area */
+.ct--country--list {
+    overflow-y: auto;
+    max-height: 200px;
+    flex: 1;
+}
+
+.ct--country--list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ct--country--list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ct--country--list::-webkit-scrollbar-thumb {
+    background: rgba(78, 205, 196, 0.3);
+    border-radius: 2px;
+}
+
+/* Country option items */
+.ct--country--option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.6rem 0.75rem;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+    transition: background 0.15s;
+    border-bottom: 1px solid rgba(78, 205, 196, 0.05);
+}
+
+.ct--country--option:last-child {
+    border-bottom: none;
+}
+
+.ct--country--option:hover {
+    background: rgba(78, 205, 196, 0.12);
+    color: white;
+}
+
+.ct--country--option .cn {
+    flex: 1;
+    font-size: 0.82rem;
+}
+
+.ct--country--option .cc {
+    color: rgba(78, 205, 196, 0.9);
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+/* Format note */
+.ct--country--format {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    color: rgba(78, 205, 196, 0.7);
+    margin-top: 0.35rem;
+}
+
+/* ============================================================
    RESPONSIVE — CONTACT SECTION
 ============================================================ */
 
@@ -1350,6 +1517,11 @@ body {
         font-size: 28px;
         margin-bottom: 1.5rem;
     }
+
+    .ct--country--dropdown {
+        width: 260px;
+        left: 0;
+    }
 }
 
 /* ── 720px – 850px ── */
@@ -1384,12 +1556,13 @@ body {
 @media only screen and (min-width: 801px) {
     .ct--sec01--grid {
         position: relative;
-        min-height: 700px; /* Ensure enough space for info panel */
+        min-height: 700px;
+        /* Ensure enough space for info panel */
     }
 
-    .ct--sec01--formrowdiv{
-    width: 90%;
-}
+    .ct--sec01--formrowdiv {
+        width: 90%;
+    }
 
     .ct--sec01--formpanel {
         width: 65%;
@@ -1414,7 +1587,8 @@ body {
 
     .ct--sec01--fieldgroup {
         width: 100%;
-        min-width: 0; /* Prevents flex/grid items from overflowing */
+        min-width: 0;
+        /* Prevents flex/grid items from overflowing */
     }
 
     .ct--sec01--input,
@@ -1449,10 +1623,20 @@ body {
 
 
 
-.ct--sec02{
+.ct--sec02 {
     margin-bottom: 5rem;
 }
 
-.ct--sec02--div01{
+.ct--sec02--div01 {
     width: 100%;
+}
+
+
+
+/* Responsive dropdown fixes */
+@media only screen and (max-width: 400px) {
+    .ct--country--dropdown {
+        width: 220px;
+        left: -20px;
+    }
 }
