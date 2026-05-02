@@ -49,10 +49,10 @@
     <!-- Right side controls -->
     <div class="header-cta">
       <!-- Desktop Call Us -->
-      <a href="about.php#contact" class="cta-btn">Call Us</a>
+      <a href="tel:+94740553769" class="cta-btn" target="_blank">Call Us</a>
 
       <!-- Mobile: Call Now (left of hamburger) -->
-      <a href="about.php#contact" class="mobile-call-btn">Call Us</a>
+      <a href="tel:+94740553769" class="mobile-call-btn" target="_blank">Call Us</a>
 
       <!-- Hamburger -->
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
@@ -103,7 +103,7 @@
       <a href="kanneliya.php" class="slide-panel-link">Kanneliya</a>
       <a href="gallery.php" class="slide-panel-link">Gallery</a>
       <a href="about.php#contact" class="slide-panel-link">Contact</a>
-      <a href="about.php#contact" class="slide-panel-cta">Call Us</a>
+      <a href="tel:+94740553769" class="slide-panel-cta" target="_blank">Call Us</a>
     </div>
 
   </nav>

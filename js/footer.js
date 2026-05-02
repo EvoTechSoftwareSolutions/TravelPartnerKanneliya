@@ -3,38 +3,46 @@
 (function () {
   const sendBtn = document.getElementById('footerSendBtn');
   const msgBox  = document.getElementById('footerMsg');
+  const note    = document.getElementById('footerNote');
 
   if (!sendBtn || !msgBox) return;
 
   sendBtn.addEventListener('click', function () {
     const msg = msgBox.value.trim();
+
     if (!msg) {
-      msgBox.style.borderColor = 'rgba(255,80,80,0.7)';
+      msgBox.style.borderColor = 'rgba(255, 80, 80, 0.7)';
       msgBox.focus();
       setTimeout(() => { msgBox.style.borderColor = ''; }, 1500);
       return;
     }
 
+    // Open WhatsApp with the message pre-filled
+    const phone   = '94760487277'; // replace with actual number (no + or spaces)
+    const encoded = encodeURIComponent(msg);
+    window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
+
     // Success feedback
-    sendBtn.textContent = '✓ Sent!';
-    sendBtn.style.borderColor = '#4ecdc4';
-    sendBtn.style.color = '#4ecdc4';
+    if (note) {
+      note.textContent = 'Opening WhatsApp...';
+      note.classList.add('visible');
+    }
+
+    sendBtn.style.opacity = '0.6';
+    sendBtn.style.pointerEvents = 'none';
     msgBox.value = '';
 
     setTimeout(() => {
-      sendBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px">
-          <line x1="22" y1="2" x2="11" y2="13"/>
-          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-        </svg>
-        SEND
-      `;
-      sendBtn.style.borderColor = '';
-      sendBtn.style.color = '';
-    }, 2500);
+      sendBtn.style.opacity = '';
+      sendBtn.style.pointerEvents = '';
+      if (note) {
+        note.textContent = '';
+        note.classList.remove('visible');
+      }
+    }, 3000);
   });
 
-  // Smooth scroll for footer nav links
+  // Smooth scroll for footer nav anchor links
   document.querySelectorAll('.footer-nav a').forEach(link => {
     link.addEventListener('click', function (e) {
       const href = this.getAttribute('href');

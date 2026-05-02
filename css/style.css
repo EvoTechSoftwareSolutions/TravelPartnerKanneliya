@@ -780,7 +780,7 @@ body {
 }
 
 /* Subtle hex grid background decoration */
-.pkg-section::before {
+/* .pkg-section::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -792,7 +792,7 @@ body {
     repeating-linear-gradient(60deg, rgba(78, 205, 196, 0.04) 0px, rgba(78, 205, 196, 0.04) 1px, transparent 1px, transparent 40px),
     repeating-linear-gradient(120deg, rgba(78, 205, 196, 0.04) 0px, rgba(78, 205, 196, 0.04) 1px, transparent 1px, transparent 40px);
   pointer-events: none;
-}
+} */
 
 .pkg-inner {
   max-width: 1280px;
@@ -1175,7 +1175,7 @@ body {
 }
 
 /* Hex grid decoration top-left */
-.why-section::before {
+/* .why-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1187,7 +1187,7 @@ body {
     repeating-linear-gradient(60deg, rgba(78, 205, 196, 0.05) 0px, rgba(78, 205, 196, 0.05) 1px, transparent 1px, transparent 38px),
     repeating-linear-gradient(120deg, rgba(78, 205, 196, 0.05) 0px, rgba(78, 205, 196, 0.05) 1px, transparent 1px, transparent 38px);
   pointer-events: none;
-}
+} */
 
 .why-inner {
   max-width: 1280px;
@@ -1423,7 +1423,6 @@ body {
 .testi-section {
   width: 100%;
   padding: 90px 72px;
-  /* background: linear-gradient(160deg, #071217 0%, #0b1e27 50%, #071217 100%); */
   overflow: hidden;
 }
 
@@ -1499,7 +1498,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  /* pause on hover */
 }
 
 .testi-col:hover .testi-track {
@@ -1545,8 +1543,8 @@ body {
   flex-shrink: 0;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
--webkit-box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
--moz-box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
+  -webkit-box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
+  -moz-box-shadow: 1px -1px 15px -6px rgba(78,205,196,0.75);
 }
 
 .testi-card:hover {
@@ -1564,6 +1562,7 @@ body {
   letter-spacing: 0.05em;
   color: var(--white);
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .testi-card-text {
@@ -1586,53 +1585,60 @@ body {
   }
 }
 
+/* ── Mobile: Horizontal scroll columns ── */
 @media (max-width: 720px) {
   .testi-section {
     padding: 64px 28px;
   }
 
-  /* Horizontal scroll on mobile — left→right & right→left */
   .testi-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(3, auto);
     height: auto;
-    gap: 0;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    gap: 16px;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .testi-col {
-    height: 160px;
+    height: auto;
+    min-height: 180px;
     overflow: hidden;
+    position: relative;
   }
 
   /* Horizontal track */
   .testi-track {
     flex-direction: row;
     width: max-content;
-    gap: 12px;
+    gap: 14px;
+    align-items: stretch;
   }
 
   .testi-card {
-    width: 260px;
+    width: 280px;
     flex-shrink: 0;
+    padding: 20px 18px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   /* Col 1 & 3 — left to right */
   .testi-col-down .testi-track {
-    animation: scrollRight 20s linear infinite;
+    animation: scrollRight 25s linear infinite;
   }
 
   /* Col 2 — right to left */
   .testi-col-up .testi-track {
-    animation: scrollLeft 24s linear infinite;
+    animation: scrollLeft 30s linear infinite;
   }
 
   @keyframes scrollRight {
     0% {
       transform: translateX(0);
     }
-
     100% {
       transform: translateX(-50%);
     }
@@ -1642,7 +1648,6 @@ body {
     0% {
       transform: translateX(-50%);
     }
-
     100% {
       transform: translateX(0);
     }
@@ -1658,12 +1663,17 @@ body {
     font-size: 26px;
   }
 
+  .testi-grid {
+    gap: 12px;
+  }
+
   .testi-col {
-    height: 140px;
+    min-height: 160px;
   }
 
   .testi-card {
-    width: 220px;
+    width: 260px;
     padding: 18px 16px;
+    min-height: 140px;
   }
 }

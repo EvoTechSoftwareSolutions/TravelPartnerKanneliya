@@ -60,57 +60,40 @@
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  const currentPath = window.location.pathname.split('/').pop();
-  const currentHash = window.location.hash.replace('#', '');
+  const currentPath = window.location.pathname.split('/').pop() || 'index.php';
 
   navLinks.forEach(link => {
     const href     = link.getAttribute('href') || '';
-    const linkPage = href.split('/').pop().split('#')[0];
+    const linkPage = href.split('#')[0];
     const linkHash = href.includes('#') ? href.split('#')[1] : null;
 
-    // If URL has a hash, only activate the matching hash link — skip all others
-    if (currentHash) {
-      if (linkHash && linkPage === currentPath && linkHash === currentHash) {
+    const pageMatches = linkPage === currentPath ||
+      (currentPath === '' && linkPage === 'index.php') ||
+      (currentPath === 'index.php' && linkPage === '');
+
+    if (pageMatches && !linkHash) {
+      link.classList.add('active');
+    } else if (pageMatches && linkHash) {
+      if (window.location.hash === '#' + linkHash) {
         link.classList.add('active');
       }
-      return;
-    }
-
-    // Skip links that point to a hash on a different page
-    if (linkHash && linkPage !== '' && linkPage !== currentPath) return;
-
-    const isHome =
-      (currentPath === '' || currentPath === 'home.php') &&
-      (linkPage === 'home.php' || linkPage === '');
-
-    const isOther =
-      linkPage !== '' &&
-      linkPage !== 'home.php' &&
-      currentPath === linkPage &&
-      !linkHash;
-
-    if (isHome || isOther) {
-      link.classList.add('active');
     }
   });
 
-  // ── Scroll-based active (for anchor sections on home page) ───
-  // Disabled when URL has a hash to prevent overriding hash-based active state
-  if (sections.length && navLinks.length && !currentHash) {
+  // ── Scroll-based active (for anchor sections on same page) ───
+  if (sections.length && navLinks.length) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(l => l.classList.remove('active'));
 
-          // Try matching by anchor hash first
           let active = document.querySelector(
-            `.nav-link[href="#${entry.target.id}"]`
+            `.nav-link[href="${currentPath}#${entry.target.id}"]`
           );
 
-          // Fallback: match page-based link for current page
           if (!active) {
             active = document.querySelector(
-              `.nav-link[href="${currentPath}"], .nav-link[href="home.php"]`
+              `.nav-link[href="${currentPath}"]`
             );
           }
 
@@ -122,4 +105,24 @@
     sections.forEach(s => observer.observe(s));
   }
 
+})();
+
+
+// ── Anchor scroll offset fix for fixed header ──
+(function () {
+  const HEADER_HEIGHT = 100;
+
+  function scrollToHash(hash) {
+    if (!hash) return;
+    const target = document.querySelector(hash);
+    if (!target) return;
+    const top = target.getBoundingClientRect().top + window.scrollY - HEADER_HEIGHT;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      setTimeout(() => scrollToHash(window.location.hash), 50);
+    }
+  });
 })();

@@ -1322,7 +1322,7 @@ body {
 .ct--sec01--socialbtn svg {
     width: 18px;
     height: 18px;
-    fill: currentColor;
+    /* fill: currentColor; */
 }
 
 /* ============================================================

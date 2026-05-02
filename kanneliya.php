@@ -30,7 +30,7 @@
 
         <!-- Background image -->
         <div class="banner-bg">
-            <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85"
+            <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=85"
                 alt="Kanneliya Packages" />
         </div>
 
@@ -73,21 +73,21 @@
             </h2>
 
             <p class="kanneliya-article-desc reveal">
-                Kanneliya Forest Reserve is one of Sri Lanka’s most biologically rich and ecologically significant rainforests, offering a truly immersive escape into nature. Surrounded by lush greenery, flowing streams, and diverse wildlife, this nature sanctuary provides a peaceful retreat far from the noise of everyday life. Our goal is to introduce travelers to this hidden gem while preserving its natural beauty for future generations.
+                Kanneliya Forest Reserve is one of Sri Lanka's most biologically rich and ecologically significant rainforests, offering a truly immersive escape into nature. Surrounded by lush greenery, flowing streams, and diverse wildlife, this nature sanctuary provides a peaceful retreat far from the noise of everyday life. Our goal is to introduce travelers to this hidden gem while preserving its natural beauty for future generations.
             </p>
 
         </div>
     </section>
 
     <!-- ================================================
-   ATTRACTION SECTION
+   ATTRACTION SECTION 1 — Natural Bat's Cave (normal layout)
 ================================================ -->
     <section class="attraction-final-section" id="attraction-final">
         <div class="attraction-final-inner">
 
             <div class="attraction-final-grid">
 
-                <!-- Left Column -->
+                <!-- Left Column: text + 2 images -->
                 <div class="attraction-final-left reveal">
 
                     <div class="attraction-final-header">
@@ -101,20 +101,6 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-index="0">
-                            <img src="_resource/img/kanneliya/batCave/1.jpg" alt="Waterfall" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-index="1">
                             <img src="_resource/img/kanneliya/batCave/2.webp" alt="Mountain view" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
@@ -128,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="attraction-final-img" data-index="2">
+                        <div class="attraction-final-img" data-index="1">
                             <img src="_resource/img/kanneliya/batCave/3.jpg" alt="Landscape" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
@@ -145,11 +131,11 @@
                     </div>
                 </div>
 
-                <!-- Right Column -->
+                <!-- Right Column: 3 images -->
                 <div class="attraction-final-right reveal">
 
-                    <div class="attraction-final-img attraction-final-right-tall" data-index="3">
-                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Green hills" loading="lazy" />
+                    <div class="attraction-final-img attraction-final-right-tall" data-index="2">
+                        <img src="_resource/img/kanneliya/batCave/1.jpg" alt="Green hills" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -163,7 +149,7 @@
                         </div>
                     </div>
 
-                    <div class="attraction-final-img attraction-final-right-top" data-index="4">
+                    <div class="attraction-final-img attraction-final-right-top" data-index="3">
                         <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Aerial view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -178,7 +164,7 @@
                         </div>
                     </div>
 
-                    <div class="attraction-final-img attraction-final-right-bottom" data-index="5">
+                    <div class="attraction-final-img attraction-final-right-bottom" data-index="4">
                         <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty hills" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -225,72 +211,17 @@
     </div>
 
     <!-- ================================================
-   ATTRACTION 2 — REVERSED (text left, images right)
+   ATTRACTION 2 — Anagimala Ella Waterfall (reversed layout)
 ================================================ -->
     <section class="attraction-final-section" id="attraction-2">
         <div class="attraction-final-inner">
             <div class="attraction-final-grid attraction-reversed">
 
+                <!-- Left Column: 3 images -->
                 <div class="attraction-final-left reveal">
 
-                    <div class="attraction-final-header">
-                        <span class="attraction-final-numeral">II.</span>
-                        <h2 class="attraction-final-title">Anagimala Ella Waterfall</h2>
-                    </div>
-
-                    <p class="attraction-final-desc">
-                        This is the most accessible waterfall in the <span class="highlight">Kanneliya Reserve</span>, located just about <span class="highlight">2–3 km</span> from the entrance. It is a beautiful cascade that flows over a series of large rocks. The name "Anagimala" has a local folklore connection, telling the story of a young village woman named Anagi who is said to have plunged to her death at this spot. While bathing and climbing are now prohibited by the Forest Department, it remains a popular and easy-to-reach site for visitors. The area around the falls is rich in flora and fauna, including various orchids and butterfly species. The falls are most vibrant during the rainy season, from <span class="highlight">May to June</span>.
-                    </p>
-
-                    <div class="attraction-final-left-images">
-                        <div class="attraction-final-img" data-lb="2" data-index="0">
-                            <img src="_resource/img/kanneliya/anagimala/1.jpg" alt="Anagimala Waterfall" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="2" data-index="1">
-                            <img src="_resource/img/kanneliya/anagimala/2.jpg" alt="Forest view" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="2" data-index="2">
-                            <img src="_resource/img/kanneliya/anagimala/3.jpg" alt="Mountain mist" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="attraction-final-right reveal">
-                    <div class="attraction-final-img attraction-final-right-tall" data-lb="2" data-index="3">
-                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="Valley view" loading="lazy" />
+                    <div class="attraction-final-img attraction-final-right-tall" data-lb="2" data-index="0">
+                        <img src="_resource/img/kanneliya/anagimala/3.jpg" alt="Valley view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -303,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-top" data-lb="2" data-index="4">
+                    <div class="attraction-final-img attraction-final-right-top" data-lb="2" data-index="1">
                         <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty hills" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -317,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="2" data-index="5">
+                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="2" data-index="2">
                         <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80" alt="Waterfall close" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -328,6 +259,50 @@
                                     <line x1="8" y1="11" x2="14" y2="11" />
                                 </svg>
                                 <span>Click to Expand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: text + 2 images -->
+                <div class="attraction-final-right reveal">
+
+                    <div class="attraction-final-header">
+                        <span class="attraction-final-numeral">II.</span>
+                        <h2 class="attraction-final-title">Anagimala Ella Waterfall</h2>
+                    </div>
+
+                    <p class="attraction-final-desc">
+                        This is the most accessible waterfall in the <span class="highlight">Kanneliya Reserve</span>, located just about <span class="highlight">2–3 km</span> from the entrance. It is a beautiful cascade that flows over a series of large rocks. The name "Anagimala" has a local folklore connection, telling the story of a young village woman named Anagi who is said to have plunged to her death at this spot. While bathing and climbing are now prohibited by the Forest Department, it remains a popular and easy-to-reach site for visitors. The area around the falls is rich in flora and fauna, including various orchids and butterfly species. The falls are most vibrant during the rainy season, from <span class="highlight">May to June</span>.
+                    </p>
+
+                    <div class="attraction-final-left-images">
+                        <div class="attraction-final-img" data-lb="2" data-index="3">
+                            <img src="_resource/img/kanneliya/anagimala/1.jpg" alt="Anagimala Waterfall" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-lb="2" data-index="4">
+                            <img src="_resource/img/kanneliya/anagimala/2.jpg" alt="Forest view" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -368,6 +343,7 @@
         <div class="attraction-final-inner">
             <div class="attraction-final-grid">
 
+                <!-- Left Column: text + 2 images -->
                 <div class="attraction-final-left reveal">
 
                     <div class="attraction-final-header">
@@ -381,20 +357,6 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="3" data-index="0">
-                            <img src="_resource/img/kanneliya/tree/1.jpg" alt="Giant Nawada Tree" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="3" data-index="1">
                             <img src="_resource/img/kanneliya/tree/2.webp" alt="Forest canopy" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
@@ -408,7 +370,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="attraction-final-img" data-lb="3" data-index="2">
+                        <div class="attraction-final-img" data-lb="3" data-index="1">
                             <img src="_resource/img/kanneliya/tree/3.webp" alt="Tree observation" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
@@ -425,8 +387,9 @@
                     </div>
                 </div>
 
+                <!-- Right Column: 3 images -->
                 <div class="attraction-final-right reveal">
-                    <div class="attraction-final-img attraction-final-right-tall" data-lb="3" data-index="3">
+                    <div class="attraction-final-img attraction-final-right-tall" data-lb="3" data-index="2">
                         <img src="_resource/img/kanneliya/tree/4.webp" alt="Nawada tree trunk" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -440,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-top" data-lb="3" data-index="4">
+                    <div class="attraction-final-img attraction-final-right-top" data-lb="3" data-index="3">
                         <img src="_resource/img/kanneliya/tree/5.webp" alt="Forest view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -454,7 +417,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="3" data-index="5">
+                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="3" data-index="4">
                         <img src="_resource/img/kanneliya/tree/6.webp" alt="Deep forest" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -505,65 +468,9 @@
         <div class="attraction-final-inner">
             <div class="attraction-final-grid attraction-reversed">
 
+                <!-- Left Column: 3 images -->
                 <div class="attraction-final-left reveal">
-
-                    <div class="attraction-final-header">
-                        <span class="attraction-final-numeral">IV.</span>
-                        <h2 class="attraction-final-title">Narangas Ella Waterfall</h2>
-                    </div>
-
-                    <p class="attraction-final-desc">
-                        Deeper within the forest lies the <span class="highlight">Narangas Ella</span> waterfall, located <span class="highlight">7 K.M</span> from the entrance. To reach it, visitors must traverse more challenging and sometimes slippery trails, including crossing rope bridges. The waterfall drops down a vertical rock face onto several flat ledges before continuing its flow, creating a beautiful sight. Many consider it to be more impressive than <span class="highlight">Anagimala Ella</span>. The trail to Narangas Ella is a fantastic way to experience the dense jungle environment.
-                    </p>
-
-                    <div class="attraction-final-left-images">
-                        <div class="attraction-final-img" data-lb="4" data-index="0">
-                            <img src="_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="4" data-index="1">
-                            <img src="_resource/img/kanneliya/narangas/2.webp" alt="Jungle trail" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="4" data-index="2">
-                            <img src="_resource/img/kanneliya/narangas/3.webp" alt="Rope bridge" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="attraction-final-right reveal">
-                    <div class="attraction-final-img attraction-final-right-tall" data-lb="4" data-index="3">
+                    <div class="attraction-final-img attraction-final-right-tall" data-lb="4" data-index="0">
                         <img src="_resource/img/kanneliya/narangas/4.webp" alt="Waterfall cascade" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -577,7 +484,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-top" data-lb="4" data-index="4">
+                    <div class="attraction-final-img attraction-final-right-top" data-lb="4" data-index="1">
                         <img src="_resource/img/kanneliya/narangas/5.webp" alt="Forest mist" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -591,7 +498,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="4" data-index="5">
+                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="4" data-index="2">
                         <img src="_resource/img/kanneliya/narangas/6.webp" alt="Deep jungle" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -602,6 +509,50 @@
                                     <line x1="8" y1="11" x2="14" y2="11" />
                                 </svg>
                                 <span>Click to Expand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: text + 2 images -->
+                <div class="attraction-final-right reveal">
+
+                    <div class="attraction-final-header">
+                        <span class="attraction-final-numeral">IV.</span>
+                        <h2 class="attraction-final-title">Narangas Ella Waterfall</h2>
+                    </div>
+
+                    <p class="attraction-final-desc">
+                        Deeper within the forest lies the <span class="highlight">Narangas Ella</span> waterfall, located <span class="highlight">7 K.M</span> from the entrance. To reach it, visitors must traverse more challenging and sometimes slippery trails, including crossing rope bridges. The waterfall drops down a vertical rock face onto several flat ledges before continuing its flow, creating a beautiful sight. Many consider it to be more impressive than <span class="highlight">Anagimala Ella</span>. The trail to Narangas Ella is a fantastic way to experience the dense jungle environment.
+                    </p>
+
+                    <div class="attraction-final-left-images">
+                        <div class="attraction-final-img" data-lb="4" data-index="3">
+                            <img src="_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-lb="4" data-index="4">
+                            <img src="_resource/img/kanneliya/narangas/2.webp" alt="Jungle trail" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -642,6 +593,7 @@
         <div class="attraction-final-inner">
             <div class="attraction-final-grid">
 
+                <!-- Left Column: text + 2 images -->
                 <div class="attraction-final-left reveal">
 
                     <div class="attraction-final-header">
@@ -655,20 +607,6 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="5" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Kuda Kabbale Peak" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="5" data-index="1">
                             <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain panorama" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
@@ -682,7 +620,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="attraction-final-img" data-lb="5" data-index="2">
+                        <div class="attraction-final-img" data-lb="5" data-index="1">
                             <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80" alt="KDN forest view" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
@@ -699,8 +637,9 @@
                     </div>
                 </div>
 
+                <!-- Right Column: 3 images -->
                 <div class="attraction-final-right reveal">
-                    <div class="attraction-final-img attraction-final-right-tall" data-lb="5" data-index="3">
+                    <div class="attraction-final-img attraction-final-right-tall" data-lb="5" data-index="2">
                         <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=800&q=80" alt="Misty peak" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -714,7 +653,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-top" data-lb="5" data-index="4">
+                    <div class="attraction-final-img attraction-final-right-top" data-lb="5" data-index="3">
                         <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80" alt="Forest trail" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -728,8 +667,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="5" data-index="5">
-                        <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc3c95?w=800&q=80" alt="Mountain hike" loading="lazy" />
+                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="5" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Mountain hike" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -779,65 +718,9 @@
         <div class="attraction-final-inner">
             <div class="attraction-final-grid attraction-reversed">
 
+                <!-- Left Column: 3 images -->
                 <div class="attraction-final-left reveal">
-
-                    <div class="attraction-final-header">
-                        <span class="attraction-final-numeral">VI.</span>
-                        <h2 class="attraction-final-title">Maha Kabbale Peak</h2>
-                    </div>
-
-                    <p class="attraction-final-desc">
-                        Continuing further up from Kuda Kabbale leads to the main summit of <span class="highlight">Maha Kabbale</span> (Greater Kabbale), located <span class="highlight">13 K.M</span> from the entrance. This trail is known for its ruggedness and scenic beauty. The full journey to the top and back is about <span class="highlight">12 km</span> and offers an immersive experience of the rainforest's biodiversity, including endemic species of snails and snakes. At the top of <span class="highlight">Kabbale Hill</span>, you can enjoy a panoramic view of the entire area — a truly rewarding finish to one of the most adventurous trails in the Kanneliya reserve.
-                    </p>
-
-                    <div class="attraction-final-left-images">
-                        <div class="attraction-final-img" data-lb="6" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Maha Kabbale Peak" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="6" data-index="1">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Summit panorama" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-final-img" data-lb="6" data-index="2">
-                            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80" alt="Rainforest biodiversity" loading="lazy" />
-                            <div class="attraction-final-img-overlay">
-                                <div class="attraction-final-expand-hint">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="11" cy="11" r="8" />
-                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                                        <line x1="11" y1="8" x2="11" y2="14" />
-                                        <line x1="8" y1="11" x2="14" y2="11" />
-                                    </svg>
-                                    <span>Click to Expand</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="attraction-final-right reveal">
-                    <div class="attraction-final-img attraction-final-right-tall" data-lb="6" data-index="3">
+                    <div class="attraction-final-img attraction-final-right-tall" data-lb="6" data-index="0">
                         <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80" alt="Peak view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -851,7 +734,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-top" data-lb="6" data-index="4">
+                    <div class="attraction-final-img attraction-final-right-top" data-lb="6" data-index="1">
                         <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Rugged trail" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -865,7 +748,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="6" data-index="5">
+                    <div class="attraction-final-img attraction-final-right-bottom" data-lb="6" data-index="2">
                         <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80" alt="Forest canopy top" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
@@ -876,6 +759,50 @@
                                     <line x1="8" y1="11" x2="14" y2="11" />
                                 </svg>
                                 <span>Click to Expand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: text + 2 images -->
+                <div class="attraction-final-right reveal">
+
+                    <div class="attraction-final-header">
+                        <span class="attraction-final-numeral">VI.</span>
+                        <h2 class="attraction-final-title">Maha Kabbale Peak</h2>
+                    </div>
+
+                    <p class="attraction-final-desc">
+                        Continuing further up from Kuda Kabbale leads to the main summit of <span class="highlight">Maha Kabbale</span> (Greater Kabbale), located <span class="highlight">13 K.M</span> from the entrance. This trail is known for its ruggedness and scenic beauty. The full journey to the top and back is about <span class="highlight">12 km</span> and offers an immersive experience of the rainforest's biodiversity, including endemic species of snails and snakes. At the top of <span class="highlight">Kabbale Hill</span>, you can enjoy a panoramic view of the entire area — a truly rewarding finish to one of the most adventurous trails in the Kanneliya reserve.
+                    </p>
+
+                    <div class="attraction-final-left-images">
+                        <div class="attraction-final-img" data-lb="6" data-index="3">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" alt="Maha Kabbale Peak" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attraction-final-img" data-lb="6" data-index="4">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Summit panorama" loading="lazy" />
+                            <div class="attraction-final-img-overlay">
+                                <div class="attraction-final-expand-hint">
+                                    <svg viewBox="0 0 24 24">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                        <line x1="11" y1="8" x2="11" y2="14" />
+                                        <line x1="8" y1="11" x2="14" y2="11" />
+                                    </svg>
+                                    <span>Click to Expand</span>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -33,7 +33,7 @@
 
     <div class="hero-slider" id="heroSlider">
       <div class="slide active" data-index="0">
-        <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85" alt="Kanneliya Forest 1" class="slide-img" />
+        <img src="_resource/img/home/hero/Kanneliya-1-1 1.png" alt="Kanneliya Forest 1" class="slide-img" />
       </div>
       <div class="slide" data-index="1">
         <img src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85" alt="Kanneliya Forest 2" class="slide-img" />
@@ -51,7 +51,7 @@
     <div class="hero-social">
       <span class="social-label">Follow Us</span>
       <div class="social-icons">
-        <a href="#" class="social-link" aria-label="Facebook">
+        <a href="https://www.facebook.com/share/1Bs3cBNbkj/?mibextid=wwXIfr" class="social-link" aria-label="Facebook" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
           </svg>
@@ -63,7 +63,7 @@
             <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
           </svg>
         </a>
-        <a href="#" class="social-link" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@travelpartnerkanneliya?_r=1&_t=ZS-92JbmMsXzKm" class="social-link" aria-label="TikTok" target="_blank">
           <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.7a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z" />
           </svg>
@@ -133,7 +133,7 @@
             <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain fog" />
           </div>
 
-          <button class="about-explore-btn">Explore More</button>
+          <button class="about-explore-btn" onclick="window.location.href='about.php#about'">Explore More</button>
 
         </div>
       </div>
@@ -526,29 +526,29 @@
         <div class="testi-col testi-col-down">
           <div class="testi-track">
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Ronny Engebretsen</h4>
+              <p class="testi-card-text">Amazing place, top service and wonderful people🤩 I will recomend this atraction👌</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Niels Onrust</h4>
+              <p class="testi-card-text">We had an amazing trek through the rainforest with the best guides! We saw beautiful nature and had amazing mountain views and waterfalls all around. Had a lot of good chats, fun and learnt a lot!</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Laura Hoffmann</h4>
+              <p class="testi-card-text">Kanneliya blew me away. The biodiversity here is unlike anything I have experienced in Southeast Asia. Our guide pointed out rare bird species and medicinal plants I never would have noticed on my own. Absolutely worth every moment.</p>
             </div>
             <!-- Duplicate for seamless loop -->
-            <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             <div class="testi-card">
+              <h4 class="testi-card-title">Ronny Engebretsen</h4>
+              <p class="testi-card-text">Amazing place, top service and wonderful people🤩 I will recomend this atraction👌</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Niels Onrust</h4>
+              <p class="testi-card-text">We had an amazing trek through the rainforest with the best guides! We saw beautiful nature and had amazing mountain views and waterfalls all around. Had a lot of good chats, fun and learnt a lot!</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Laura Hoffmann</h4>
+              <p class="testi-card-text">Kanneliya blew me away. The biodiversity here is unlike anything I have experienced in Southeast Asia. Our guide pointed out rare bird species and medicinal plants I never would have noticed on my own. Absolutely worth every moment.</p>
             </div>
           </div>
         </div>
@@ -557,64 +557,64 @@
         <div class="testi-col testi-col-up">
           <div class="testi-track">
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Priya Nair</h4>
+              <p class="testi-card-text">As someone who loves nature but rarely gets off the beaten track, this experience was transformative. The canopy walk and the sound of the forest at dawn are things I will carry with me forever. The team made us feel completely safe throughout.</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">James Whitfield</h4>
+              <p class="testi-card-text">We booked a private trek for our anniversary and it was the best decision of our trip. The waterfall at the end of the trail was breathtaking, and having a knowledgeable guide made the whole experience so much richer. Highly recommend!</p>
             </div>
-            <div class="testi-card testi-card-partial">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur</p>
+            <div class="testi-card">
+              <h4 class="testi-card-title">Amelia Schroeder</h4>
+              <p class="testi-card-text">Fantastic experience from start to finish. Booking was easy, the pickup was on time, and the trail itself is stunning.</p>
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Priya Nair</h4>
+              <p class="testi-card-text">As someone who loves nature but rarely gets off the beaten track, this experience was transformative. The canopy walk and the sound of the forest at dawn are things I will carry with me forever. The team made us feel completely safe throughout.</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">James Whitfield</h4>
+              <p class="testi-card-text">We booked a private trek for our anniversary and it was the best decision of our trip. The waterfall at the end of the trail was breathtaking, and having a knowledgeable guide made the whole experience so much richer. Highly recommend!</p>
             </div>
-            <div class="testi-card testi-card-partial">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur</p>
+            <div class="testi-card">
+              <h4 class="testi-card-title">Amelia Schroeder</h4>
+              <p class="testi-card-text">Fantastic experience from start to finish. Booking was easy, the pickup was on time, and the trail itself is stunning.</p>
             </div>
           </div>
         </div>
-
+ 
         <!-- Column 3 — scrolls top→bottom -->
         <div class="testi-col testi-col-down">
           <div class="testi-track">
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Tomás Ferreira</h4>
+              <p class="testi-card-text">I visited Kanneliya as part of a two-week tour of Sri Lanka and it was the highlight without a doubt. The forest feels ancient and untouched. Our guide shared stories about the ecosystem that completely changed how I see nature conservation. A truly special place.</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Sophie Marchand</h4>
+              <p class="testi-card-text">The morning bird walk was magical. We spotted over a dozen endemic species within the first hour. The guides know every call and rustle in that forest. It felt like having a secret window into a world most people never get to see.</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Kenji Watanabe</h4>
+              <p class="testi-card-text">Perfect for photographers. The light through the canopy in the early morning is incredible, and there are so many interesting subjects everywhere you look. The team was patient with our slow pace and always pointed us towards the best spots.</p>
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Tomás Ferreira</h4>
+              <p class="testi-card-text">I visited Kanneliya as part of a two-week tour of Sri Lanka and it was the highlight without a doubt. The forest feels ancient and untouched. Our guide shared stories about the ecosystem that completely changed how I see nature conservation. A truly special place.</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Sophie Marchand</h4>
+              <p class="testi-card-text">The morning bird walk was magical. We spotted over a dozen endemic species within the first hour. The guides know every call and rustle in that forest. It felt like having a secret window into a world most people never get to see.</p>
             </div>
             <div class="testi-card">
-              <h4 class="testi-card-title">TOPIC OR SOMETHING</h4>
-              <p class="testi-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4 class="testi-card-title">Kenji Watanabe</h4>
+              <p class="testi-card-text">Perfect for photographers. The light through the canopy in the early morning is incredible, and there are so many interesting subjects everywhere you look. The team was patient with our slow pace and always pointed us towards the best spots.</p>
             </div>
           </div>
         </div>
-
+ 
       </div><!-- /testi-grid -->
     </div>
   </section>

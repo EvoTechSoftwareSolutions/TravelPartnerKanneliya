@@ -30,7 +30,7 @@
 
         <!-- Background image -->
         <div class="banner-bg">
-            <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=85"
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=85"
                 alt="Kanneliya Packages" />
         </div>
 

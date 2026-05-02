@@ -30,7 +30,6 @@ html {
 }
 
 body {
-  /* background: var(--bg-dark); */
   color: var(--white);
   font-family: var(--font-sans);
   overflow-x: hidden;
@@ -388,24 +387,35 @@ body {
     z-index: 1;
 }
 
+/* ── Main grid: two equal columns, fixed height so both sides always balance ── */
 .attraction-final-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
+    grid-template-rows: 470px;   /* total row height — both columns are exactly this tall */
+    gap: 12px;
+    align-items: stretch;
 }
 
+/* ============================================================
+   NORMAL LAYOUT (sections 1, 3, 5)
+   Left  = flex column: header + desc + 2-image row (240px fixed)
+   Right = 3-image grid filling the full 560px height
+   ============================================================ */
+
+/* ── Left column ── */
 .attraction-final-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .attraction-final-header {
     display: flex;
     align-items: baseline;
     gap: 10px;
-    margin-bottom: 4px;
+    flex-shrink: 0;
 }
 
 .attraction-final-numeral {
@@ -433,7 +443,7 @@ body {
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.85;
     max-width: 95%;
-    margin-bottom: 8px;
+    flex-shrink: 0;
 }
 
 .attraction-final-desc .highlight {
@@ -441,36 +451,26 @@ body {
     font-weight: 400;
 }
 
+/* 2-image row — fixed 240px, sits at the bottom of the flex column */
 .attraction-final-left-images {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 220px 110px;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
+    height: 240px;
+    flex-shrink: 0;
+    margin-top: auto;   /* pushes images to the bottom */
 }
 
-.attraction-final-left-images .attraction-final-img:nth-child(1) {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-}
-
-.attraction-final-left-images .attraction-final-img:nth-child(2) {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.attraction-final-left-images .attraction-final-img:nth-child(3) {
-    grid-column: 2;
-    grid-row: 2;
-}
-
+/* ── Right column: 3-image grid filling the full column height ── */
 .attraction-final-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 280px 280px;
+    grid-template-rows: 1fr 1fr;   /* two equal rows, both fill half of 560px = 275px each */
     gap: 10px;
-    align-self: start;
+    height: 100%;
 }
 
+/* Tall image spans both rows on the right side of the sub-grid */
 .attraction-final-right-tall {
     grid-column: 2;
     grid-row: 1 / span 2;
@@ -587,13 +587,60 @@ body {
     text-transform: uppercase;
 }
 
-/* ── Reversed layout (section 2) ── */
-.attraction-reversed .attraction-final-left  { order: 2; }
-.attraction-reversed .attraction-final-right { order: 1; }
+/* ============================================================
+   REVERSED LAYOUT (sections 2, 4, 6)
+   Visually swap the two columns — text+2img goes right, 3-img goes left.
+   Internal image arrangement inside the 3-image grid stays IDENTICAL.
+   ============================================================ */
 
-@media (max-width: 1100px) {
-    .attraction-reversed .attraction-final-left  { order: unset; }
-    .attraction-reversed .attraction-final-right { order: unset; }
+/* Swap visual order only */
+.attraction-reversed .attraction-final-left { order: 1; }
+.attraction-reversed .attraction-final-right { order: 2; }
+
+/* Left becomes the 3-image grid — identical rules to .attraction-final-right */
+.attraction-reversed .attraction-final-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+    flex: unset;
+}
+
+/* Tall image stays on column 2 — same as normal layout */
+.attraction-reversed .attraction-final-left .attraction-final-right-tall {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.attraction-reversed .attraction-final-left .attraction-final-right-top {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.attraction-reversed .attraction-final-left .attraction-final-right-bottom {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* Right becomes the flex text + 2-image column */
+.attraction-reversed .attraction-final-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+}
+
+/* 2-image row inside reversed right column — same fixed height, pushed to bottom */
+.attraction-reversed .attraction-final-right .attraction-final-left-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 240px;
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 /* ── Responsive ── */
@@ -602,21 +649,36 @@ body {
         padding: 80px 48px 100px;
     }
 
+    /* Stack columns vertically */
     .attraction-final-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         gap: 32px;
     }
 
-    .attraction-final-left-images {
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: 200px 100px;
+    /* Restore natural order */
+    .attraction-reversed .attraction-final-left  { order: unset; }
+    .attraction-reversed .attraction-final-right { order: unset; }
+
+    /* Left/right columns lose fixed height when stacked */
+    .attraction-final-left,
+    .attraction-final-right,
+    .attraction-reversed .attraction-final-left,
+    .attraction-reversed .attraction-final-right {
+        height: auto;
     }
 
-    .attraction-final-right {
-        max-width: 100%;
-        grid-template-columns: 1fr 1fr;
+    /* 3-image grids get explicit pixel rows */
+    .attraction-final-right,
+    .attraction-reversed .attraction-final-left {
         grid-template-rows: 220px 220px;
-        align-self: start;
+    }
+
+    /* 2-image rows fixed height */
+    .attraction-final-left-images,
+    .attraction-reversed .attraction-final-right .attraction-final-left-images {
+        height: 220px;
+        margin-top: 0;
     }
 }
 
@@ -625,13 +687,14 @@ body {
         padding: 60px 32px 80px;
     }
 
-    .attraction-final-left-images {
-        grid-template-columns: 1.5fr 1fr;
-        grid-template-rows: 180px 90px;
+    .attraction-final-right,
+    .attraction-reversed .attraction-final-left {
+        grid-template-rows: 180px 180px;
     }
 
-    .attraction-final-right {
-        grid-template-rows: 180px 180px;
+    .attraction-final-left-images,
+    .attraction-reversed .attraction-final-right .attraction-final-left-images {
+        height: 180px;
     }
 }
 
@@ -640,59 +703,24 @@ body {
         padding: 50px 16px 70px;
     }
 
-    .attraction-final-numeral {
-        font-size: 24px;
-    }
-
-    .attraction-final-title {
-        font-size: 22px;
-    }
+    .attraction-final-numeral { font-size: 24px; }
+    .attraction-final-title   { font-size: 22px; }
 
     .attraction-final-desc {
         font-size: 12px;
         line-height: 1.75;
     }
 
-    .attraction-final-left-images {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 120px;
+    .attraction-final-right,
+    .attraction-reversed .attraction-final-left {
+        grid-template-rows: 150px 150px;
         gap: 8px;
     }
 
-    .attraction-final-left-images .attraction-final-img:nth-child(1) {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-    }
-
-    .attraction-final-left-images .attraction-final-img:nth-child(2) {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .attraction-final-left-images .attraction-final-img:nth-child(3) {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .attraction-final-right {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 120px 120px;
+    .attraction-final-left-images,
+    .attraction-reversed .attraction-final-right .attraction-final-left-images {
+        height: 150px;
         gap: 8px;
-    }
-
-    .attraction-final-right-tall {
-        grid-column: 2 !important;
-        grid-row: 1 / span 2 !important;
-    }
-
-    .attraction-final-right-top {
-        grid-column: 1 !important;
-        grid-row: 1 !important;
-    }
-
-    .attraction-final-right-bottom {
-        grid-column: 1 !important;
-        grid-row: 2 !important;
     }
 }
 
@@ -716,9 +744,6 @@ body {
     transform: translateY(-50%);
     width: 100%;
     height: 60%;
-    /* background:
-        linear-gradient(90deg, transparent 0%, rgba(78, 205, 196, 0.03) 20%, transparent 40%),
-        linear-gradient(90deg, transparent 60%, rgba(78, 205, 196, 0.03) 80%, transparent 100%); */
     pointer-events: none;
 }
 
@@ -753,17 +778,17 @@ body {
     gap: 12px;
 }
 
-.destinations-grid .destination-card:nth-child(1) { grid-column: 1; grid-row: 1; }
-.destinations-grid .destination-card:nth-child(2) { grid-column: 2; grid-row: 1; }
-.destinations-grid .destination-card:nth-child(3) { grid-column: 3; grid-row: 1; }
-.destinations-grid .destination-card:nth-child(4) { grid-column: 4; grid-row: 1; }
-.destinations-grid .destination-card:nth-child(5) { grid-column: 1; grid-row: 2; }
-.destinations-grid .destination-card:nth-child(6) { grid-column: 2; grid-row: 2; }
-.destinations-grid .destination-card:nth-child(7) { grid-column: 3 / span 2; grid-row: 2; }
-.destinations-grid .destination-card:nth-child(8) { grid-column: 1; grid-row: 3; }
-.destinations-grid .destination-card:nth-child(9) { grid-column: 2; grid-row: 3; }
-.destinations-grid .destination-card:nth-child(10) { grid-column: 3; grid-row: 3; }
-.destinations-grid .destination-card:nth-child(11) { grid-column: 4; grid-row: 3; }
+.destinations-grid .destination-card:nth-child(1)  { grid-column: 1;          grid-row: 1; }
+.destinations-grid .destination-card:nth-child(2)  { grid-column: 2;          grid-row: 1; }
+.destinations-grid .destination-card:nth-child(3)  { grid-column: 3;          grid-row: 1; }
+.destinations-grid .destination-card:nth-child(4)  { grid-column: 4;          grid-row: 1; }
+.destinations-grid .destination-card:nth-child(5)  { grid-column: 1;          grid-row: 2; }
+.destinations-grid .destination-card:nth-child(6)  { grid-column: 2;          grid-row: 2; }
+.destinations-grid .destination-card:nth-child(7)  { grid-column: 3 / span 2; grid-row: 2; }
+.destinations-grid .destination-card:nth-child(8)  { grid-column: 1;          grid-row: 3; }
+.destinations-grid .destination-card:nth-child(9)  { grid-column: 2;          grid-row: 3; }
+.destinations-grid .destination-card:nth-child(10) { grid-column: 3;          grid-row: 3; }
+.destinations-grid .destination-card:nth-child(11) { grid-column: 4;          grid-row: 3; }
 
 /* ── Destination Card ── */
 .destination-card {
@@ -841,7 +866,7 @@ body {
     opacity: 1;
 }
 
-/* ── Expand hint — appears above card name on hover ── */
+/* ── Expand hint ── */
 .destination-card-hint {
     position: absolute;
     bottom: 42px;
@@ -903,16 +928,16 @@ body {
         gap: 10px;
     }
 
-    .destinations-grid .destination-card:nth-child(1) { grid-column: 1 / span 2; grid-row: 1; }
-    .destinations-grid .destination-card:nth-child(2) { grid-column: 3; grid-row: 1; }
-    .destinations-grid .destination-card:nth-child(3) { grid-column: 1; grid-row: 2; }
-    .destinations-grid .destination-card:nth-child(4) { grid-column: 2; grid-row: 2; }
-    .destinations-grid .destination-card:nth-child(5) { grid-column: 3; grid-row: 2; }
-    .destinations-grid .destination-card:nth-child(6) { grid-column: 1; grid-row: 3; }
-    .destinations-grid .destination-card:nth-child(7) { grid-column: 2 / span 2; grid-row: 3; }
-    .destinations-grid .destination-card:nth-child(8) { grid-column: 1; grid-row: 4; }
-    .destinations-grid .destination-card:nth-child(9) { grid-column: 2; grid-row: 4; }
-    .destinations-grid .destination-card:nth-child(10) { grid-column: 3; grid-row: 4; }
+    .destinations-grid .destination-card:nth-child(1)  { grid-column: 1 / span 2; grid-row: 1; }
+    .destinations-grid .destination-card:nth-child(2)  { grid-column: 3;          grid-row: 1; }
+    .destinations-grid .destination-card:nth-child(3)  { grid-column: 1;          grid-row: 2; }
+    .destinations-grid .destination-card:nth-child(4)  { grid-column: 2;          grid-row: 2; }
+    .destinations-grid .destination-card:nth-child(5)  { grid-column: 3;          grid-row: 2; }
+    .destinations-grid .destination-card:nth-child(6)  { grid-column: 1;          grid-row: 3; }
+    .destinations-grid .destination-card:nth-child(7)  { grid-column: 2 / span 2; grid-row: 3; }
+    .destinations-grid .destination-card:nth-child(8)  { grid-column: 1;          grid-row: 4; }
+    .destinations-grid .destination-card:nth-child(9)  { grid-column: 2;          grid-row: 4; }
+    .destinations-grid .destination-card:nth-child(10) { grid-column: 3;          grid-row: 4; }
     .destinations-grid .destination-card:nth-child(11) { grid-column: 1 / span 3; grid-row: 5; }
 }
 
@@ -930,7 +955,6 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 180px);
     }
-
 }
 
 @media (max-width: 700px) {
@@ -945,21 +969,21 @@ body {
     }
 
     .destinations-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-auto-rows: 200px;
         gap: 8px;
     }
 
-     .destinations-grid .destination-card:nth-child(1) { grid-column: 1 / span 2; grid-row: 1; }
-    .destinations-grid .destination-card:nth-child(2) { grid-column: 1; grid-row: 2; }
-    .destinations-grid .destination-card:nth-child(3) { grid-column: 2; grid-row: 2; }
-    .destinations-grid .destination-card:nth-child(4) { grid-column: 1; grid-row: 3; }
-    .destinations-grid .destination-card:nth-child(5) { grid-column: 2; grid-row: 3; }
-    .destinations-grid .destination-card:nth-child(6) { grid-column: 1 / span 2; grid-row: 4; }
-    .destinations-grid .destination-card:nth-child(7) { grid-column: 1; grid-row: 5; }
-    .destinations-grid .destination-card:nth-child(8) { grid-column: 2; grid-row: 5; }
-    .destinations-grid .destination-card:nth-child(9) { grid-column: 1; grid-row: 6; }
-    .destinations-grid .destination-card:nth-child(10) { grid-column: 2; grid-row: 6; }
+    .destinations-grid .destination-card:nth-child(1)  { grid-column: 1 / span 2; grid-row: 1; }
+    .destinations-grid .destination-card:nth-child(2)  { grid-column: 1;          grid-row: 2; }
+    .destinations-grid .destination-card:nth-child(3)  { grid-column: 2;          grid-row: 2; }
+    .destinations-grid .destination-card:nth-child(4)  { grid-column: 1;          grid-row: 3; }
+    .destinations-grid .destination-card:nth-child(5)  { grid-column: 2;          grid-row: 3; }
+    .destinations-grid .destination-card:nth-child(6)  { grid-column: 1 / span 2; grid-row: 4; }
+    .destinations-grid .destination-card:nth-child(7)  { grid-column: 1;          grid-row: 5; }
+    .destinations-grid .destination-card:nth-child(8)  { grid-column: 2;          grid-row: 5; }
+    .destinations-grid .destination-card:nth-child(9)  { grid-column: 1;          grid-row: 6; }
+    .destinations-grid .destination-card:nth-child(10) { grid-column: 2;          grid-row: 6; }
     .destinations-grid .destination-card:nth-child(11) { grid-column: 1 / span 2; grid-row: 7; }
 
     .destination-card-name {
@@ -1006,7 +1030,7 @@ body {
 
 
 /* ============================================================
-   LIGHTBOX — Matches index.php dest-lightbox style
+   LIGHTBOX
    ============================================================ */
 
 .kb-lightbox {
@@ -1119,22 +1143,12 @@ body {
   fill: none;
 }
 
-.kb-lb-prev {
-  left: -60px;
-}
+.kb-lb-prev { left: -60px; }
+.kb-lb-next { right: -60px; }
 
-.kb-lb-next {
-  right: -60px;
-}
-
-/* ── Lightbox Responsive ── */
 @media (max-width: 1050px) {
-  .kb-lb-prev {
-    left: -10px;
-  }
-  .kb-lb-next {
-    right: -10px;
-  }
+  .kb-lb-prev { left: -10px; }
+  .kb-lb-next { right: -10px; }
 }
 
 @media (max-width: 600px) {

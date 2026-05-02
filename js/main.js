@@ -48,10 +48,19 @@ function showNext() {
 // });
 
 //redirect to page:
+const destMap = {
+  "Natural Bat's Cave":       'kanneliya.php#attraction-final',
+  'Anagimala Ella Waterfall': 'kanneliya.php#attraction-2',
+  'Giant Nawada Tree':        'kanneliya.php#attraction-3',
+  'Kuda Kabbale Peak':        'kanneliya.php#attraction-5',
+  'Narangas Ella Waterfall':  'kanneliya.php#attraction-4',
+  'Maha Kabbale Peak':        'kanneliya.php#attraction-6',
+};
+
 cards.forEach((card) => {
   card.addEventListener('click', () => {
-    const target = card.getAttribute('window.location');
-    if (target) window.location.href = target;
+    const name = card.dataset.name;
+    if (destMap[name]) window.location.href = destMap[name];
   });
 });
 
