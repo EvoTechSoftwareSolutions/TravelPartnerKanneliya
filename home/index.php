@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travel Partner Kanneliya</title>
 
-  <link rel="icon" href="_resource/img/logo.png">
+  <link rel="icon" href="/_resource/img/logo.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="/home/style.css">
+  <link rel="stylesheet" href="/header/header.css">
+  <link rel="stylesheet" href="/home/hero.css">
+  <link rel="stylesheet" href="/footer/footer.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
   <!-- ================================================
        HEADER
   ================================================ -->
-  <?php include 'includes/header.php'; ?>
+  <?php include '../header/header.php'; ?>
 
   <!-- ================================================
        SECTION 01 — HERO
@@ -33,7 +33,7 @@
 
     <div class="hero-slider" id="heroSlider">
       <div class="slide active" data-index="0">
-        <img src="_resource/img/home/hero/Kanneliya-1-1 1.png" alt="Kanneliya Forest 1" class="slide-img" />
+        <img src="/_resource/img/home/hero/Kanneliya-1-1 1.png" alt="Kanneliya Forest 1" class="slide-img" />
       </div>
       <div class="slide" data-index="1">
         <img src="https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1920&q=85" alt="Kanneliya Forest 2" class="slide-img" />
@@ -133,7 +133,7 @@
             <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Mountain fog" />
           </div>
 
-          <button class="about-explore-btn" onclick="window.location.href='about.php#about'">Explore More</button>
+          <button class="about-explore-btn" onclick="window.location.href='/about#about'">Explore More</button>
 
         </div>
       </div>
@@ -172,16 +172,16 @@
         <!-- Col 1 — spans row 1+2 -->
         <div class="dest-card dest-a reveal d1"
           data-name="Natural Bat's Cave"
-          data-src="_resource/img/kanneliya/batCave/1.jpg">
-          <img src="_resource/img/kanneliya/batCave/1.jpg" alt="Natural Bat's Cave" />
+          data-src="/_resource/img/kanneliya/batCave/1.jpg">
+          <img src="/_resource/img/kanneliya/batCave/1.jpg" alt="Natural Bat's Cave" />
           <div class="dest-card-label">Natural Bat's Cave</div>
         </div>
 
         <!-- Col 2 — spans row 1+2 -->
         <div class="dest-card dest-b reveal d2"
           data-name="Anagimala Ella Waterfall"
-          data-src="_resource/img/kanneliya/anagimala/3.jpg">
-          <img src="_resource/img/kanneliya/anagimala/3.jpg" alt="Anagimala Ella Waterfallm" />
+          data-src="/_resource/img/kanneliya/anagimala/3.jpg">
+          <img src="/_resource/img/kanneliya/anagimala/3.jpg" alt="Anagimala Ella Waterfallm" />
           <div class="dest-card-label">Anagimala Ella Waterfall</div>
         </div>
 
@@ -197,8 +197,8 @@
         <!-- Col 3 row 2 — image-c -->
         <div class="dest-card dest-c reveal d3"
           data-name="Giant Nawada Tree"
-          data-src="_resource/img/kanneliya/tree/3.webp">
-          <img src="_resource/img/kanneliya/tree/3.webp" alt="Giant Nawada Tree" />
+          data-src="/_resource/img/kanneliya/tree/3.webp">
+          <img src="/_resource/img/kanneliya/tree/3.webp" alt="Giant Nawada Tree" />
           <div class="dest-card-label">Giant Nawada Tree</div>
         </div>
 
@@ -213,8 +213,8 @@
         <!-- Bottom row — sm | big | sm | sm -->
         <div class="dest-card dest-e reveal d2"
           data-name="Narangas Ella Waterfall"
-          data-src="_resource/img/kanneliya/narangas/1.webp">
-          <img src="_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" />
+          data-src="/_resource/img/kanneliya/narangas/1.webp">
+          <img src="/_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" />
           <div class="dest-card-label">Narangas Ella Waterfall</div>
         </div>
 
@@ -457,7 +457,7 @@
 
         <!-- Card 1 — active by default (large) -->
         <div class="why-card why-active" data-index="0">
-          <img src="_resource/img/home/why/y1.jpg" alt="Kanneliya Waterfall" />
+          <img src="/_resource/img/home/why/y1.jpg" alt="Kanneliya Waterfall" />
           <div class="why-card-content">
             <h3 class="why-card-title">Unforgettable Rainforest Adventures</h3>
             <p class="why-card-text">Experience the magic of Kanneliya through expertly guided tours, hidden waterfalls, and breathtaking जंगल trails that bring you closer to nature.</p>
@@ -466,7 +466,7 @@
 
         <!-- Card 2 -->
         <div class="why-card" data-index="1">
-          <img src="_resource/img/home/why/y2.jpg" alt="Forest Path" />
+          <img src="/_resource/img/home/why/y2.jpg" alt="Forest Path" />
           <div class="why-card-content">
             <h3 class="why-card-title">Expert Local Guides</h3>
             <p class="why-card-text">Our knowledgeable guides ensure safe, insightful, and enriching journeys through the rainforest.</p>
@@ -475,7 +475,7 @@
 
         <!-- Card 3 -->
         <div class="why-card" data-index="2">
-          <img src="_resource/img/home/why/y3.jpg" alt="Mountain View" />
+          <img src="/_resource/img/home/why/y3.jpg" alt="Mountain View" />
           <div class="why-card-content">
             <h3 class="why-card-title">Eco-Friendly Travel</h3>
             <p class="why-card-text">We promote sustainable tourism that protects nature while supporting local communities.</p>
@@ -484,7 +484,7 @@
 
         <!-- Card 4 -->
         <div class="why-card" data-index="3">
-          <img src="_resource/img/home/why/y4.jpg" alt="Sky & Forest" />
+          <img src="/_resource/img/home/why/y4.jpg" alt="Sky & Forest" />
           <div class="why-card-content">
             <h3 class="why-card-title">Customized Experiences</h3>
             <p class="why-card-text">Enjoy flexible tour packages tailored to your interests, time, and comfort.</p>
@@ -492,7 +492,7 @@
         </div>
 
         <div class="why-card" data-index="4">
-          <img src="_resource/img/home/why/y5.jpg" alt="Sky & Forest" />
+          <img src="/_resource/img/home/why/y5.jpg" alt="Sky & Forest" />
           <div class="why-card-content">
             <h3 class="why-card-title">Breathtaking Locations</h3>
             <p class="why-card-text">Explore waterfalls, wildlife, and scenic viewpoints unique to Kanneliya.</p>
@@ -622,13 +622,13 @@
   <!-- ================================================
        FOOTER
   ================================================ -->
-  <?php include 'includes/footer.php'; ?>
+  <?php include '../footer/footer.php'; ?>
 
   <!-- Scripts -->
-  <script src="js/header.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/hero.js"></script>
-  <script src="js/footer.js"></script>
+  <script src="/header/header.js"></script>
+  <script src="/home/main.js"></script>
+  <script src="/home/hero.js"></script>
+  <script src="/footer/footer.js"></script>
 
 </body>
 

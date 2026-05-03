@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Partner Kanneliya</title>
 
-    <link rel="icon" href="_resource/img/logo.png">
+    <link rel="icon" href="/_resource/img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/about/about.css">
 </head>
 
 <body>
 
     <!-- ── Header (reused) ── -->
-    <?php include 'includes/header.php'; ?>
+    <?php include '../header/header.php'; ?>
 
     <!-- ================================================
        BANNER SECTION
@@ -29,7 +29,7 @@
 
         <!-- Background image -->
         <div class="banner-bg">
-            <img src="_resource/img/home/hero/Kanneliya-1-1 1.png"
+            <img src="/_resource/img/home/hero/Kanneliya-1-1 1.png"
                 alt="Kanneliya Packages" />
         </div>
 
@@ -73,7 +73,7 @@
 
                 <div class="ab--sec01--div04">
                     <div class="ab--sec01--leftdiv">
-                        <img src="_resource/img/aboutContact/sec01/Kanneliya-1-1 2.png" alt="Mountain View"
+                        <img src="/_resource/img/aboutContact/sec01/Kanneliya-1-1 2.png" alt="Mountain View"
                             class="ab--sec01--leftdivimg" />
                         <p class="ab--sec01--leftdivp">
                             Customer satisfaction is at the heart of everything we do. We take pride in building trust, ensuring safety, and delivering a service that exceeds expectations. By choosing us, you're not just booking a tour you're partnering with a team that genuinely cares about making your journey special and unforgettable.
@@ -93,30 +93,30 @@
                         <p class="ab--sec01--rightdivp">
                             We are a dedicated tourism service provider specializing in unforgettable travel experiences in and around Kanneliya. With a passion for nature and a deep understanding of what travelers truly seek, we focus on delivering well-organized, comfortable, and memorable journeys for every visitor. Our goal is not just to take you to a destination, but to ensure you experience it in the most enjoyable and hassle-free way.
                         </p>
-                        <img src="_resource/img/aboutContact/sec01/gal1 2.png" alt="Hillside View"
+                        <img src="/_resource/img/aboutContact/sec01/gal1 2.png" alt="Hillside View"
                             class="ab--sec01--rightdivimg" />
                     </div>
                 </div>
 
                 <div class="ab--sec01--div05">
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/service1.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="/_resource/img/aboutContact/sec01/service1.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Unforgettable Rainforest Adventures</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/service2.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="/_resource/img/aboutContact/sec01/service2.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Expert Local Guides</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/service3.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="/_resource/img/aboutContact/sec01/service3.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Eco-Friendly Travel</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/service4.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="/_resource/img/aboutContact/sec01/service4.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Customized Experiences</p>
                     </div>
                     <div class="ab--sec01--card">
-                        <img src="_resource/img/aboutContact/sec01/service5.png" alt="" class="ab--sec01--cardimg" />
+                        <img src="/_resource/img/aboutContact/sec01/service5.png" alt="" class="ab--sec01--cardimg" />
                         <p class="ab--sec01--cardtext">Breathtaking Locations</p>
                     </div>
                 </div>
@@ -319,11 +319,11 @@
     </section>
 
     <!-- ── Footer ── -->
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../footer/footer.php'; ?>
 
-    <script src="js/header.js"></script>
-    <script src="js/about.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="/header/header.js"></script>
+    <script src="/about/about.js"></script>
+    <script src="/footer/footer.js"></script>
 
 </body>
 

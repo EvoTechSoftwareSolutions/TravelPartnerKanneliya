@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Partner Kanneliya</title>
 
-    <link rel="icon" href="_resource/img/logo.png">
+    <link rel="icon" href="/_resource/img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/kanneliya.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/kanneliya/kanneliya.css">
 </head>
 
 <body>
 
     <!-- ── Header (reused) ── -->
-    <?php include 'includes/header.php'; ?>
+    <?php include '../header/header.php'; ?>
 
     <!-- ================================================
        BANNER SECTION
@@ -101,7 +101,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-index="0">
-                            <img src="_resource/img/kanneliya/batCave/2.webp" alt="Mountain view" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/batCave/2.webp" alt="Mountain view" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -115,7 +115,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-index="1">
-                            <img src="_resource/img/kanneliya/batCave/3.jpg" alt="Landscape" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/batCave/3.jpg" alt="Landscape" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
                 <div class="attraction-final-right reveal">
 
                     <div class="attraction-final-img attraction-final-right-tall" data-index="2">
-                        <img src="_resource/img/kanneliya/batCave/1.jpg" alt="Green hills" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/batCave/1.jpg" alt="Green hills" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -221,7 +221,7 @@
                 <div class="attraction-final-left reveal">
 
                     <div class="attraction-final-img attraction-final-right-tall" data-lb="2" data-index="0">
-                        <img src="_resource/img/kanneliya/anagimala/3.jpg" alt="Valley view" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/anagimala/3.jpg" alt="Valley view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -278,7 +278,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="2" data-index="3">
-                            <img src="_resource/img/kanneliya/anagimala/1.jpg" alt="Anagimala Waterfall" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/anagimala/1.jpg" alt="Anagimala Waterfall" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -292,7 +292,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="2" data-index="4">
-                            <img src="_resource/img/kanneliya/anagimala/2.jpg" alt="Forest view" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/anagimala/2.jpg" alt="Forest view" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -357,7 +357,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="3" data-index="0">
-                            <img src="_resource/img/kanneliya/tree/2.webp" alt="Forest canopy" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/tree/2.webp" alt="Forest canopy" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -371,7 +371,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="3" data-index="1">
-                            <img src="_resource/img/kanneliya/tree/3.webp" alt="Tree observation" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/tree/3.webp" alt="Tree observation" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -390,7 +390,7 @@
                 <!-- Right Column: 3 images -->
                 <div class="attraction-final-right reveal">
                     <div class="attraction-final-img attraction-final-right-tall" data-lb="3" data-index="2">
-                        <img src="_resource/img/kanneliya/tree/4.webp" alt="Nawada tree trunk" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/tree/4.webp" alt="Nawada tree trunk" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -404,7 +404,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-top" data-lb="3" data-index="3">
-                        <img src="_resource/img/kanneliya/tree/5.webp" alt="Forest view" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/tree/5.webp" alt="Forest view" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -418,7 +418,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-bottom" data-lb="3" data-index="4">
-                        <img src="_resource/img/kanneliya/tree/6.webp" alt="Deep forest" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/tree/6.webp" alt="Deep forest" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -471,7 +471,7 @@
                 <!-- Left Column: 3 images -->
                 <div class="attraction-final-left reveal">
                     <div class="attraction-final-img attraction-final-right-tall" data-lb="4" data-index="0">
-                        <img src="_resource/img/kanneliya/narangas/4.webp" alt="Waterfall cascade" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/narangas/4.webp" alt="Waterfall cascade" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -485,7 +485,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-top" data-lb="4" data-index="1">
-                        <img src="_resource/img/kanneliya/narangas/5.webp" alt="Forest mist" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/narangas/5.webp" alt="Forest mist" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -499,7 +499,7 @@
                         </div>
                     </div>
                     <div class="attraction-final-img attraction-final-right-bottom" data-lb="4" data-index="2">
-                        <img src="_resource/img/kanneliya/narangas/6.webp" alt="Deep jungle" loading="lazy" />
+                        <img src="/_resource/img/kanneliya/narangas/6.webp" alt="Deep jungle" loading="lazy" />
                         <div class="attraction-final-img-overlay">
                             <div class="attraction-final-expand-hint">
                                 <svg viewBox="0 0 24 24">
@@ -528,7 +528,7 @@
 
                     <div class="attraction-final-left-images">
                         <div class="attraction-final-img" data-lb="4" data-index="3">
-                            <img src="_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/narangas/1.webp" alt="Narangas Ella Waterfall" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -542,7 +542,7 @@
                             </div>
                         </div>
                         <div class="attraction-final-img" data-lb="4" data-index="4">
-                            <img src="_resource/img/kanneliya/narangas/2.webp" alt="Jungle trail" loading="lazy" />
+                            <img src="/_resource/img/kanneliya/narangas/2.webp" alt="Jungle trail" loading="lazy" />
                             <div class="attraction-final-img-overlay">
                                 <div class="attraction-final-expand-hint">
                                     <svg viewBox="0 0 24 24">
@@ -849,7 +849,7 @@
             <div class="destinations-grid reveal">
 
             <div class="destination-card" data-index="0">
-                    <img src="_resource/img/kanneliya/destination/kanneliya.jpg" alt="Kanneliya Rain Forest" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/kanneliya.jpg" alt="Kanneliya Rain Forest" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -864,7 +864,7 @@
                 </div>
 
                 <div class="destination-card" data-index="1">
-                    <img src="_resource/img/kanneliya/destination/lankagama.jpg" alt="Lankagama" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/lankagama.jpg" alt="Lankagama" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -879,7 +879,7 @@
                 </div>
 
                 <div class="destination-card" data-index="2">
-                    <img src="_resource/img/kanneliya/destination/hermitage.jpg" alt="Forest Hermitage" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/hermitage.jpg" alt="Forest Hermitage" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -894,7 +894,7 @@
                 </div>
 
                 <div class="destination-card" data-index="3">
-                    <img src="_resource/img/kanneliya/destination/shrine.jpg" alt="Kalwari Shrine Hiniduma" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/shrine.jpg" alt="Kalwari Shrine Hiniduma" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -909,7 +909,7 @@
                 </div>
 
                 <div class="destination-card" data-index="4">
-                    <img src="_resource/img/kanneliya/destination/sinharaja.jpg" alt="Sinharaja Rain Forest" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/sinharaja.jpg" alt="Sinharaja Rain Forest" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -924,7 +924,7 @@
                 </div>
 
                 <div class="destination-card" data-index="5">
-                    <img src="_resource/img/kanneliya/destination/doowili.webp" alt="Dooli Ella Waterfall" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/doowili.webp" alt="Dooli Ella Waterfall" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -939,7 +939,7 @@
                 </div>
 
                 <div class="destination-card" data-index="6">
-                    <img src="_resource/img/kanneliya/destination/fort.jpg" alt="Galle Fort" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/fort.jpg" alt="Galle Fort" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -954,7 +954,7 @@
                 </div>
 
                 <div class="destination-card" data-index="7">
-                    <img src="_resource/img/kanneliya/destination/rumassala.jpg" alt="Rumassala" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/rumassala.jpg" alt="Rumassala" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -969,7 +969,7 @@
                 </div>
 
                 <div class="destination-card" data-index="8">
-                    <img src="_resource/img/kanneliya/destination/meauseum.jpg" alt="National Maritime Museum - Galle" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/meauseum.jpg" alt="National Maritime Museum - Galle" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -984,7 +984,7 @@
                 </div>
 
                 <div class="destination-card" data-index="9">
-                    <img src="_resource/img/kanneliya/destination/turtle.webp" alt="Sea Turtle Hatchery" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/turtle.webp" alt="Sea Turtle Hatchery" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -999,7 +999,7 @@
                 </div>
 
                 <div class="destination-card" data-index="10">
-                    <img src="_resource/img/kanneliya/destination/martin.jpg" alt="Martin Wickramasinghe Museum" loading="lazy" />
+                    <img src="/_resource/img/kanneliya/destination/martin.jpg" alt="Martin Wickramasinghe Museum" loading="lazy" />
                     <div class="destination-card-overlay"></div>
                     <div class="destination-card-hint">
                         <svg viewBox="0 0 24 24">
@@ -1043,11 +1043,11 @@
     </div>
 
     <!-- ── Footer ── -->
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../footer/footer.php'; ?>
 
-    <script src="js/header.js"></script>
-    <script src="js/kanneliya.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="/header/header.js"></script>
+    <script src="/kanneliya/kanneliya.js"></script>
+    <script src="/footer/footer.js"></script>
 
 </body>
 

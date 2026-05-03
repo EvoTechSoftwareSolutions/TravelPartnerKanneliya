@@ -49,12 +49,12 @@ function showNext() {
 
 //redirect to page:
 const destMap = {
-  "Natural Bat's Cave":       'kanneliya.php#attraction-final',
-  'Anagimala Ella Waterfall': 'kanneliya.php#attraction-2',
-  'Giant Nawada Tree':        'kanneliya.php#attraction-3',
-  'Kuda Kabbale Peak':        'kanneliya.php#attraction-5',
-  'Narangas Ella Waterfall':  'kanneliya.php#attraction-4',
-  'Maha Kabbale Peak':        'kanneliya.php#attraction-6',
+  "Natural Bat's Cave":       '/kanneliya#attraction-final',
+  'Anagimala Ella Waterfall': '/kanneliya#attraction-2',
+  'Giant Nawada Tree':        '/kanneliya#attraction-3',
+  'Kuda Kabbale Peak':        '/kanneliya#attraction-5',
+  'Narangas Ella Waterfall':  '/kanneliya#attraction-4',
+  'Maha Kabbale Peak':        '/kanneliya#attraction-6',
 };
 
 cards.forEach((card) => {
@@ -177,7 +177,7 @@ document.addEventListener('keydown', (e) => {
     card.addEventListener('click', () => {
       if (dragMoved) return; // was a drag, not a click
       if (card.classList.contains('pkg-pos-center')) {
-        window.location.href = 'packages.php#pk0' + (current + 1);
+        window.location.href = '/packages#pk0' + (current + 1);
       } else if (card.classList.contains('pkg-pos-right')) {
         goTo(current + 1);
       } else if (card.classList.contains('pkg-pos-left')) {

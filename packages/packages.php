@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Partner Kanneliya</title>
 
-    <link rel="icon" href="_resource/img/logo.png">
+    <link rel="icon" href="/_resource/img/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/packages.css">
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/packages/packages.css?v=<?= filemtime($_SERVER['DOCUMENT_ROOT'].'/packages/packages.css') ?>">
 </head>
 
 <body>
 
     <!-- ── Header (reused) ── -->
-    <?php include 'includes/header.php'; ?>
+    <?php include '../header/header.php'; ?>
 
     <!-- ================================================
        BANNER SECTION
@@ -444,11 +444,11 @@
 
 
     <!-- ── Footer ── -->
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../footer/footer.php'; ?>
 
-    <script src="js/header.js"></script>
-    <script src="js/packages.js"></script>
-    <script src="js/footer.js"></script>
+    <script src="/header/header.js"></script>
+    <script src="/packages/packages.js"></script>
+    <script src="/footer/footer.js"></script>
 
 </body>
 

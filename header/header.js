@@ -7,6 +7,9 @@
   const panelOverlay = document.getElementById('panelOverlay');
   const panelClose   = document.getElementById('panelClose');
 
+  // Guard — stop if header elements not found
+  if (!header || !menuToggle || !slidePanel) return;
+
   // ── Scroll effect ────────────────────────────────────────────
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 30);
@@ -28,11 +31,9 @@
   }
 
   // ── Toggle on hamburger click ────────────────────────────────
-  if (menuToggle && slidePanel) {
-    menuToggle.addEventListener('click', () => {
-      slidePanel.classList.contains('open') ? closePanel() : openPanel();
-    });
-  }
+  menuToggle.addEventListener('click', () => {
+    slidePanel.classList.contains('open') ? closePanel() : openPanel();
+  });
 
   // ── Close button inside panel ────────────────────────────────
   if (panelClose) {
@@ -45,11 +46,9 @@
   }
 
   // ── Close on nav link click ──────────────────────────────────
-  if (slidePanel) {
-    slidePanel.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closePanel);
-    });
-  }
+  slidePanel.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closePanel);
+  });
 
   // ── Close on Escape key ──────────────────────────────────────
   document.addEventListener('keydown', (e) => {
@@ -57,47 +56,48 @@
   });
 
   // ── Active nav link ──────────────────────────────────────────
-  const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
+  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  const currentHash = window.location.hash;
 
-  const currentPath = window.location.pathname.split('/').pop() || 'index.php';
+  navLinks.forEach(link => link.classList.remove('active'));
 
   navLinks.forEach(link => {
-    const href     = link.getAttribute('href') || '';
-    const linkPage = href.split('#')[0];
-    const linkHash = href.includes('#') ? href.split('#')[1] : null;
+    const href = link.getAttribute('href') || '';
+    if (href.startsWith('tel:') || href.startsWith('http')) return;
 
-    const pageMatches = linkPage === currentPath ||
-      (currentPath === '' && linkPage === 'index.php') ||
-      (currentPath === 'index.php' && linkPage === '');
+    const linkPath = href.split('#')[0].replace(/\/$/, '') || '/';
+    const linkHash = href.includes('#') ? '#' + href.split('#')[1] : '';
 
-    if (pageMatches && !linkHash) {
-      link.classList.add('active');
-    } else if (pageMatches && linkHash) {
-      if (window.location.hash === '#' + linkHash) {
+    if (linkHash) {
+      if (linkPath === currentPath && currentHash === linkHash) {
+        link.classList.add('active');
+      }
+    } else {
+      if (linkPath === currentPath) {
         link.classList.add('active');
       }
     }
   });
 
   // ── Scroll-based active (for anchor sections on same page) ───
+  const sections = document.querySelectorAll('section[id]');
+
   if (sections.length && navLinks.length) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           navLinks.forEach(l => l.classList.remove('active'));
 
-          let active = document.querySelector(
+          const hashLink = document.querySelector(
             `.nav-link[href="${currentPath}#${entry.target.id}"]`
           );
+          const pageLink = document.querySelector(
+            `.nav-link[href="${currentPath}"]`
+          );
 
-          if (!active) {
-            active = document.querySelector(
-              `.nav-link[href="${currentPath}"]`
-            );
-          }
-
-          if (active) active.classList.add('active');
+          if (hashLink) hashLink.classList.add('active');
+          else if (pageLink) pageLink.classList.add('active');
         }
       });
     }, { threshold: 0.4 });
@@ -108,7 +108,7 @@
 })();
 
 
-// ── Anchor scroll offset fix for fixed header ──
+// ── Anchor scroll offset fix for fixed header ──────────────────
 (function () {
   const HEADER_HEIGHT = 100;
 

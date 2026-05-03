@@ -74,7 +74,7 @@
       }
     };
 
-    xhr.open('POST', '../mail/sendEmailProcess.php', true);
+    xhr.open('POST', '/mail/sendEmailProcess.php', true);
     xhr.send(f);
   }
 
