@@ -1,8 +1,11 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-require "../mail/SMTP.php";
-require "../mail/PHPMailer.php";
-require "../mail/Exception.php";
+require __DIR__ . "/SMTP.php";
+require __DIR__ . "/PHPMailer.php";
+require __DIR__ . "/Exception.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -14,15 +17,41 @@ function sanitizeInput($data) {
     return $data;
 }
 
-// ─── Brand SVG icons (inline, white fill) ──────────────────────────────────────
-$svg_facebook = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>';
+// ─── Unicode icons (for buttons, badges, inline text only) ─────────────────────
+$icon_check    = '&#10003;'; // ✓ Check
+$icon_warning  = '&#9888;';  // ⚠ Warning
+$icon_arrow    = '&#8617;';  // ↩ Reply
+$icon_leaf     = '&#127807;'; // 🌿 Leaf
 
-$svg_whatsapp = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.128.558 4.122 1.532 5.852L.057 23.428a.5.5 0 00.611.61l5.608-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.5-5.24-1.375l-.374-.216-3.878 1.009 1.032-3.768-.234-.386A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>';
+// ─── Image icons (for detail card left side) ───────────────────────────────────
+$img_person   = 'https://travelpartnerkanneliya.com/_resource/img/mail/user.png';
+$img_phone    = 'https://travelpartnerkanneliya.com/_resource/img/mail/phone.png';
+$img_mail     = 'https://travelpartnerkanneliya.com/_resource/img/mail/mail.png';
+$img_message  = 'https://travelpartnerkanneliya.com/_resource/img/mail/pen.png';
 
-$svg_tiktok = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.7a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z"/></svg>';
+// ─── Social icons ──────────────────────────────────────────────────────────────
+$svg_facebook = 'https://travelpartnerkanneliya.com/_resource/img/mail/facebook.png';
+$svg_whatsapp = 'https://travelpartnerkanneliya.com/_resource/img/mail/whatsapp.png';
+$svg_tiktok   = 'https://travelpartnerkanneliya.com/_resource/img/mail/tiktok.png';
+
+// ─── Helper: image icon cell for detail cards ──────────────────────────────────
+function iconCellImage($image_url, $alt = 'icon') {
+    return '
+      <td style="padding:16px 18px;width:56px;vertical-align:middle;">
+        <div style="width:42px;height:42px;border-radius:10px;
+                    background:rgba(78,205,196,0.1);
+                    border:1px solid rgba(78,205,196,0.25);
+                    text-align:center;line-height:42px;
+                    display:inline-block;">
+          <img src="' . $image_url . '" alt="' . $alt . '" 
+               style="width:22px;height:22px;vertical-align:middle;
+                      filter: brightness(0) saturate(100%) invert(77%) sepia(15%) saturate(1160%) hue-rotate(128deg) brightness(95%) contrast(92%);">
+        </div>
+      </td>';
+}
 
 // ─── Shared social icon row ─────────────────────────────────────────────────────
-function socialIconRow($svg_fb, $svg_wa, $svg_tt) {
+function socialIconRow($fb_svg, $wa_svg, $tt_svg) {
     return '
       <tr>
         <td align="center" style="padding:24px 40px 28px;">
@@ -33,29 +62,34 @@ function socialIconRow($svg_fb, $svg_wa, $svg_tt) {
           </p>
           <table cellpadding="0" cellspacing="0" border="0" align="center">
             <tr>
-              <td style="padding:0 8px;">
+              <td style="padding:0 10px;">
                 <a href="https://www.facebook.com/share/1Bs3cBNbkj/?mibextid=wwXIfr" target="_blank"
-                   style="display:inline-block;width:44px;height:44px;border-radius:50%;
-                          background:#1877F2;text-align:center;line-height:48px;
+                   style="display:inline-block;width:44px;height:44px;border-radius:2rem;
+                          background:transparent;
+                          border:1px solid rgba(78,205,196,0.35);
+                          text-align:center;line-height:44px;
                           text-decoration:none;vertical-align:middle;">
-                  ' . $svg_fb . '
+                  <img src="' . $fb_svg . '" alt="Facebook" style="width:20px;height:20px;vertical-align:middle;filter: brightness(0) saturate(100%) invert(77%) sepia(15%) saturate(1160%) hue-rotate(128deg) brightness(95%) contrast(92%);">
                 </a>
               </td>
-              <td style="padding:0 8px;">
+              <td style="padding:0 10px;">
                 <a href="https://wa.link/lzcezh" target="_blank"
-                   style="display:inline-block;width:44px;height:44px;border-radius:50%;
-                          background:#25D366;text-align:center;line-height:48px;
+                   style="display:inline-block;width:44px;height:44px;border-radius:2rem;
+                          background:transparent;
+                          border:1px solid rgba(78,205,196,0.35);
+                          text-align:center;line-height:44px;
                           text-decoration:none;vertical-align:middle;">
-                  ' . $svg_wa . '
+                  <img src="' . $wa_svg . '" alt="WhatsApp" style="width:20px;height:20px;vertical-align:middle;filter: brightness(0) saturate(100%) invert(77%) sepia(15%) saturate(1160%) hue-rotate(128deg) brightness(95%) contrast(92%);">
                 </a>
               </td>
-              <td style="padding:0 8px;">
+              <td style="padding:0 10px;">
                 <a href="https://www.tiktok.com/@travelpartnerkanneliya?_r=1&_t=ZS-92JbmMsXzKm" target="_blank"
-                   style="display:inline-block;width:44px;height:44px;border-radius:50%;
-                          background:#010101;border:1px solid rgba(255,255,255,0.2);
-                          text-align:center;line-height:48px;
+                   style="display:inline-block;width:44px;height:44px;border-radius:2rem;
+                          background:transparent;
+                          border:1px solid rgba(78,205,196,0.35);
+                          text-align:center;line-height:44px;
                           text-decoration:none;vertical-align:middle;">
-                  ' . $svg_tt . '
+                  <img src="' . $tt_svg . '" alt="TikTok" style="width:20px;height:20px;vertical-align:middle;filter: brightness(0) saturate(100%) invert(77%) sepia(15%) saturate(1160%) hue-rotate(128deg) brightness(95%) contrast(92%);">
                 </a>
               </td>
             </tr>
@@ -118,20 +152,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'et.website.message@gmail.com';
-        $mail->Password   = 'YOUR_APP_PASSWORD_HERE';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port       = 465;
+        $mail->Username   = 'kawarjanagunasekara@gmail.com';
+        $mail->Password   = 'itjjycrgcaiocdmf';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
         $mail->CharSet    = 'UTF-8';
-        $mail->setFrom('et.website.message@gmail.com', 'Travel Partner Kanneliya');
+        $mail->setFrom('kawarjanagunasekara@gmail.com', 'Travel Partner Kanneliya');
         $mail->addReplyTo($email, $fname . ' ' . $lname);
 
         // ════════════════════════════════════════════════════════════════════════
         //  EMAIL 1 — OWNER NOTIFICATION
         // ════════════════════════════════════════════════════════════════════════
-        $mail->addAddress('info@travelpartnerkanneliya.com');
+        $mail->addAddress('chadina9@gmail.com');
         $mail->isHTML(true);
-        $mail->Subject = '=?UTF-8?B?' . base64_encode('📩 New Enquiry — ' . $fname . ' ' . $lname) . '?=';
+        $mail->Subject = '=?UTF-8?B?' . base64_encode('New Enquiry — ' . $fname . ' ' . $lname) . '?=';
 
         $mail->Body = '<!DOCTYPE html>
 <html lang="en">
@@ -140,9 +174,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>New Enquiry</title>
 </head>
-<body style="margin:0;padding:0;background:#060e13;font-family:Arial,Helvetica,sans-serif;">
+<body style="margin:0;padding:0;background:transparent;font-family:Arial,Helvetica,sans-serif;">
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#060e13;padding:48px 0;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:transparent;padding:48px 0;">
   <tr><td align="center">
 
   <table width="600" cellpadding="0" cellspacing="0" border="0"
@@ -209,14 +243,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       background:linear-gradient(135deg,rgba(78,205,196,0.08),rgba(78,205,196,0.02));
                       border:1px solid rgba(78,205,196,0.18);border-radius:10px;">
           <tr>
-            <td style="padding:16px 18px;width:56px;vertical-align:middle;">
-              <div style="width:42px;height:42px;border-radius:10px;
-                          background:rgba(78,205,196,0.15);
-                          border:1px solid rgba(78,205,196,0.3);
-                          text-align:center;line-height:42px;font-size:20px;">
-                👤
-              </div>
-            </td>
+            ' . iconCellImage($img_person, 'User') . '
             <td style="padding:16px 18px 16px 8px;vertical-align:middle;">
               <p style="margin:0 0 3px;font-size:9px;letter-spacing:2.5px;
                         color:rgba(78,205,196,0.8);text-transform:uppercase;
@@ -235,14 +262,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       background:linear-gradient(135deg,rgba(78,205,196,0.08),rgba(78,205,196,0.02));
                       border:1px solid rgba(78,205,196,0.18);border-radius:10px;">
           <tr>
-            <td style="padding:16px 18px;width:56px;vertical-align:middle;">
-              <div style="width:42px;height:42px;border-radius:10px;
-                          background:rgba(78,205,196,0.15);
-                          border:1px solid rgba(78,205,196,0.3);
-                          text-align:center;line-height:42px;font-size:20px;">
-                📞
-              </div>
-            </td>
+            ' . iconCellImage($img_phone, 'Phone') . '
             <td style="padding:16px 18px 16px 8px;vertical-align:middle;">
               <p style="margin:0 0 3px;font-size:9px;letter-spacing:2.5px;
                         color:rgba(78,205,196,0.8);text-transform:uppercase;
@@ -261,14 +281,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       background:linear-gradient(135deg,rgba(78,205,196,0.08),rgba(78,205,196,0.02));
                       border:1px solid rgba(78,205,196,0.18);border-radius:10px;">
           <tr>
-            <td style="padding:16px 18px;width:56px;vertical-align:middle;">
-              <div style="width:42px;height:42px;border-radius:10px;
-                          background:rgba(78,205,196,0.15);
-                          border:1px solid rgba(78,205,196,0.3);
-                          text-align:center;line-height:42px;font-size:20px;">
-                ✉️
-              </div>
-            </td>
+            ' . iconCellImage($img_mail, 'Email') . '
             <td style="padding:16px 18px 16px 8px;vertical-align:middle;">
               <p style="margin:0 0 3px;font-size:9px;letter-spacing:2.5px;
                         color:rgba(78,205,196,0.8);text-transform:uppercase;
@@ -289,14 +302,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                style="background:linear-gradient(135deg,rgba(78,205,196,0.08),rgba(78,205,196,0.02));
                       border:1px solid rgba(78,205,196,0.18);border-radius:10px;">
           <tr>
-            <td style="padding:18px 18px 6px;width:56px;vertical-align:top;">
-              <div style="width:42px;height:42px;border-radius:10px;
-                          background:rgba(78,205,196,0.15);
-                          border:1px solid rgba(78,205,196,0.3);
-                          text-align:center;line-height:42px;font-size:20px;">
-                💬
-              </div>
-            </td>
+            ' . iconCellImage($img_message, 'Message') . '
             <td style="padding:18px 18px 18px 8px;vertical-align:top;">
               <p style="margin:0 0 8px;font-size:9px;letter-spacing:2.5px;
                         color:rgba(78,205,196,0.8);text-transform:uppercase;
@@ -323,7 +329,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   text-decoration:none;border-radius:8px;
                   font-family:Arial,Helvetica,sans-serif;
                   box-shadow:0 8px 24px rgba(78,205,196,0.3);">
-          &#8617;&nbsp; Reply to ' . $fname . '
+          ' . $icon_arrow . '&nbsp; Reply to ' . $fname . '
         </a>
       </td>
     </tr>
@@ -376,7 +382,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->clearAddresses();
         $mail->clearReplyTos();
         $mail->addAddress($email, $fname . ' ' . $lname);
-        $mail->addReplyTo('info@travelpartnerkanneliya.com', 'Travel Partner Kanneliya');
+        $mail->addReplyTo('chadina9@gmail.com', 'Travel Partner Kanneliya');
         $mail->Subject = 'We received your message — Travel Partner Kanneliya';
 
         $mail->Body = '<!DOCTYPE html>
@@ -386,9 +392,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Thank You</title>
 </head>
-<body style="margin:0;padding:0;background:#060e13;font-family:Arial,Helvetica,sans-serif;">
+<body style="margin:0;padding:0;background:transparent;font-family:Arial,Helvetica,sans-serif;">
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#060e13;padding:48px 0;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:transparent;padding:48px 0;">
   <tr><td align="center">
 
   <table width="600" cellpadding="0" cellspacing="0" border="0"
@@ -404,12 +410,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <td style="background:linear-gradient(160deg,#071e28 0%,#0a3a44 55%,#062030 100%);
                  padding:40px 40px 34px;text-align:center;">
 
+        <!-- Leaf icon -->
         <div style="display:inline-block;width:66px;height:66px;border-radius:50%;
                     background:rgba(78,205,196,0.12);
                     border:1.5px solid rgba(78,205,196,0.45);
-                    text-align:center;line-height:66px;font-size:30px;
-                    margin-bottom:18px;">
-          &#127807;
+                    text-align:center;line-height:66px;
+                    margin-bottom:18px;
+                    color:#4ecdc4;font-size:32px;">
+          ' . $icon_leaf . '
         </div>
 
         <p style="margin:0 0 5px;font-size:9px;letter-spacing:5px;
@@ -444,7 +452,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                      color:#4ecdc4;text-transform:uppercase;
                      font-family:Arial,Helvetica,sans-serif;
                      margin-bottom:22px;">
-          &#10003;&nbsp; Message Received
+          ' . $icon_check . '&nbsp; Message Received
         </span>
 
         <h2 style="margin:0 0 14px;font-family:Georgia,serif;font-size:26px;
@@ -564,22 +572,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       border:1px solid rgba(78,205,196,0.12);border-radius:10px;">
           <tr>
             <td align="center" style="padding:16px 20px;">
-              <p style="margin:0 0 7px;font-size:9px;letter-spacing:2.5px;
+              <p style="margin:0 0 10px;font-size:9px;letter-spacing:2.5px;
                         color:rgba(78,205,196,0.7);text-transform:uppercase;
                         font-family:Arial,Helvetica,sans-serif;">
                 Reach us directly
               </p>
-              <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.72);
+              <p style="margin:0 0 6px;font-size:13px;color:#4ecdc4;
                         font-family:Arial,Helvetica,sans-serif;">
-                &#128222;&nbsp;
-                <a href="https://wa.link/lzcezh"
-                   style="color:#4ecdc4;text-decoration:none;">+94 74 055 3769</a>
-                &nbsp;&middot;&nbsp;
-                &#9993;&nbsp;
-                <a href="mailto:info@travelpartnerkanneliya.com"
-                   style="color:#4ecdc4;text-decoration:none;">
-                  info@travelpartnerkanneliya.com
-                </a>
+                <span style="color:rgba(78,205,196,0.6);">&#9656;</span> 
+                <a href="https://wa.link/lzcezh" style="color:#4ecdc4;text-decoration:none;">+94 74 055 3769</a>
+              </p>
+              <p style="margin:0;font-size:13px;color:#4ecdc4;
+                        font-family:Arial,Helvetica,sans-serif;">
+                <span style="color:rgba(78,205,196,0.6);">&#9656;</span> 
+                <a href="mailto:info@travelpartnerkanneliya.com" style="color:#4ecdc4;text-decoration:none;">info@travelpartnerkanneliya.com</a>
               </p>
             </td>
           </tr>
@@ -608,7 +614,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <td style="padding:13px 18px;">
               <p style="margin:0;font-size:11px;color:rgba(255,220,80,0.65);
                         line-height:1.75;font-family:Arial,Helvetica,sans-serif;">
-                <strong style="color:rgba(255,220,80,0.85);">&#9888; Automated Email:</strong>
+                <strong style="color:rgba(255,220,80,0.85);">' . $icon_warning . ' Automated Email:</strong>
                 This is a system-generated confirmation email. Please do not reply
                 directly to this message. To reach us, use the contact details
                 listed above.
@@ -646,7 +652,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </html>';
 
         if (!$mail->send()) {
-            echo 'Message Sent successfully';
+            echo 'Failed to send: ' . $mail->ErrorInfo;
         } else {
             echo 'Message Sent successfully';
         }

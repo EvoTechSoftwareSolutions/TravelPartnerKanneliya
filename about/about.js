@@ -6,10 +6,6 @@
 (function () {
   'use strict';
 
-  // ── Country selector (runs immediately when DOM is ready) ─────────────────
-  // NOTE: The country dropdown logic is already in its own IIFE below.
-  //       This file handles form submission only.
-
   // ── Form submit ───────────────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function () {
 
@@ -19,6 +15,45 @@
     submitBtn.addEventListener('click', function () {
       sendMessage();
     });
+
+    // ── Numbers-only enforcement on mobile input ──────────────────────────
+    const mobileInput = document.getElementById('ctMobileInput');
+    if (mobileInput) {
+
+      // Block non-numeric key presses
+      mobileInput.addEventListener('keydown', function (e) {
+        const allowed = [
+          'Backspace','Delete','Tab','Escape','Enter',
+          'ArrowLeft','ArrowRight','ArrowUp','ArrowDown',
+          'Home','End'
+        ];
+        if (allowed.includes(e.key)) return;
+        if (e.ctrlKey || e.metaKey) return; // allow Ctrl+C / Ctrl+V etc.
+        if (!/^\d$/.test(e.key)) {
+          e.preventDefault();
+        }
+      });
+
+      // Strip any non-digits on paste
+      mobileInput.addEventListener('paste', function (e) {
+        e.preventDefault();
+        const pasted = (e.clipboardData || window.clipboardData).getData('text');
+        const digitsOnly = pasted.replace(/\D/g, '');
+        const start = this.selectionStart;
+        const end   = this.selectionEnd;
+        this.value = this.value.slice(0, start) + digitsOnly + this.value.slice(end);
+      });
+
+      // Sanitize on input (catches autofill, etc.)
+      mobileInput.addEventListener('input', function () {
+        const pos = this.selectionStart;
+        const clean = this.value.replace(/\D/g, '');
+        if (this.value !== clean) {
+          this.value = clean;
+          this.setSelectionRange(pos, pos);
+        }
+      });
+    }
 
   });
 
@@ -32,15 +67,37 @@
     const message = (document.querySelector('.ct--sec01--textarea')?.value                                               || '').trim();
     const countryCode = (document.getElementById('ctSelCode')?.textContent || '+94').trim();
 
-    // Combine country code + number (digits only)
+    // Combine country code + digits-only number
     const phone = countryCode + mobile.replace(/\D/g, '');
 
     // ── Client-side validation ─────────────────────────────────────────────
-    if (!fname) { showAlert('Please enter your first name.', 'error'); return; }
-    if (!lname) { showAlert('Please enter your last name.',  'error'); return; }
-    if (!email || !isValidEmail(email)) { showAlert('Please enter a valid email address.', 'error'); return; }
-    if (!mobile) { showAlert('Please enter your mobile number.', 'error'); return; }
-    if (!message) { showAlert('Please enter your message.', 'error'); return; }
+    if (!fname) {
+      showAlert('Please enter your first name.', 'error'); return;
+    }
+    if (!lname) {
+      showAlert('Please enter your last name.', 'error'); return;
+    }
+    if (!email) {
+      showAlert('Please enter your email address.', 'error'); return;
+    }
+    if (!isValidEmail(email)) {
+      showAlert('Please enter a valid email address (e.g. you@example.com).', 'error'); return;
+    }
+    if (!mobile) {
+      showAlert('Please enter your mobile number.', 'error'); return;
+    }
+    if (mobile.length < 4) {
+      showAlert('Mobile number must be at least 4 digits.', 'error'); return;
+    }
+    if (mobile.length > 18) {
+      showAlert('Mobile number must be no longer than 18 digits.', 'error'); return;
+    }
+    if (!message) {
+      showAlert('Please enter your message.', 'error'); return;
+    }
+    if (message.length < 5) {
+      showAlert('Your message is too short. Please provide more detail.', 'error'); return;
+    }
 
     // ── Build form data ───────────────────────────────────────────────────
     const f = new FormData();
@@ -63,12 +120,8 @@
       setButtonLoading(btn, false);
 
       if (xhr.responseText === 'Message Sent successfully') {
-
-        // Clear form fields
         clearForm();
-
         showAlert('Your message has been sent! We\'ll get back to you soon.', 'success');
-
       } else {
         showAlert(xhr.responseText || 'Something went wrong. Please try again.', 'error');
       }
@@ -114,7 +167,6 @@
   // ── Toast / Alert ─────────────────────────────────────────────────────────
   function showAlert(msg, type) {
 
-    // Remove existing toast
     const existing = document.getElementById('tpk--toast');
     if (existing) existing.remove();
 
@@ -154,7 +206,6 @@
 
     document.body.appendChild(toast);
 
-    // Animate in
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
         toast.style.opacity   = '1';
@@ -162,7 +213,6 @@
       });
     });
 
-    // Auto-remove after 5 s
     setTimeout(function () {
       toast.style.opacity   = '0';
       toast.style.transform = 'translateY(16px)';
@@ -212,7 +262,6 @@
   let open          = false;
   let selectedIndex = 0;
 
-  // Wait for DOM
   document.addEventListener('DOMContentLoaded', function () {
 
     const btn    = document.getElementById('ctCountryBtn');

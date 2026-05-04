@@ -189,7 +189,7 @@
                                                 <div class="ct--country--list" id="ctCountryList"></div>
                                             </div>
                                         </div>
-                                        <input type="tel" class="ct--sec01--mobileinput" id="ctMobileInput" placeholder="Enter Your Mobile Number" />
+                                        <input type="tel" class="ct--sec01--mobileinput" id="ctMobileInput" placeholder="Enter Your Mobile Number" maxlength="18" minlength="4" />
                                     </div>
                                     <p class="ct--country--format" id="ctFormatNote">Format: 07X XXXXXXX</p>
                                 </div>

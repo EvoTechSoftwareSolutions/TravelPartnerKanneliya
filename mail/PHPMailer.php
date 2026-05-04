@@ -5014,7 +5014,7 @@ class PHPMailer
      *
      * @return OAuth
      */
-    public function getOAuth()
+        public function getOAuth()
     {
         return $this->oauth;
     }
